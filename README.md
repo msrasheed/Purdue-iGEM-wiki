@@ -1,4 +1,5 @@
-This is the source code for Purdue iGEM's 2018 website.
+This is the source code for Purdue iGEM's 2018 website.<br/>
+www.2018.igem.org/Team:Purdue
 
 a brief description of important files
 
