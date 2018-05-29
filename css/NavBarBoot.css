@@ -1,0 +1,447 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x:hidden;
+}
+
+#HQ_page p{
+	text-align:inherit;
+	font-size:initial;
+	margin:0;
+}
+
+#globalWrapper{
+	padding-bottom:0px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////
+Navigation Menu
+////////////////////////////////?//////////////////////////////////////////*/
+
+.menu {
+	/*display:none;*/
+	position: fixed;
+	background-color:#222222;
+	opacity:.95;
+	top:5px;
+	border-top-style:solid;
+	border-top-width:17px;
+	border-top-color:#222222;
+	/*border-bottom-style:solid;
+	border-bottom-width:10px;
+	border-bottom-color:#222222;*/
+	padding-bottom:10px;
+	min-width:100%;
+	/*height:4em;*/
+	z-index:100;
+}
+
+.menu .menu-container {
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-between;
+	height:50px;
+}
+
+.menu-logo-container {
+	/*height:5em;*/
+   	width:12em;
+	/*position: absolute;*/
+   	/*top: 50%;
+   	transform: translate(0, -50%);*/
+   	margin-left:3%;
+	/*border-style:solid;
+	border-radius:.5em;
+	border-color:#222222;
+	background-color:#222222;	
+	display:table;*/
+}	
+
+.menu-logo-container a {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.menu-logo-container a img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:10em;	
+}
+
+.menu-items {
+	display:flex;
+	justify-content: space-between;
+	width:65%;
+	margin:auto;
+}
+
+.menu-hamburger {
+	/*border:1px solid #9d9d9d;*/
+	visibility:hidden;
+	width:50px;
+	/*height:50px;*/
+	margin-right:40px;
+	margin-left:40px;
+	/*overflow:auto;*/
+	float:right;
+}	
+
+.menu-hamburger div {
+	background-color:#9d9d9d;
+	height:5px;
+	width:80%;
+	margin:auto;
+	margin-top:5px;
+}
+
+.menu-hamburger div:last-child {
+	margin-bottom:5px;
+}
+
+.dropdown:hover .dropdown-menu{
+	display:block;
+}
+
+.nav-menu-side {
+	/*width:300px;*/
+	height:100%;
+	width:300px;
+	position:fixed;
+	top:5.9em;
+	left:-300px;
+	opacity:.95;
+	background-color:#222222;
+	overflow:auto;
+	-webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    -ms-transition: left 0.3s;
+    -o-transition: left 0.3s;
+    transition: left 0.3s;
+}
+
+.nav-menu-side-slide-left {
+	left:0;
+}
+
+.nav-menu-side ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	text-align: center;
+	/*color:white;*/
+	/*width:200px;*/
+}
+
+.nav-menu-side ul > li > a {
+	text-decoration: none;
+	/*width:300px;*/
+	padding:10px 0 10px 0;
+	display:block;
+	color:#9d9d9d;
+	/*border-bottom:1px solid #9d9d9d;*/
+}
+
+.nav-menu-side ul:last-child {
+	margin-bottom:100px;
+}
+
+.nav-menu-side ul > li > a:hover {
+	color:white;
+	text-decoration: none;
+}
+
+.nav-menu-side .dropdown-menu-side {
+	display:none;
+	background-color:#444444;
+}
+
+@media (max-width:1110px) {
+	.menu-items {
+		display:none;
+	}
+	.menu-hamburger {
+		visibility:visible;
+	}
+}
+
+/*////////////////////////////////////////////////////////////////////////////
+Home Page
+////////////////////////////////?//////////////////////////////////////////*/
+
+.home-splash {
+	position:relative;
+	/*margin-top:5.2em;*/
+	padding-top:0px;
+	padding-bottom:0px;
+	height:100vh;
+	width:auto;
+	max-width:100%;
+	overflow:hidden;
+	transform: translate(0,-10px);
+}
+
+.home-splash img {
+	max-width:100%;
+	height:auto;
+}
+
+.home-splash .home-splash-title {
+	position:absolute;
+	top:25%;
+	left:5%;
+	/*transform:translate(50%,-300%);*/
+	font-size:10em;
+	font-weight:900;
+	overflow:visible;
+	white-space:nowrap;
+}
+
+.home-splash .home-splash-title h1{
+	color:#222222;
+	font-size:inherit;
+	font-weight:inherit;
+}
+
+.home-splash .home-splash-title p{
+	margin-left:90%;
+}
+
+.home-links {
+	width:80%;
+}
+
+.home-links div h1{
+	text-align:center;
+}
+
+#HQ_page .home-links div h1{
+	text-align:center;
+	margin-bottom:.5em;
+}
+
+.home-links div .home-links-icon {
+	margin:auto;
+	width:80%;
+	height:9em;
+	/*height:80%;*/
+	overflow:hidden;
+}
+
+.home-links div .home-links-icon img{
+	max-width:100%;
+}
+
+.home-links div p {
+	margin-top:2em;
+	margin-bottom:2em;
+	font-size:1.5em;
+}
+
+#HQ_page .home-links div p {
+	margin-top:2em;
+	margin-bottom:2em;
+	font-size:1em;
+}
+
+.home-links div a {
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:2em;
+}
+
+/*////////////////////////////////////////////////////////////////////////////
+Footer
+////////////////////////////////?//////////////////////////////////////////*/
+
+.footer {
+	background-color:#222222;
+	display:flex;
+	flex-wrap:wrap;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+.footer .igem_2018_team_content .igem_2018_team_column_wrapper div h1{
+	/*background-color:white;*/
+	text-align:center;
+	color:white;
+}
+
+.footer .igem_2018_team_content .igem_2018_team_column_wrapper div p{
+	/*background-color:#222222;*/
+	text-align:center;
+	color:#cccccc;
+}
+
+.footer .igem_2018_team_content .igem_2018_team_column_wrapper div .footer-text-link{
+	text-decoration:none;
+}
+
+.footer .igem_2018_team_content .igem_2018_team_column_wrapper div .footer-text-link p{
+	-webkit-transition-property:color; /* Safari */
+    -webkit-transition-duration: .5s; /* Safari */
+    transition-property:color;
+    transition-duration: :.5s;
+}
+
+.footer .igem_2018_team_content .igem_2018_team_column_wrapper div .footer-text-link p:hover{
+	color:white;
+}
+
+.footer .igem_2018_team_content .igem_2018_team_column_wrapper div .footer-media-div {
+	width:31.33%;
+	float:left;
+	margin:1%;
+}
+
+.social {
+	filter:invert(75%);
+	-webkit-transition-property: filter; /* Safari */
+    -webkit-transition-duration: .5s; /* Safari */
+    transition-property: filter;
+    transition-duration: .5s;
+}
+
+.social-purdue {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	/*height:5em;
+	width:auto;*/
+}
+
+.social:hover {
+	filter:invert(100%);
+}
+
+/*////////////////////////////////////////////////////////////////////////////
+Basic Page and EZ stylings
+////////////////////////////////?//////////////////////////////////////////*/
+
+.basic-page {
+	margin-top:5.9em;
+	width:100vw;
+	position:relative;
+	top:0;
+	left:0;
+	/*display:inline-block;*/
+	-webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    -ms-transition: left 0.3s;
+    -o-transition: left 0.3s;
+    transition: left 0.3s;
+}
+
+.basic-page-slide-left {
+	left:300px;
+}
+
+.basic-page .basic-header {
+	min-width:100%;
+	height:10em;
+	overflow:hidden;
+	/*border-style:solid;
+	border-color:black;*/
+	position:relative;
+}
+
+.basic-page .basic-header img {
+	min-width:100%;
+	position:absolute;
+	top:-60%;
+}
+
+.basic-page .basic-header p {
+	position:absolute;
+	top:50%;
+	right:50%;
+	transform:translate(50%, -50%);
+	font-size:5em;
+	color:white;
+	border-bottom-style:solid;
+	border-bottom-color:white;
+}
+
+.basic-page .basic-page-body {
+	width:80%;
+	margin:auto;
+}
+
+.basic-page .basic-page-body h1 {
+	width:100%;
+	color:#fbbf29;
+	border-bottom-style:solid;
+	border-bottom-width:thin;
+	border-bottom-color:grey;
+}
+
+.basic-page .basic-page-body h1 a {
+	color:inherit;
+}
+
+.basic-page .basic-page-body h1 a:hover{
+	text-decoration:none;
+}
+
+.basic-page .basic-page-body p {
+	width:90%;
+	margin:auto;
+	text-indent:3em;
+}
+
+.basic-page .basic-page-body .spacer-small {
+	width:100%;
+	height:3em;
+}
+
+.basic-page .basic-page-body .col-container {
+	display:flex;
+}
+
+.basic-page .basic-page-body .col-container .col img {
+	width:90%;
+	/*max-width:100%;*/
+	display:block;
+	margin:auto;
+}
+
+.basic-page .basic-page-body .imageAndText img {
+	float:right;
+}
+
+/*////////////////////////////////////////////////////////////////////////////
+Notebook
+////////////////////////////////?//////////////////////////////////////////*/
+
+.basic-page .basic-page-side-menu {
+	top:37%;
+	width:8%;
+	/*height:20em;*/
+	position:fixed;
+	border-style:solid;
+	border-color:black;
+}
+
+.basic-page .basic-page-side-menu div {
+	text-align:center;
+	background-color:#222222;
+	padding-top:.5em;
+	padding-bottom:.5em;
+}
+
+.basic-page .basic-page-side-menu div:hover {
+	background-color:#333333;
+}
+
+.basic-page .basic-page-side-menu div a {
+	color:white;
+}
+
+.basic-page .basic-page-side-menu div a:hover{
+	text-decoration:none;
+}
