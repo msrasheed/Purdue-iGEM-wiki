@@ -1,0 +1,181 @@
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Purdue/NavBarCSS?action=raw&ctype=text/css" />
+<link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Purdue/BootstrapCSS?action=raw&ctype=text/css" />
+ 
+</head>
+
+<body>
+
+
+<h1 id = "questionNumber"> Question 1 </h1>
+<p id="question"> Men can also get yeast infections? </p>
+<button id="yes" onclick="correct=yesAnswer(counter,correct)"> Yes </button>
+<button id="no" onclick="correct=noAnswer(counter,correct)"> No </button>
+<h2 id="Commentary"></h2>
+<div class="clear"></div>
+<div class="clear"></div>
+<div class="clear"></div>
+<p id="Description"></p>
+<button style="visibility:hidden;" onclick="counter=nextQuestion(counter)" id="button">Next Question</button>
+
+<script>
+var counter=0;
+var correct=0;
+
+
+
+
+function yesAnswer(cnt,numCorrect){
+	// First Question Answer
+   if(cnt==0){
+		document.getElementById("Commentary").innerHTML="Correct!";
+		document.getElementById("Description").innerHTML="Up to god knows how many men get diagnosed with testicular yeast infections per year.";
+		document.getElementById("button").style.visibility = "visible";
+		numCorrect =numCorrect + 1;
+	}
+	// Second Question Answer
+	else if(cnt==1){
+		document.getElementById("Commentary").innerHTML="Correct!";
+		document.getElementById("Description").innerHTML="C. Albicans exists in two different forms. There is a white form and an opaque form. <br>"+
+														"white gains the ability to borrow through skin and is often the cause of yeast infections in the blood <br>"+
+														"opaque is a more fertile form where it can reproduce upwards to 300% faster. This form normally causes mucosal infections";
+		document.getElementById("button").style.visibility= "visible";
+		numCorrect = numCorrect + 1;
+	
+	}
+	// Third Question Answer
+	else if(cnt==2){
+		document.getElementById("Commentary").innerHTML="Incorrect!";
+		document.getElementById("Description").innerHTML=" While the test is okay to use to determine a yeast infection, the test doesn't directly detect for a yeast infection.<br>"+
+											"Instead, it checks the pH of the region. If it is a bacterial infection, it will have a raised pH, otherwise it is likely a yeast infection,<br>"+
+											"This leaves room for error, as sometimes, the symptoms of a yeast infection can be from an alergic reaction, this will also not raise pH.<br>"+
+											"Also, sometimes things like creams and other things can cause a rise in the pH, making the test read a bacterial infection instead of a yeast infection.";
+		document.getElementById("button").style.visibility="visible";	
+	}
+	
+	// Fourth Question Answer
+	else if(cnt==3){
+		document.getElementById("Commentary").innerHTML="Correct";
+		document.getElementById("Description").innerHTML="We use split Tyrosinase and pqsR and join each half with a split HRP. In the presence in Farnesol and Tyrosol, Tyrosinase and pqsR will bond to it<br>"+
+											"Each half will come together and reform, this will then allow the HRP to reform and catalyze a reaction to produce a visible blue substrate.";
+		document.getElementById("button").style.visibility="visible";
+		numCorrect = numCorrect  + 1;
+	}
+	
+	// Else there's an error somewhere
+	else{
+	document.getElementById("Commentary").innerHTML="Oops!";
+	}
+	
+return numCorrect;
+}
+
+
+
+function noAnswer(cnt, numCorrect){
+
+    // First Question Answer
+	if(cnt==0){
+		document.getElementById("Commentary").innerHTML="Incorrect";
+		document.getElementById("Description").innerHTML="Up to god knows how many men get diagnosed with testicular yeast infections per year.";
+		document.getElementById("button").style.visibility = "visible";
+	}
+	// Second Question Answer
+	else if(cnt==1){
+		document.getElementById("Commentary").innerHTML="Incorrect";
+		document.getElementById("Description").innerHTML="C. Albicans exists in two different forms. There is a white form and an opaque form. <br>"+
+														"white gains the ability to borrow through skin and is often the cause of yeast infections in the blood <br>"+
+														"opaque is a more fertile form where it can reproduce upwards to 300% faster. This form normally causes mucosal infections";
+		document.getElementById("button").style.visibility="visible";
+	}
+	
+	else if(cnt==2){
+		document.getElementById("Commentary").innerHTML="Correct";
+		document.getElementById("Description").innerHTML=" While the test is okay to use to determine a yeast infection, the test doesn't directly detect for a yeast infection."+
+											"Instead, it checks the pH of the region. If it is a bacterial infection, it will have a raised pH, otherwise it is likely a yeast infection,"+
+											"This leaves room for error, as sometimes, the symptoms of a yeast infection can be from an alergic reaction, this will also not raise pH."+
+											"Also, sometimes things like creams and other things can cause a rise in the pH, making the test read a bacterial infection instead of a yeast infection.";
+		document.getElementById("button").style.visibility = "visible";
+		numCorrect = numCorrect+1;
+	
+	}
+	
+	else if(cnt==3){
+		document.getElementById("Commentary").innerHTML="Incorrect";
+		document.getElementById("Description").innerHTML="We use split Tyrosinase and pqsR and join each half with a split HRP. In the presence in Farnesol and Tyrosol, Tyrosinase and pqsR will bond to it<br>"+
+											"Each half will come together and reform, this will then allow the HRP to reform and catalyze a reaction to produce a visible blue substrate.";
+		document.getElementById("button").style.visibility="visible";
+	}
+	else{
+		document.getElementById("Commentary").innerHTML="Oops!";
+	}
+
+return numCorrect;
+}
+
+
+
+
+
+function nextQuestion(cnt){
+	// Second Question
+	if(cnt==0){
+		document.getElementById("questionNumber").innerHTML= "Question 2";
+		document.getElementById("question").innerHTML= "C. Albicans can exisit in two different forms which produce different molecules?";
+		document.getElementById("button").style.visibility="hidden";
+		document.getElementById("Commentary").innerHTML="";
+		document.getElementById("Description").innerHTML="";
+			}
+	// Third Question
+	else if(cnt==1){
+		document.getElementById("questionNumber").innerHTML= "Question 3";
+		document.getElementById("question").innerHTML= "Yeast infection kits that you buy from over the counter test directly for yeast infections?";
+		document.getElementById("button").style.visibility="hidden";
+		document.getElementById("Commentary").innerHTML="";
+		document.getElementById("Description").innerHTML="";
+	
+	}
+	// Fourth Question
+	else if(cnt==2){
+		document.getElementById("questionNumber").innerHTML= "Question 4";
+		document.getElementById("question").innerHTML= "Split Proteins are proteins that are transcribed in two different halfs, but then form together to create a functional protein.";
+		document.getElementById("button").style.visibility="hidden";
+		document.getElementById("Commentary").innerHTML="";
+		document.getElementById("Description").innerHTML="";
+	}
+	
+	// Fifth Question
+	else if(cnt==3){
+	
+		document.getElementById("questionNumber").innerHTML= "Question 5";
+		document.getElementById("question").innerHTML= "Invasive Yeast Infections are cheap to diagnose ";
+		document.getElementById("button").style.visibility="hidden";
+		document.getElementById("Commentary").innerHTML="";
+		document.getElementById("Description").innerHTML="";
+	
+	}
+		document.getElementById("question").innerHTML= "Laurel or Yanny";
+	
+	else{
+	document.getElementById("questionNumber").innerHTML= "Question 5";
+		document.getElementById("button").style.visibility="hidden";
+		document.getElementById("Commentary").innerHTML="";
+		document.getElementById("Description").innerHTML="";}
+
+
+	return cnt+1;
+	}
+
+
+</script>
+
+
+</body>
+
+
+
+
+</html>

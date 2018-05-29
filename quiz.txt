@@ -1,0 +1,78 @@
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Purdue/NavBarCSS?action=raw&ctype=text/css" />
+<link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Purdue/BootstrapCSS?action=raw&ctype=text/css" />
+ 
+</head>
+
+<body>
+
+
+<h1 id = "questionNumber"> Question 1 </h1>
+<p id="question"> Men can also get yeast infections? </p>
+<button id="yes" onclick="yesAnswer(counter)"> Yes </button>
+<button id="no" onclick="noAnswer(counter)"> No </button>
+<h2 id="Commentary"></h2>
+<div class="clear"></div>
+<div class="clear"></div>
+<div class="clear"></div>
+<p id="Description"></p>
+<button style="visibility:hidden;" onclick="counter=nextQuestion(counter)" id="button">Next Question</button>
+
+<script>
+var counter=0;
+
+function yesAnswer(cnt){
+   if(cnt==0){
+   document.getElementById("Commentary").innerHTML="Correct!";
+   document.getElementById("Description").innerHTML="Up to god knows how many men get diagnosed with testicular yeast infections per year.";
+  document.getElementById("button").style.visibility = "visible";
+
+}
+else{
+document.getElementById("Commentary").innerHTML="Oops!";
+}
+return;
+}
+
+function noAnswer(cnt){
+
+if(cnt==0){
+   document.getElementById("Commentary").innerHTML="Incorrect";
+   document.getElementById("Description").innerHTML="Up to god knows how many men get diagnosed with testicular yeast infections per year.";
+  document.getElementById("button").style.visibility = "visible";
+}
+else{
+document.getElementById("Commentary").innerHTML="Oops!";
+}
+
+return;
+}
+
+function nextQuestion(cnt){
+if(cnt==0){
+   document.getElementById("questionNumber").innerHTML= "Question 2";
+   document.getElementById("question").innerHTML= "Yanny or Laurel?";
+   document.getElementById("button").style.visibility="hidden";
+   document.getElementById("Commentary").innerHTML="";
+   document.getElementById("Description").innerHTML="";
+}
+
+else{}
+
+
+return cnt+1;
+}
+
+
+</script>
+
+
+</body>
+
+
+
+
+</html>
