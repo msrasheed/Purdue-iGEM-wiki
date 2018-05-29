@@ -1,3 +1,5 @@
+This is the source code for Purdue iGEM's 2018 website.
+
 a brief description of important files
 
 Important HTML files <br />
