@@ -64,7 +64,13 @@ function yesAnswer(cnt,numCorrect){
 		document.getElementById("button").style.visibility="visible";
 		numCorrect = numCorrect  + 1;
 	}
-	
+	else if(cnt==4){
+		document.getElementById("Commentary").innerHTML="Incorrect";
+		document.getElementById("Description").innerHTML="Current modern methods use antibodies which are somewhat expensive to produce and therefore expensive to purchase.<br>"+
+												"Furthermore, the anitbodies are detected via fluoresence and a fluoresence microscope can cost between 1.5k to 5k USD.<br>"+
+												"The T2Dx system is a bit cheaper, but the cost of the instrument is still high.";
+		document.getElementById("button").style.visibility="visible";
+	}
 	// Else there's an error somewhere
 	else{
 	document.getElementById("Commentary").innerHTML="Oops!";
@@ -109,9 +115,18 @@ function noAnswer(cnt, numCorrect){
 											"Each half will come together and reform, this will then allow the HRP to reform and catalyze a reaction to produce a visible blue substrate.";
 		document.getElementById("button").style.visibility="visible";
 	}
+	else if(cnt==4){
+		document.getElementById("Commentary").innerHTML="Correct";
+		document.getElementById("Description").innerHTML="Current modern methods use antibodies which are somewhat expensive to produce and therefore expensive to purchase.<br>"+
+												"Furthermore, the anitbodies are detected via fluoresence and a fluoresence microscope can cost between 1.5k to 5k USD.<br>"+
+												"The T2Dx system is a bit cheaper, but the cost of the instrument is still high.";
+		document.getElementById("button").style.visibility="visible";
+		numCorrect=numCorrect+1;
+	}
 	else{
 		document.getElementById("Commentary").innerHTML="Oops!";
 	}
+
 
 return numCorrect;
 }
@@ -136,7 +151,7 @@ function nextQuestion(cnt){
 		document.getElementById("button").style.visibility="hidden";
 		document.getElementById("Commentary").innerHTML="";
 		document.getElementById("Description").innerHTML="";
-	
+	 
 	}
 	// Fourth Question
 	else if(cnt==2){
@@ -151,19 +166,21 @@ function nextQuestion(cnt){
 	else if(cnt==3){
 	
 		document.getElementById("questionNumber").innerHTML= "Question 5";
-		document.getElementById("question").innerHTML= "Invasive Yeast Infections are cheap to diagnose ";
+		document.getElementById("question").innerHTML= "Invasive Yeast Infections are cheap to diagnose, (besides growing a culture from blood.) ";
 		document.getElementById("button").style.visibility="hidden";
 		document.getElementById("Commentary").innerHTML="";
 		document.getElementById("Description").innerHTML="";
 	
 	}
-		document.getElementById("question").innerHTML= "Laurel or Yanny";
+
 	
 	else{
-	document.getElementById("questionNumber").innerHTML= "Question 5";
+	document.getElementById("questionNumber").innerHTML= "Question?";
+			document.getElementById("question").innerHTML= "Laurel or Yanny?";
 		document.getElementById("button").style.visibility="hidden";
 		document.getElementById("Commentary").innerHTML="";
-		document.getElementById("Description").innerHTML="";}
+		document.getElementById("Description").innerHTML="";
+		}
 
 
 	return cnt+1;
