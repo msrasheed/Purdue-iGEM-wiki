@@ -123,10 +123,6 @@ Navigation Menu
     transition: left 0.3s;
 }
 
-.nav-menu-side-slide-left {
-	left:0;
-}
-
 .nav-menu-side ul {
 	list-style-type: none;
 	margin:0;
@@ -420,28 +416,71 @@ Notebook
 
 .basic-page .basic-page-side-menu {
 	top:37%;
-	width:8%;
-	/*height:20em;*/
+	left:-100px;
+	width:125px;
+	height:250px;
 	position:fixed;
-	border-style:solid;
-	border-color:black;
+	-webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    -ms-transition: left 0.3s;
+    -o-transition: left 0.3s;
+    transition: left 0.3s;
+	/*border-style:solid;
+	border-color:black;*/
+	/*overflow:hidden;*/
 }
 
-.basic-page .basic-page-side-menu div {
+.basic-page .basic-page-side-menu .options {
+	height:100%;
+	overflow-y:auto;
+}
+
+.basic-page .basic-page-side-menu .options div {
 	text-align:center;
 	background-color:#222222;
-	padding-top:.5em;
-	padding-bottom:.5em;
+	/*overflow:visible;*/
 }
 
-.basic-page .basic-page-side-menu div:hover {
+.basic-page .basic-page-side-menu .options div a {
+	color:#9d9d9d;
+	padding-top:5px;
+	padding-bottom:5px;
+	display:block;
+}
+
+.basic-page .basic-page-side-menu .options div:hover {
 	background-color:#333333;
-}
-
-.basic-page .basic-page-side-menu div a {
 	color:white;
 }
 
-.basic-page .basic-page-side-menu div a:hover{
+.basic-page .basic-page-side-menu .options div:hover a {
 	text-decoration:none;
+	color:white;
+}
+
+.basic-page .basic-page-side-menu .side-tab {
+	transform: rotate(90deg);
+    width: 100%;
+    position: absolute;
+    top: 108px;
+    left: -10px;
+    width: 250px;
+    text-align: center;
+    background-color: #111;
+    border-radius: 10px 10px 0 0;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+.basic-page .basic-page-side-menu .side-tab p {
+	margin: 0 0 0 0;
+    padding: 10px 0 5px 0;
+    /* transform: rotate(90deg); */
+    color: #9d9d9d;
+    z-index: 1000;
+    font-weight: 600;
+}
+
+.slide-left-into-page {
+	left:0 !important;
 }
