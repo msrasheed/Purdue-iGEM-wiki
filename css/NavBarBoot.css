@@ -416,7 +416,7 @@ Notebook
 
 .basic-page .basic-page-side-menu {
 	top:37%;
-	left:-100px;
+	left:-125px;
 	width:125px;
 	height:250px;
 	position:fixed;
@@ -428,6 +428,10 @@ Notebook
 	/*border-style:solid;
 	border-color:black;*/
 	/*overflow:hidden;*/
+}
+
+.basic-page .basic-page-side-menu:hover {
+	left:0;
 }
 
 .basic-page .basic-page-side-menu .options {
@@ -463,7 +467,7 @@ Notebook
     width: 100%;
     position: absolute;
     top: 108px;
-    left: -10px;
+    left: 17px;
     width: 250px;
     text-align: center;
     background-color: #111;
@@ -483,4 +487,20 @@ Notebook
 
 .slide-left-into-page {
 	left:0 !important;
+}
+
+.options::-webkit-scrollbar-track
+{
+	background-color: #222222;
+}
+
+.options::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.options::-webkit-scrollbar-thumb
+{
+	background-color: #111111;
 }

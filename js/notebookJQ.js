@@ -46,10 +46,10 @@ $(document).ready(() => {
 	////////////////////////////////////////////////////
 	//For side menu
 	////////////////////////////////////////////////////
-	$('.basic-page-side-menu').on('mouseenter', () => {
-		$('.basic-page-side-menu').addClass('slide-left-into-page');
-	});
-	$('.basic-page-side-menu').on('mouseleave', () => {
-		$('.basic-page-side-menu').removeClass('slide-left-into-page');
-	})
+	// $('.basic-page-side-menu').on('click', () => {
+	// 	$('.basic-page-side-menu').addClass('slide-left-into-page');
+	// });
+	// $('.basic-page-side-menu').on('mouseleave', () => {
+	// 	$('.basic-page-side-menu').removeClass('slide-left-into-page');
+	// })
 });
