@@ -524,7 +524,9 @@ Team Page
 	background-color: rgba(251, 191, 41, .5);
 }
 
-.basic-page .team .alt-sections img {
+.basic-page .team .alt-sections .profile {
+	height:208px;
+	width:235px;
 	display:block;
 	margin:auto;
 }
