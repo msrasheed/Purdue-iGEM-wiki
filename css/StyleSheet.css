@@ -498,3 +498,46 @@ Notebook
 {
 	background-color: #111111;
 }
+
+/*////////////////////////////////////////////////////////////////////////////
+Team Page
+////////////////////////////////?//////////////////////////////////////////*/
+
+@media (max-width : 600px) {
+	.basic-page .team .alt-sections .col-container {
+		flex-direction: column;
+	}
+}
+
+.basic-page .team .alt-sections .col-container {
+	padding-bottom:2em;
+	padding-top:2em;
+}
+
+.basic-page .team .alt-sections .col-container:nth-child(odd) {
+	background-color: rgba(251, 191, 41, .5);
+}
+
+.basic-page .team .alt-sections .profile-wrap {
+	height:208px;
+	width:235px;
+	overflow:hidden;
+	display:block;
+	margin:auto;
+	position:relative;
+}
+
+.basic-page .team .alt-sections .profile-wrap .profile {
+	position:absolute;
+	width:235px;
+	height:auto;
+}
+
+.basic-page .team .alt-sections p {
+	text-indent: 0;
+	width:100%;
+}
+
+.basic-page .team .alt-sections .col-container p:nth-child(4) {
+	padding-top:1em;
+}
