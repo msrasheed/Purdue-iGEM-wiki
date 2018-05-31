@@ -113,7 +113,7 @@ Navigation Menu
 	position:fixed;
 	top:5.9em;
 	left:-300px;
-	opacity:.95;
+	/*opacity:.95;*/
 	background-color:#222222;
 	overflow:auto;
 	-webkit-transition: left 0.3s;
@@ -121,6 +121,7 @@ Navigation Menu
     -ms-transition: left 0.3s;
     -o-transition: left 0.3s;
     transition: left 0.3s;
+    z-index: 100;
 }
 
 .nav-menu-side ul {
