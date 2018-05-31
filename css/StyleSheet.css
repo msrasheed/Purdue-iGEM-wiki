@@ -533,11 +533,12 @@ Team Page
 	height:auto;
 }
 
-.basic-page .team .alt-sections p {
+#HQ_page .basic-page .team .alt-sections p {
 	text-indent: 0;
 	width:100%;
+	margin-top:0;
 }
 
-.basic-page .team .alt-sections .col-container p:nth-child(4) {
+#HQ_page .basic-page .team .alt-sections .col-container p:nth-child(4) {
 	padding-top:1em;
 }

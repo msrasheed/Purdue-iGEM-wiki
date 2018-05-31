@@ -1,6 +1,6 @@
 $(document).ready(() => {	
 	let hasKevinPassed = false;
-	let countKevinPasses = 0;
+	let countKevinPasses = 1;
 	let kevinTop = 0;
 	let kevinLeft = 0;
 	let kevinWidth = 235;
@@ -11,15 +11,16 @@ $(document).ready(() => {
 		if(scroll > kevinBenchmark && !(hasKevinPassed)) {
 			hasKevinPassed = true;
 			console.log(countKevinPasses);
-			countKevinPasses++;
 			let $kevinImage = $($kevinDiv).find('img')[0];
 			kevinTop -= 50;
 			kevinLeft -= 50;
 			kevinWidth += 191.25;
+			countKevinPasses++;
 			$($kevinImage).css({
-				width:kevinWidth+'px',
-				top:kevinTop+'px',
-				left:kevinLeft+'px'
+				// width:kevinWidth+'px',
+				// top:kevinTop+'px',
+				// left:kevinLeft+'px'
+				transform:'scale('+countKevinPasses+')'
 			});
 		} else if (scroll < kevinBenchmark && hasKevinPassed) {
 			hasKevinPassed = false;
