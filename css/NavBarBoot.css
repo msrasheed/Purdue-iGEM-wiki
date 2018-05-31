@@ -155,15 +155,6 @@ Navigation Menu
 	background-color:#444444;
 }
 
-@media (max-width:1110px) {
-	.menu-items {
-		display:none;
-	}
-	.menu-hamburger {
-		visibility:visible;
-	}
-}
-
 /*////////////////////////////////////////////////////////////////////////////
 Home Page
 ////////////////////////////////?//////////////////////////////////////////*/
@@ -509,12 +500,6 @@ Notebook
 Team Page
 ////////////////////////////////?//////////////////////////////////////////*/
 
-@media (max-width : 600px) {
-	.basic-page .team .alt-sections .col-container {
-		flex-direction: column;
-	}
-}
-
 .basic-page .team .alt-sections .col-container {
 	padding-bottom:2em;
 	padding-top:2em;
@@ -546,4 +531,65 @@ Team Page
 
 .basic-page .team .alt-sections .col-container p:nth-child(4) {
 	padding-top:1em;
+}
+
+/*////////////////////////////////////////////////////////////////////////////
+Home Page 2
+////////////////////////////////?//////////////////////////////////////////*/
+
+.basic-page .splash {
+	position:relative;
+	top:-5.9em;
+	width:100%;
+	height:100vh;
+	background-color:#666666;
+}
+
+.basic-page .splash .title {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+
+.basic-page .splash .title p {
+	font-size:5em;
+	font-weight:700;
+	text-align:center;
+	display:block;
+}
+
+.basic-page .splash .title p:nth-child(2) {
+	margin-left:20px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////
+Media Queries
+////////////////////////////////?//////////////////////////////////////////*/
+
+@media (max-width:1110px) {
+	.menu-items {
+		display:none;
+	}
+	.menu-hamburger {
+		visibility:visible;
+	}
+}
+
+/*Smartphone*/
+@media (max-width : 600px) {
+	.basic-page .splash .title p {
+		display:block;
+		text-align:center;
+		margin-left:0 !important;
+	}
+	.basic-page .basic-header p {
+		font-size:2.35em;
+	}
+	.basic-page .basic-page-body h1 {
+		font-size:2em;
+	}
+	.basic-page .team .alt-sections .col-container {
+		flex-direction: column;
+	}
 }
