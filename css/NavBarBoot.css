@@ -563,24 +563,33 @@ Home Page 2
 	width:100%;
 	height:100vh;
 	background-color:#666666;
+	overflow:hidden;
+}
+
+.basic-page .splash video {
+	width:100%;
 }
 
 .basic-page .splash .title {
 	position:absolute;
 	top:50%;
-	left:50%;
-	transform:translate(-50%, -50%);
+	left:50px;
+	transform:translate(0, -50%);
 }
 
 .basic-page .splash .title p {
-	font-size:5em;
+	color:white;
+	font-size:10em;
 	font-weight:700;
-	text-align:center;
+	/*text-align:center;*/
 	display:block;
+	padding:0;
+	margin:0;
 }
 
 .basic-page .splash .title p:nth-child(2) {
-	margin-left:20px;
+	/*margin-left:20px;*/
+	margin-top:-50px;
 }
 
 /*////////////////////////////////////////////////////////////////////////////
@@ -598,10 +607,21 @@ Media Queries
 
 /*Smartphone*/
 @media (max-width : 600px) {
+	.basic-page .splash video{
+		height:100%;
+		width:auto;
+	}
+	.basic-page .splash .title {
+		top:50%;
+		left:50%;
+		transform:translate(-50%, -50%);
+	}
 	.basic-page .splash .title p {
 		display:block;
 		text-align:center;
+		font-size:5em;
 		margin-left:0 !important;
+		margin-top:0 !important;
 	}
 	.basic-page .basic-header p {
 		font-size:2.35em;

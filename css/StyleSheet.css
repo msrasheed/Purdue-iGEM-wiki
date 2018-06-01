@@ -551,10 +551,21 @@ Media Queries
 
 /*Smartphone*/
 @media (max-width : 600px) {
+	.basic-page .splash video{
+		height:100%;
+		width:auto;
+	}
+	.basic-page .splash .title {
+		top:50%;
+		left:50%;
+		transform:translate(-50%, -50%);
+	}
 	.basic-page .splash .title p {
 		display:block;
 		text-align:center;
+		font-size:5em;
 		margin-left:0 !important;
+		margin-top:0 !important;
 	}
 	#HQ_page .basic-page .basic-header p {
 		font-size:2.35em;
