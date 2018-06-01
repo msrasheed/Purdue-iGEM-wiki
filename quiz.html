@@ -49,10 +49,10 @@ function yesAnswer(cnt,numCorrect){
 	// Third Question Answer
 	else if(cnt==2){
 		document.getElementById("Commentary").innerHTML="Incorrect!";
-		document.getElementById("Description").innerHTML=" While the test is okay to use to determine a yeast infection, the test doesn't directly detect for a yeast infection.<br>"+
+		document.getElementById("Description").innerHTML=" While the test is okay to use to determine a yeast infection, the test doesn't directly detect for a yeast.<br>"+
 											"Instead, it checks the pH of the region. If it is a bacterial infection, it will have a raised pH, otherwise it is likely a yeast infection,<br>"+
 											"This leaves room for error, as sometimes, the symptoms of a yeast infection can be from an alergic reaction, this will also not raise pH.<br>"+
-											"Also, sometimes things like creams and other things can cause a rise in the pH, making the test read a bacterial infection instead of a yeast infection.";
+											"Also, sometimes things like creams or viral STI's or other things can cause a rise in the pH, making the test read a bacterial infection instead of a yeast infection.";
 		document.getElementById("button").style.visibility="visible";	
 	}
 	
@@ -147,7 +147,7 @@ function nextQuestion(cnt){
 	// Third Question
 	else if(cnt==1){
 		document.getElementById("questionNumber").innerHTML= "Question 3";
-		document.getElementById("question").innerHTML= "Yeast infection kits that you buy from over the counter test directly for yeast infections?";
+		document.getElementById("question").innerHTML= "Yeast infection kits that you buy from over the counter test specifically for yeast when diagnosing a yeast infection?";
 		document.getElementById("button").style.visibility="hidden";
 		document.getElementById("Commentary").innerHTML="";
 		document.getElementById("Description").innerHTML="";
@@ -175,11 +175,13 @@ function nextQuestion(cnt){
 
 	
 	else{
-	document.getElementById("questionNumber").innerHTML= "Question?";
-			document.getElementById("question").innerHTML= "Laurel or Yanny?";
+	document.getElementById("questionNumber").innerHTML= "Results";
+			document.getElementById("question").innerHTML= "Thank you for taking our quiz";
 		document.getElementById("button").style.visibility="hidden";
 		document.getElementById("Commentary").innerHTML="";
-		document.getElementById("Description").innerHTML="";
+		document.getElementById("Description").innerHTML="You got " +correct+" out of 5 correct";
+		document.getElementById("yes").style.visibility="hidden";
+		document.getElementById("no").style.visibility="hidden";
 		}
 
 
