@@ -384,6 +384,7 @@ Basic Page and EZ stylings
 
 .basic-page .basic-page-body img {
 	max-width:100%;
+	min-width:50%;
 	display:block;
 	margin:auto;
 }

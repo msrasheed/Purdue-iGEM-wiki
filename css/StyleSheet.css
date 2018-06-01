@@ -378,6 +378,13 @@ Basic Page and EZ stylings
 	text-indent:3em;
 }
 
+.basic-page .basic-page-body img {
+	max-width:100%;
+	min-width:50%;
+	display:block;
+	margin:auto;
+}
+
 .basic-page .basic-page-body .spacer-small {
 	width:100%;
 	height:3em;

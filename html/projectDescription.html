@@ -185,7 +185,7 @@ Speed is also essential, especially in the context of treating invasive yeast in
 If a test is inaccessible to users, however, speed and accuracy are inconsequential. Should a diagnostic test rely on resources not available to all or require expensive overhead and maintenance, as is often the case in rural and underdeveloped areas, afflicted may never receive a diagnosis and subsequent treatment; in the case of invasive candidiasis, inaccessibility is synonymous with death [5]. One treatment used to detect invasive yeast infection is the T2Dx system which uses magnetic resonance. Though accurate, the instrument costs $150,000, with each test costing up to $250 [1]. For the clinics of rural and underdeveloped communities lacking the capital to fund such a purchase, the “golden standard” for detecting C. albicans may as well not exist.
             </p>
 			<div class="spacer-small"></div>
-			<div class="table-responsive">
+			<div class="table-responsive thumbnail">
 			<table class="table table-bordered">
 				<thead>
 					<tr>
@@ -264,9 +264,13 @@ If a test is inaccessible to users, however, speed and accuracy are inconsequent
 					</tr>
 				</tbody>
 			</table>
+			<div class="caption"><p>this is a table</p></div>
 			</div>
 			<div class="spacer-small"></div>
-			<img src="../photos/RappamycinAssey.png"/>
+			<div class="thumbnail">
+				<img src="../photos/RappamycinAssey.png"/>
+				<div class="caption"><p>This is an image</p></div>
+			</div>
 			<div class="spacer-small"></div>
 			<h1> What are we doing to solve this issue?</h1>
 			<p>To meet the needs of those infected by and diagnosing C. albicans, we’ve identified three primary criteria as guidelines in the design of a superior diagnostic test: accuracy, accessibility, and speed. Design began by translating these criteria into base level assumptions. To improve accuracy, we would have to detect a biomarker as unique to C. albicans as possible. To make the test accessible, it would have to be relatively inexpensive, simple to use, and not require the use of any external machinery or resources. To make the test fast, we would have to avoid a relatively slow cell-based system and make use of cell-less alternatives. The culmination of these assumptions in the context of the problem background led to our current design: a 2-step paper-based test featuring a cell-less reaction and a decisive colorimetric output. The test will detect farnesol, indicative of systemic infection, and tyrosol, indicative of vulvovaginal infections; both molecules are relatively unique to C. albicans. The binary output mechanism of the test revolves around the state of horseradish peroxidase (HRP), an enzyme capable of oxidizing colorless substrates like tetramethylbenzidine (TMB) to form colored products. Split and non-split versions of HRP constitute the non-functional and functional versions of the enzyme, respectively. A locking mechanism will consist of split proteins that recombine in the presence of a target biomarker: farnesol with pqsR, tyrosol with tyrosinase. The locking mechanism and output mechanism are attached to each other such that HRP is functional only when a biomarker and the respective split halves “lock” around it. To receive a diagnosis, patients must first retrieve a sample of infected material and then introduce the sample to our test. If the paper turns blue, they have a yeast infection.
