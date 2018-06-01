@@ -402,6 +402,18 @@ Basic Page and EZ stylings
 	margin-top:1.25em;
 }
 
+.basic-page .basic-page-body .references li {
+	padding:10px 30px;
+}
+
+.basic-page .basic-page-body .references li:nth-child(even) {
+	background-color:rgba(200,200,200,.5);
+}
+
+.basic-page .basic-page-body .references .highlight {
+	background-color:rgba(251,191,41,.5) !important;
+}
+
 /*////////////////////////////////////////////////////////////////////////////
 Notebook
 ////////////////////////////////?//////////////////////////////////////////*/
