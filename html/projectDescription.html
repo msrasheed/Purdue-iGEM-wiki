@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+  <script src="../bootstrap/jquery.min.js"></script>
+  <script src="../bootstrap/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="../css/NavBarBoot.css">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="../js/notebookJQ.js"></script>
+  <script src="../js/general.js"></script>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-inverse menu">
+	 	<div class="menu-container">
+			<!-- <div class="navbar-header"> -->
+				<div class="menu-logo-container">
+					<a href="http://2018.igem.org/Team:Purdue">
+						<img src="../photos/logo_cropped.png">
+					</a>
+				</div>
+	    	<!-- </div> -->
+	    	<div class="container menu-items">
+		    	<ul class="nav navbar-nav">
+		      		<li class="dropdown">
+		      			<a href="#">Team
+		      				<span class="caret"></span></a>
+		      			<ul class="dropdown-menu">
+		      				<li><a href="#">Team Members</a></li>
+		      				<li><a href="#">Collaborations</a></li>
+						</ul>
+		      		</li>
+					<li class="dropdown">
+						<a href="#">Project
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Description">Description</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Design">Design</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Experiments">Experiments</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Notebook">Notebook</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/InterLab">InterLab</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Demonstrate">Demonstrate</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Improve">Improve</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Attributions">Attributions</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#">Parts
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Parts">Parts Overview</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Basic_Part">Basic Parts</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Composite_Part">Composite Parts</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Part_Collection">Part Collection</a></li>
+						</ul>
+					</li>
+					<li><a href="http://2018.igem.org/Team:Purdue/Safety">Safety</a></li>
+					<li class="dropdown">
+						<a href="#">Human Practices
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Human_Practices">Human Practices</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Public_Engagement">Education &amp; Engagement</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#">Awards
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Applied_Design">Applied Design</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Entrepreneurship">Entrepreneurship</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Hardware">Hardware</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Measurement">Measurement</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Plant">Plant</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Software">Software</a></li>
+						</ul>
+					</li>
+					<li><a href="http://igem.org/2018_Judging_Form?team=Purdue">Judging Form</a></li>
+		    	</ul>
+	    	</div>
+	    	<div class="menu-hamburger">
+	    		<a href='#'>
+	    		<div></div>
+	    		<div></div>
+	    		<div></div>
+	    		</a>
+	    	</div>
+	 	</div>
+	</nav>
+
+	<!-- <div class="basic-page"> -->
+	<div class="nav-menu-side">
+		<ul>
+      		<li class="dropdown-side">
+      			<a href="#">Team
+      				<span class="caret"></span></a></li>
+  			<ul class="dropdown-menu-side">
+  				<li><a href="#">Team Members</a></li>
+  				<li><a href="#">Collaborations</a></li>
+			</ul>
+			<li class="dropdown-side">
+				<a href="#">Project
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Description">Description</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Design">Design</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Experiments">Experiments</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Notebook">Notebook</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/InterLab">InterLab</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Demonstrate">Demonstrate</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Improve">Improve</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Attributions">Attributions</a></li>
+			</ul>
+			<li class="dropdown-side">
+				<a href="#">Parts
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Parts">Parts Overview</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Basic_Part">Basic Parts</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Composite_Part">Composite Parts</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Part_Collection">Part Collection</a></li>
+			</ul>
+			<li><a href="http://2018.igem.org/Team:Purdue/Safety">Safety</a></li>
+			<li class="dropdown-side">
+				<a href="#">Human Practices
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Human_Practices">Human Practices</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Public_Engagement">Education &amp; Engagement</a></li>
+			</ul>
+			<li class="dropdown-side">
+				<a href="#">Awards
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Applied_Design">Applied Design</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Entrepreneurship">Entrepreneurship</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Hardware">Hardware</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Measurement">Measurement</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Plant">Plant</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Software">Software</a></li>
+			</ul>
+			<li><a href="http://igem.org/2018_Judging_Form?team=Purdue">Judging Form</a></li>
+    	</ul>
+	</div>
+</body>
+</html>
+
+<html>
+<link rel="stylesheet" type="text/css" href="../css/StandardStyling.css" />
+<script src="../js/referencesJQ.js"></script>
+<body>
+	<div class = "basic-page">
+		<div class = "basic-header">
+			<img src="../photos/bread3.jpg"/>
+			<p>Project Description</p>
+		</div>
+		<div class="container basic-page-body">
+			<h1>Abstract</h1>
+			<p>Systemic candidiasis--caused by the fungal pathogen Candida albicans--is the fourth leading cause of hospital-acquired infections, with a mortality rate of up to 49%. Current method of diagnosis focus on either cell culture (which is time-consuming) or xxx Timely diagnosis of candidiasis, especially in rural or underdeveloped regions, is challenging because it requires specialized equipment and expertise. Purdue iGEM is developing a paper-based, diagnostic test for C. albicans that is rapid, cost-effective, and user-friendly. The test detects the biomarkers farnesol and tyrosol by binding them to the proteins pqsR and tyrosinase respectively. Upon binding, horseradish peroxidase activates and produces an amplified colorimetric signal by oxidizing the substrate tetramethylbenzidine (TMB). Implementing our diagnostic test will provide a simple, colorimetric output, which can be interpreted by the user to take the appropriate action, i.e. administer antifungals if needed. Using such a test will control the abuse of antifungals and thus, limit the propagation of antimicrobial resistance.</p>
+			<div class="spacer-small"></div>
+			<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Methods of Diagnosis</th>
+						<th>Time</th>
+						<th>Cost</th>
+						<th>Accuracy</th>
+						<th>Expertise</th>
+						<th>Capital investment</th>
+						<th>Type of infection</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Blood Culturing</td>
+						<td class="danger">1-5 days <a class="ref-link" href="#">[3]</a></td>
+						<td class="success">Low (cost of plate)</td>
+						<td class="danger">50% <a class="ref-link" href="#">[7]</a></td>
+						<td class="warning">Medium (Lab technicians can do)</td>
+						<td class="warning">Medium (common equipment)</td>
+						<td>Invasive</td>
+					</tr>
+					<tr>
+						<td>Monistat</td>
+						<td class="success">A few minutes</td>
+						<td class="warning">Medium ($15 for 2) <a class="ref-link" href="#">[13]</a></td>
+						<td class="danger">High, but can yield false positives</td>
+						<td class="success">Low (self-diiagnosis)</td>
+						<td class="success">none</td>
+						<td>Vulvovaginal</td>
+					</tr>
+					<tr>
+						<td>PCR</td>
+						<td class="danger">1-5 days</td>
+						<td class="success">Low (about $1 per reaction) [9]</td>
+						<td class="success">High (83.3% sensitivity) <a class="ref-link" href="#">[4]</a></td>
+						<td class="warning">Medium (lab technicians)</td>
+						<td class="danger">High (Requires equipment)</td>
+						<td>Vulvovaginal</td>
+					</tr>
+					<tr>
+						<td>CAGTA</td>
+						<td class="warning">3 hours <a class="ref-link" href="#">[10]</a></td>
+						<td class="warning">Medium ($13 per determination) <a class="ref-link" href="#">[10]</a></td>
+						<td class="success">High (84-96% sensitivity) [10]</td>
+						<td class="warning">Medium (Lab Technicians)</td>
+						<td class="danger">High (Requires equipment)</td>
+						<td>Invasive</td>
+					</tr>
+					<tr>
+						<td>T2Dx</td>
+						<td class="warning">4 hours <a class="ref-link" href="#">[11]</a></td>
+						<td class="danger">High $250 per test</td>
+						<td class="success">High (91% sensitivity) <a class="ref-link" href="#">[12]</a></td>
+						<td class="warning">Medium (Lab Technicians)</td>
+						<td class="danger">High (Requires Equipment)</td>
+						<td>Invasive</td>
+					</tr>
+					<tr>
+						<td>Microscopic examination</td>
+						<td class="success">A few minutes <a class="ref-link" href="#">[14]</a></td>
+						<td class="success">Low (cost of plate)</td>
+						<td class="success">High (75-80%) <a class="ref-link" href="#">[14]</a></td>
+						<td class="danger">High (Trained Specialist) <a class="ref-link" href="#">[14]</a></td>
+						<td class="warning">Medium (common equipment)</td>
+						<td>Vulvovaginal</td>
+					</tr>
+					<tr>
+						<td>Purdue iGEM diagnostic test</td>
+						<td class="success">Goal is for a few minutes</td>
+						<td class="success">Goal is to be low</td>
+						<td class="success">Goal is for high accuracy with high specificity</td>
+						<td class="success">Low - goal is for anyone to use</td>
+						<td class="success">Low - goal is to not require equipment to use</td>
+						<td>Both</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<div class="spacer-small"></div>
+			<img src="../photos/RappamycinAssey.png"/>
+			<div class="spacer-small"></div>
+			<h1>References</h1>
+			<ol class="references">
+				<li>Anonymous, “With MRI Platform, Mass. Firm Aims To Upend Sepsis Diagnosis,” MDDI Online, 20-Feb-2015. [Online]. Available: https://www.mddionline.com/mri-platform-mass-firm-aims-upend-sepsis-diagnosis. [Accessed: 31-May-2018].</li>
+				<li>N. D. Friedman, E. Temkin, and Y. Carmeli, “The negative impact of antibiotic resistance,” Clinical Microbiology and Infection, vol. 22, no. 5, pp. 416–422, May 2016.</li>
+				<li>H. C. Chang, S. N. Leaw, A. H. Huang, T. L. Wu, and T. C. Chang, “Rapid Identification of Yeasts in Positive Blood Cultures by a Multiplex PCR Method,” J Clin Microbiol, vol. 39, no. 10, pp. 3466–3471, Oct. 2001.</li>
+				<li>C. Valero, L. de la Cruz-Villar, Ó. Zaragoza, and M. J. Buitrago, “New Panfungal Real-Time PCR Assay for Diagnosis of Invasive Fungal Infections,” J. Clin. Microbiol., vol. 54, no. 12, pp. 2910–2918, Dec. 2016.</li>
+				<li>“Healthcare Disparities and Barriers - Factsheets - Rural Health - Stanford University School of Medicine.” [Online]. Available: http://ruralhealth.stanford.edu/health-pros/factsheets/disparities-barriers.html. [Accessed: 31-May-2018].</li>
+				<li>J. Abbott, “Clinical and microscopic diagnosis of vaginal yeast infection: a prospective analysis,” Ann Emerg Med, vol. 25, no. 5, pp. 587–591, May 1995.</li>
+				<li>“Blood test cuts time to diagnosis for common, deadly yeast infection, national trial shows,” ScienceDaily. [Online]. Available: https://www.sciencedaily.com/releases/2018/02/180209174532.htm. [Accessed: 31-May-2018].</li>
+				<li>M. A. Pfaller and D. J. Diekema, “Epidemiology of Invasive Mycoses in North America,” Critical Reviews in Microbiology, vol. 36, no. 1, pp. 1–53, Feb. 2010.</li>
+				<li>“GenScript - Make Research Easy - The leader in molecular cloning and gene synthesis, peptide synthesis,protein and antibody engineering.” [Online]. Available: https://www.genscript.com/search?q=real-time+PCR&g=product&t=Molecular+Biology+Products. [Accessed: 31-May-2018].</li>
+				<li>M. C. Martínez-Jiménez et al., “Potential role of Candida albicans germ tube antibody in the diagnosis of deep-seated candidemia,” Med Mycol, vol. 52, no. 3, pp. 270–275, Apr. 2014.</li>
+				<li>P. Muñoz et al., “T2Candida MR as a predictor of outcome in patients with suspected invasive candidiasis starting empirical antifungal treatment: a prospective pilot study,” J Antimicrob Chemother, vol. 73, no. suppl_4, pp. iv6–iv12, Mar. 2018.</li>
+				<li>“T2Candida Panel,” T2 Biosystems. [Online]. Available: https://www.t2biosystems.com/t2direct-diagnostics/t2candida-panel/. [Accessed: 31-May-2018].</li>
+				<li>“Amazon.com: Monistat Vaginal Health Test, 2 Count: Prime Pantry.” [Online]. Available: https://www.amazon.com/Monistat-Vaginal-Health-Test-Count/dp/B01MSCSC7D/ref=sr_1_5_a_it?ie=UTF8&qid=1527790903&sr=8-5&keywords=monistat+yeast+infection+test. [Accessed: 31-May-2018].</li>
+				<li>L. Yang, “Interview with Dr.Lisa Yang,” 24-May-2018.[Phone Call]</li>
+			</ol>
+			<div class="spacer-small"></div>
+		</div>
+	</div>	
+</body>
+</html>
+
+
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <script src="bootstrap/jquery.min.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="../css/NavBarBoot.css">
+</head>
+<body>
+	<div style="display:block;">
+	<div class="footer">
+		<div class="igem_2018_team_content" style="background-color:inherit;">
+			<div class="igem_2018_team_column_wrapper">
+				<div class="column third_size footer-thanks">
+					<h1>Special Thanks</h1>
+					<a class="footer-text-link" href="http://2018.igem.org/Team:Purdue/Acknowledgement">
+					<p>to all those that made this possible</p></a>
+					<img class="social social-purdue" src="../photos/Purdue.png" style="height:5em;width:auto;"/>
+				</div>
+				<div class="column third_size">
+					<h1>Follow Us On</h1>
+					<div class="column third_size">
+						<a href="https://twitter.com/purdueigem">
+						<img class="social" src="../photos/twitter.png"/></a>
+					</div>
+					<div class="column third_size">
+						<a href="https://www.instagram.com/purdueigem/">
+						<img class="social" src="../photos/instagram.png"/></a>
+					</div>
+					<div class="column third_size">
+						<a href="https://www.facebook.com/PurdueiGEM/">
+						<img class="social" src="../photos/facebook.png"/></a>
+					</div>
+				</div>
+				<div class="column third_size">
+					<h1>Contact Us</h1>
+					<p>[Team Email]</p>
+					<p>[Team Address]</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

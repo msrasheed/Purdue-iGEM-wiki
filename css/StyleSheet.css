@@ -549,10 +549,10 @@ Media Queries
 		text-align:center;
 		margin-left:0 !important;
 	}
-	.basic-page .basic-header p {
+	#HQ_page .basic-page .basic-header p {
 		font-size:2.35em;
 	}
-	.basic-page .basic-page-body h1 {
+	#HQ_page .basic-page .basic-page-body h1 {
 		font-size:2em;
 	}
 	.basic-page .team .alt-sections .col-container {
