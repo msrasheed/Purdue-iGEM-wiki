@@ -12,6 +12,15 @@ body {
 	margin:0;
 }
 
+#HQ_page table {
+	margin:0;
+}
+
+#HQ_page td {
+	font-size:.75em;
+	color:black;
+}
+
 #globalWrapper{
 	padding-bottom:0px;
 }
