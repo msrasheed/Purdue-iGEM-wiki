@@ -592,6 +592,18 @@ Home Page 2
 	margin-top:-50px;
 }
 
+.basic-page .page-body-background {
+	position:relative;
+	overflow:hidden;
+	display:block;
+}
+
+.basic-page .page-body-background img {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
 .basic-page .basic-page-body .splash-section-large {
 	height:100vh;
 	position:relative;
