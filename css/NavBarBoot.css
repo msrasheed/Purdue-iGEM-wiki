@@ -312,7 +312,7 @@ Basic Page and EZ stylings
 ////////////////////////////////?//////////////////////////////////////////*/
 
 .basic-page {
-	margin-top:5.9em;
+	/*margin-top:5.9em;*/
 	width:100vw;
 	position:relative;
 	top:0;
@@ -330,6 +330,7 @@ Basic Page and EZ stylings
 }
 
 .basic-page .basic-header {
+	margin-top:5.9em;
 	min-width:100%;
 	height:10em;
 	overflow:hidden;
@@ -339,9 +340,10 @@ Basic Page and EZ stylings
 }
 
 .basic-page .basic-header img {
-	min-width:100%;
+	/*min-width:100%;*/
+	min-height:100%;
 	position:absolute;
-	top:-60%;
+	/*top:-60%;*/
 }
 
 .basic-page .basic-header p {
@@ -389,7 +391,7 @@ Basic Page and EZ stylings
 	margin:auto;
 }
 
-.basic-page .basic-page-body .spacer-small {
+.basic-page .spacer-small {
 	width:100%;
 	height:3em;
 }
@@ -559,28 +561,117 @@ Home Page 2
 
 .basic-page .splash {
 	position:relative;
-	top:-5.9em;
+	/*top:-5.9em;*/
 	width:100%;
 	height:100vh;
 	background-color:#666666;
+	overflow:hidden;
+}
+
+.basic-page .splash video {
+	width:100%;
 }
 
 .basic-page .splash .title {
 	position:absolute;
 	top:50%;
-	left:50%;
-	transform:translate(-50%, -50%);
+	left:50px;
+	transform:translate(0, -50%);
 }
 
 .basic-page .splash .title p {
-	font-size:5em;
+	color:white;
+	font-size:10em;
 	font-weight:700;
-	text-align:center;
+	/*text-align:center;*/
 	display:block;
+	padding:0;
+	margin:0;
 }
 
 .basic-page .splash .title p:nth-child(2) {
-	margin-left:20px;
+	/*margin-left:20px;*/
+	margin-top:-50px;
+}
+
+.basic-page .page-body-background {
+	position:relative;
+	overflow:hidden;
+	display:block;
+}
+
+.basic-page .page-body-background img {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.basic-page .splash-section-large {
+	height:600px;
+	position:relative;
+	overflow:hidden;
+}	
+
+.basic-page .splash-section-large > img {
+	position: absolute;
+	top:0;
+	left:0;
+	min-width:100%;
+}
+
+.basic-page .basic-page-body .splash-section-medium {
+	height:400px;
+}
+
+.basic-page .basic-page-body .highlightable-section {
+	padding-right:0;
+	padding-left:0;
+	border-right:2px solid grey;
+	color:black;
+	text-align:center;
+	transition:all .5s;
+}
+
+.basic-page .basic-page-body .highlightable-section h2 {
+	margin-top:75px;
+	margin-bottom:50px;
+}
+
+.basic-page .basic-page-body .highlightable-section:last-child {
+	border-right:none;
+}
+
+.basic-page .basic-page-body .img-background {
+	position:relative;
+	overflow:hidden;
+	height:inherit;
+}
+
+.basic-page .basic-page-body .img-background img{
+	position:absolute;
+	height:100%;
+	width:auto;
+	opacity:.5;
+	z-index:-5;
+	transition: all .5s;
+}
+
+.basic-page .basic-page-body .highlightable-section:hover img {
+	opacity:1;
+	filter: grayscale(100);
+	transform:scale(1.5);
+}
+
+.basic-page .basic-page-body .highlightable-section:hover {
+	color:white;
+}
+
+.basic-page .center-text {
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 /*////////////////////////////////////////////////////////////////////////////
@@ -598,10 +689,24 @@ Media Queries
 
 /*Smartphone*/
 @media (max-width : 600px) {
+	.basic-page .splash video{
+		height:100%;
+		width:auto;
+	}
+	.basic-page .splash .title {
+		top:50%;
+		left:50%;
+		transform:translate(-50%, -50%);
+	}
 	.basic-page .splash .title p {
 		display:block;
 		text-align:center;
+		font-size:5em;
 		margin-left:0 !important;
+		margin-top:0 !important;
+	}
+	.basic-page .basic-page-body .splash-section-medium {
+		height:auto;
 	}
 	.basic-page .basic-header p {
 		font-size:2.35em;
@@ -609,7 +714,7 @@ Media Queries
 	.basic-page .basic-page-body h1 {
 		font-size:2em;
 	}
-	.basic-page .team .alt-sections .col-container {
+	.basic-page-body .col-container {
 		flex-direction: column;
 	}
 }

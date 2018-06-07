@@ -9,7 +9,8 @@ $(document).ready(() => {
 		originalRefColor = $($reference).css('backgroundColor');
 		$('html, body').animate({
 			scrollTop: $($reference).offset().top-100
-		}, 1000).promise().then(briefHighlight());
+		}, 1000);//.promise().then(briefHighlight());
+		briefHighlight()
 	});
 });
 
@@ -18,14 +19,15 @@ function briefHighlight() {
 	console.log($reference);
 	$reference.style.transition = "background-color 0s";
 	$($reference).addClass('highlight');
-	$reference.style.transition = "background-color 3s";
+	//$reference.style.transition = "background-color 3s";
 	// $($reference).css({
 	// 	backgroundColor:originalRefColor
 	// });
-	setTimeout(removeHighlight, 1200);
+	setTimeout(removeHighlight, 1000);
 	//$($reference).toggle('highlight');
 }
 
 function removeHighlight() {
+	$reference.style.transition = "background-color 2s";
 	$($reference).removeClass('highlight');
 }
