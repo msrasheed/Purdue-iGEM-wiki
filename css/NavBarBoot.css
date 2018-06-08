@@ -340,10 +340,10 @@ Basic Page and EZ stylings
 }
 
 .basic-page .basic-header img {
-	/*min-width:100%;*/
+	min-width:100%;
 	min-height:100%;
 	position:absolute;
-	/*top:-60%;*/
+	top:-60%;
 }
 
 .basic-page .basic-header p {
