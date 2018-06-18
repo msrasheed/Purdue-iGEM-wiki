@@ -131,9 +131,10 @@
 <body>
 
 <button id="butt" onclick="gameStarto()">Start Game </button>
-	<canvas id="RootPanel" style="position:absolute;left:20px;top:40px;z-index:1;visibility:hidden;">
+<div style="position:relative;">
+	<canvas id="RootPanel" style="position:absolute;left:0px;top:0px;z-index:1;visibility:hidden;">
 	</canvas>
-		<svg id="layer_1"style="position:absolute;left:20px;top:40px;z-index:2" >
+		<svg id="layer_1"style="position:absolute;left:0px;top:0px;z-index:2" >
 			<text id="text_1" x=10 y=250 font="20px arial">
 				<animateTransform id="transform_1"
 				attributeName="transform"
@@ -142,7 +143,7 @@
 				from="-10 -250 "
 				to = "0 0"
 				dur = "2s" 
-				begin="click"
+				
 				repeatCount="1"
 				fill="freeze"
 
@@ -162,7 +163,7 @@
 				
 			</text>
 		</svg>
-	
+	</div>
 </body>
 
 
