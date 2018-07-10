@@ -619,8 +619,35 @@ Home Page 2
 	min-width:100%;
 }
 
-.basic-page .basic-page-body .splash-section-medium {
+.basic-page .splash-section-large h2, .basic-page .splash-section-large p{
+	color:white;
+	text-indent: 0;
+	margin:0 0 5px 0;
+}
+
+.basic-page .splash-section-large .center-text{
+	position:relative;
+}
+
+.basic-page .splash-section-large .center-text div{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width:80%;
+	text-align:center;
+}
+
+.basic-page .splash-section-medium {
 	height:400px;
+}
+
+.basic-page .dividers > div {
+	border-right:solid 1px #dddddd;
+}
+
+.basic-page .dividers > div:last-child {
+	border-right:none;
 }
 
 .basic-page .basic-page-body .highlightable-section {
@@ -666,13 +693,13 @@ Home Page 2
 	color:white;
 }
 
-.basic-page .center-text {
+/*.basic-page .center-text {
 	position: absolute;
 	top:50%;
 	left:50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-}
+}*/
 
 /*////////////////////////////////////////////////////////////////////////////
 Media Queries
@@ -705,8 +732,21 @@ Media Queries
 		margin-left:0 !important;
 		margin-top:0 !important;
 	}
+	.basic-page .splash-section-large {
+		height:auto;
+	}
+	.basic-page .splash-section-large > img {
+		min-height:100%;
+	}
 	.basic-page .basic-page-body .splash-section-medium {
 		height:auto;
+	}
+	.basic-page .dividers > div {
+		border-right:none;
+		border-bottom: solid 1px #dddddd;
+	}
+	.basic-page .dividers > div:last-child {
+		border-bottom: none;
 	}
 	.basic-page .basic-header p {
 		font-size:2.35em;
