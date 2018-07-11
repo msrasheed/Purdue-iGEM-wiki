@@ -214,7 +214,7 @@ Home Page
 .home-links div .home-links-icon {
 	margin:auto;
 	width:80%;
-	height:9em;
+	height:12em;
 	/*height:80%;*/
 	overflow:hidden;
 }
@@ -394,6 +394,11 @@ Basic Page and EZ stylings
 .basic-page .spacer-small {
 	width:100%;
 	height:3em;
+}
+
+.basic-page .spacer-extrasmall {
+	width:100%;
+	height:10px;
 }
 
 .basic-page .basic-page-body .col-container {
@@ -594,6 +599,43 @@ Home Page 2
 	margin-top:-50px;
 }
 
+.basic-page .splash .splash-go-button {
+	position:absolute;
+	bottom:40px;
+	right:70px;
+	height:100px;
+	width:400px;
+	background:rgba(251, 191, 41, .75);
+	border-radius:20px;
+}
+
+.basic-page .splash .splash-go-button div{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	color:white;
+	font-size:3em;
+	font-weight:600;
+	white-space: nowrap;
+}
+
+.basic-page .splash .splash-go-button .arrow{
+	height:20px;
+	width:20px;
+	border-style: solid;
+	border-color: white;
+	border-width: 5px 5px 0 0;
+	position:absolute;
+	right:10px;
+	top:50%;
+	transform: rotate(45deg);
+}
+
+.basic-page .splash .splash-go-button:hover {
+	background:rgba(251, 191, 41, .9);
+}
+
 .basic-page .page-body-background {
 	position:relative;
 	overflow:hidden;
@@ -622,7 +664,7 @@ Home Page 2
 .basic-page .splash-section-large h2, .basic-page .splash-section-large p{
 	color:white;
 	text-indent: 0;
-	margin:0 0 5px 0;
+	/*margin:0 0 5px 0;*/
 }
 
 .basic-page .splash-section-large .center-text{
@@ -701,6 +743,236 @@ Home Page 2
 	text-align: center;
 }*/
 
+.basic-page .splash-section-small {
+	width:100%;
+	height:200px;
+	position:relative;
+	overflow:hidden;
+}
+
+.basic-page .splash-section-small > img {
+	position:absolute;
+	width:100%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+.basic-page .splash-section-small .col-container{
+	height:inherit;
+}
+
+.basic-page .splash-section-small .col-container div{
+	height:inherit;
+}
+
+.basic-page .quiz .col-container > div:first-child div{
+	color:white;
+	margin-top:45px;
+}
+
+.basic-page .quiz .col-container > div:last-child .quiz-button{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	width:320px;
+	height:80px;
+	background:rgba(0, 0, 0, .40);
+	border-radius: 10px;
+}
+
+.basic-page .quiz .col-container > div:last-child .quiz-button div{
+	color:white;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	height:auto;
+	font-size: 2em;
+}
+
+.basic-page .quiz .col-container > div:last-child .quiz-button:hover{
+	background:rgba(0,0,0,.75);
+}
+
+.basic-page .square-icons-container {
+	width:80%;
+	margin:auto;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content:space-between;
+}
+
+.basic-page .square-icons-container .square-icon {
+	position:relative;
+	height:250px;
+	width:250px;
+	overflow:hidden;
+	border-radius:40px;
+	margin:0 0 20px 0;
+}
+
+.basic-page .square-icons-container .square-icon > img {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	width:500px;
+	height:auto;
+	filter: grayscale(.5);
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.basic-page .square-icons-container .square-icon > div {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	color:#eeeeee;
+	font-size: 3em;
+	font-weight: 600;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.basic-page .square-icons-container .square-icon:hover > img{
+	filter:grayscale(0);
+	width:600px;
+}
+
+.basic-page .square-icons-container .square-icon:hover > div{
+	color:white;
+}
+
+/*////////////////////////////////////////////////////////////////////////////
+SlideShow
+////////////////////////////////?//////////////////////////////////////////*/
+
+.basic-page .slideshow {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: red;
+}
+
+.basic-page .slideshow .right-arrow-pane, .basic-page .slideshow .left-arrow-pane{
+	position:absolute;
+	right:0;
+	top:0;
+	height:100%;
+	width:150px;
+	background: rgba(0,0,0,.5);
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index:75;
+    cursor:pointer;
+}
+
+.basic-page .slideshow .left-arrow-pane {
+	left:0;
+	right:auto;
+}
+
+.basic-page .slideshow .right-arrow-pane .arrow, .basic-page .slideshow .left-arrow-pane .arrow {
+	position:absolute;
+	top:50%;
+	left:30%;
+	transform:translate(-50%, -50%);
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index:50;
+}
+
+.basic-page .slideshow .left-arrow-pane .arrow {
+	right:30%;
+	left:auto;
+	transform: translate(50%, -50%);
+}
+
+.basic-page .slideshow .right-arrow-pane .arrow div, .basic-page .slideshow .left-arrow-pane .arrow div{
+	height:50px;
+	width:50px;
+	transform:rotate(45deg);
+	border-style: solid;
+	border-color: rgba(255, 255, 255, .5);
+	border-width:5px 5px 0 0;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.basic-page .slideshow .left-arrow-pane .arrow div{
+	/*border-width: 0 0 5px 5px;*/
+	transform:rotate(-135deg);
+}
+
+.basic-page .slideshow .right-arrow-pane:hover, .basic-page .slideshow .left-arrow-pane:hover {
+	background:rgba(0,0,0,.75);
+}
+
+.basic-page .slideshow .right-arrow-pane:hover .arrow {
+	left:35%;
+}
+
+.basic-page .slideshow .left-arrow-pane:hover .arrow {
+	right:35%;
+}
+
+.basic-page .slideshow .right-arrow-pane:hover .arrow div, .basic-page .slideshow .left-arrow-pane:hover .arrow div{
+	border-color:rgba(255,255,255,1);
+}
+
+.basic-page .slideshow .bubbles {
+	position:absolute;
+	width:100%;
+	height:40px;
+	bottom:20px;
+	left:0;
+	/*background-color:blue;*/
+	display:flex;
+	justify-content: center;
+}
+
+.basic-page .slideshow .bubbles div {
+	height:40px;
+	width:40px;
+	border-radius:25px;
+	border:solid white 5px;
+	margin:0 20px 0 0;
+	cursor:pointer;
+}
+
+.basic-page .slideshow .bubbles div:first-child {
+	margin-left: 20px;
+}
+
+.basic-page .slideshow .bubbles div:last-child {
+	margin-right: 0;
+}
+
+.basic-page .slideshow .bubbles div:hover {
+	background-color: white;
+}
+
 /*////////////////////////////////////////////////////////////////////////////
 Media Queries
 ////////////////////////////////?//////////////////////////////////////////*/
@@ -740,6 +1012,27 @@ Media Queries
 	}
 	.basic-page .basic-page-body .splash-section-medium {
 		height:auto;
+	}
+	.basic-page .splash-section-small {
+		height:300px;
+	}
+	.basic-page .splash-section-small .col-container, .basic-page .splash-section-small .col-container div{
+		height:125px;
+	}
+	.basic-page .splash-section-small .col-container div:last-child {
+		height:100px;
+	}
+	.basic-page .square-icons-container .square-icon {
+		height:180px;
+		width:180px;
+		margin:20px 20px auto;
+	}
+	.basic-page .square-icons-container .square-icon > img {
+		width:360px;
+		height:auto;
+	}
+	.basic-page .square-icons-container .square-icon > div {
+		font-size: 2em;
 	}
 	.basic-page .dividers > div {
 		border-right:none;
