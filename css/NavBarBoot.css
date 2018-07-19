@@ -156,6 +156,42 @@ Navigation Menu
 	background-color:#444444;
 }
 
+.basic-page .nav-story-Btns {
+	display:flex;
+	justify-content: space-between;
+	width:80%;
+	margin:auto;
+}
+
+.basic-page .nav-story-Btns > a > div {
+	width:140px;
+	height:60px;
+	background-color:#fbbf29;
+	text-align: center;
+	padding:10px 10px 10px 10px;
+	color:white;
+	font-size:2em;
+	border-radius:10px;
+}
+
+.basic-page .nav-story-Btns > a:first-child > div {
+	background-color:#d9534f;
+}
+
+.basic-page .nav-story-Btns > a:hover {
+	text-decoration: none;
+}
+
+.basic-page .nav-story-Btns > a > div:hover {
+	cursor:pointer;
+	background-color:#d79c08;
+}
+
+.basic-page .nav-story-Btns > a:first-child > div:hover {
+	background-color:#ac2925;
+	/*text-decoration: none;*/
+}
+
 /*////////////////////////////////////////////////////////////////////////////
 Home Page
 ////////////////////////////////?//////////////////////////////////////////*/
@@ -871,8 +907,8 @@ SlideShow
 	right:0;
 	top:0;
 	height:100%;
-	width:150px;
-	background: rgba(0,0,0,.5);
+	width:100px;
+	background: rgba(0,0,0,0);
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -884,6 +920,7 @@ SlideShow
 
 .basic-page .slideshow .left-arrow-pane {
 	left:0;
+	width:82px;
 	right:auto;
 }
 
@@ -926,7 +963,7 @@ SlideShow
 }
 
 .basic-page .slideshow .right-arrow-pane:hover, .basic-page .slideshow .left-arrow-pane:hover {
-	background:rgba(0,0,0,.75);
+	background:rgba(0,0,0,.25);
 }
 
 .basic-page .slideshow .right-arrow-pane:hover .arrow {
@@ -962,10 +999,6 @@ SlideShow
 	cursor:pointer;
 }
 
-.basic-page .slideshow .bubbles div:first-child {
-	margin-left: 20px;
-}
-
 .basic-page .slideshow .bubbles div:last-child {
 	margin-right: 0;
 }
@@ -978,6 +1011,73 @@ SlideShow
 	background-color:white;
 }
 
+.basic-page .slideshow .pauseBtn {
+	position:absolute;
+	height:60px;
+	width:60px;
+	bottom:20px;
+	right:150px;
+	background:rgba(34,34,34,.75);
+	border-radius:10px;
+	z-index:60;
+}
+
+.basic-page .slideshow .pauseBtn .bars {
+	visibility: hidden;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	width:30px;
+	height:35px;
+}
+
+.basic-page .slideshow .pauseBtn .bars > div{
+	float:right;
+	width:10px;
+	height:100%;
+	background:rgba(255,255,255,.75);
+}
+
+.basic-page .slideshow .pauseBtn .bars > div:first-child {
+	float:left;
+}
+
+.basic-page .slideshow .pauseBtn:hover {
+	background: rgba(34,34,34,1);
+	cursor: pointer;
+}
+
+.basic-page .slideshow .pauseBtn:hover .bars > div {
+	background: rgba(255,255,255,1);
+}
+
+.basic-page .slideshow .pauseBtn .tri {
+	visibility: hidden;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+.basic-page .slideshow .pauseBtn .tri > div {
+	width: 0;
+	height: 0;
+	border-top: 18px solid transparent;
+	border-left-style: solid;
+	border-left-width: 30px;
+	border-left-color:rgba(255,255,255,.75);
+	border-bottom: 18px solid transparent;
+}
+
+.basic-page .slideshow .pauseBtn:hover .tri > div{
+	border-left-color:rgba(255,255,255,1);
+}
+
+.basic-page .slideshow .pauseBtn .tri.active, .basic-page .slideshow .pauseBtn .bars.active {
+	visibility: visible;
+}
+
 .basic-page .slideshow .content {
 	position:absolute;
 	top:0;
@@ -987,7 +1087,7 @@ SlideShow
 }
 
 .basic-page .slideshow .content .slide {
-	/*visibility:hidden;*/
+	visibility:hidden;
 	position:absolute;
 	top:0;
 	left:0;
@@ -1015,6 +1115,14 @@ SlideShow
 	height:auto;
 }
 
+/*.basic-page .slideshow .content .slide > video:first-child {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100vw;
+	height:auto;
+}*/
+
 .basic-page .slideshow .content .slide.active {
 	left:0 !important;
 }
@@ -1025,6 +1133,15 @@ SlideShow
 
 .basic-page .slideshow .content .slide.right {
 	left:100vw !important;
+}
+
+.basic-page .splash .slideshow .title {
+	top:65%;
+	left:200px;
+}
+
+.basic-page .splash .slideshow .title p {
+	font-size:7em;
 }
 
 .notransition {
@@ -1050,6 +1167,10 @@ Media Queries
 
 /*Smartphone*/
 @media (max-width : 600px) {
+	.basic-page .splash {
+		height:500px;
+		width:100%;
+	}
 	.basic-page .splash video{
 		height:100%;
 		width:auto;

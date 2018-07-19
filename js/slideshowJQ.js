@@ -3,6 +3,9 @@ let currentSlide = 0;
 let $slideArray;
 let $bubbleArray;
 let inMotion = false;
+let $pauseShapes;
+let isPaused = false;
+let slideShowInterval;
 
 $(document).ready(() => {
 	$slideArray = $('.slideshow .content .slide');
@@ -16,6 +19,7 @@ $(document).ready(() => {
 
 	$bubbleArray.on('click', event => {
 		jumpTo($(event.currentTarget).index());
+		pause();
 	});
 
 	$('.slideshow .right-arrow-pane').on('click', () => {
@@ -25,6 +29,22 @@ $(document).ready(() => {
 	$('.slideshow .left-arrow-pane').on('click', () => {
 		prevSlide();
 	});
+
+	window.addEventListener('keydown', (event) => {
+		if (event.keyCode == 39) {
+			nextSlide();
+		}else if (event.keyCode == 37) {
+			prevSlide();
+		}else if (event.keyCode == 32) {
+			pause();
+		}
+		// console.log(event.keyCode);
+		pause();
+	});
+
+	$pauseShapes = $('.slideshow .pauseBtn > div');
+	$('.slideshow .pauseBtn').on('click', () => {togglePlay();});
+	play();
 });
 
 
@@ -40,7 +60,12 @@ function jumpTo(num) {
 	if (!inMotion) {
 		inMotion = true;
 		jumpToHelper(num);
-		setTimeout(() => {inMotion = false;}, 1000);
+		setTimeout(() => {
+			setTimeout(() => {
+				inMotion = false;
+			}, 300);
+			changeActiveBubbles(num, currentSlide);
+		}, 300);
 	}
 }
 
@@ -82,9 +107,9 @@ function jumpToHelper(num) {
 		$slideArray[currentSlide].classList.remove('active');
 		$slideArray[currentSlide].classList.add('right');
 	}
-	$bubbleArray[num].classList.add('active');
-	$bubbleArray[currentSlide].classList.remove('active');
-	currentSlide = num;
+	// $bubbleArray[num].classList.add('active');
+	// $bubbleArray[currentSlide].classList.remove('active');
+	// currentSlide = num;
 }
 
 function fixNumIndex(num) {
@@ -95,4 +120,35 @@ function fixNumIndex(num) {
 		num = numSlides - 1;
 	}
 	return num
+}
+
+function changeActiveBubbles(num, curr) {
+	num = fixNumIndex(num);
+	$bubbleArray[num].classList.add('active');
+	$bubbleArray[currentSlide].classList.remove('active');
+	currentSlide = num;
+}
+
+function togglePlay() {
+	if(isPaused) {
+			play();
+	}else {
+			pause();
+	}
+}
+
+function pause() {
+	if (!isPaused) {
+		clearInterval(slideShowInterval);
+		isPaused = true;
+		$pauseShapes[0].classList.remove('active');
+		$pauseShapes[1].classList.add('active');
+	}
+}
+
+function play() {
+	slideShowInterval = setInterval(nextSlide, 5000);
+	isPaused = false;
+	$pauseShapes[1].classList.remove('active');
+	$pauseShapes[0].classList.add('active');
 }
