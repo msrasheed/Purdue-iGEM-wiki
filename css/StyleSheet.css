@@ -568,6 +568,141 @@ Notebook
 }
 
 /*////////////////////////////////////////////////////////////////////////////
+Header
+////////////////////////////////?//////////////////////////////////////////*/
+
+.basic-page .header {
+	height:100vh;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+}
+
+.basic-page .header > img:first-child {
+	position:fixed;
+	/*z-index:1;*/
+	top:0;
+	left:0;
+	width:100%;
+}
+
+.basic-page .header .title {
+	position: absolute;
+	top:40%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	color:white;
+	font-size: 10em;
+	font-weight: 500;
+	padding: .5em .2em;
+	border: solid 5px white;
+}
+
+.basic-page .body {
+	background-color: white;
+	/*z-index:1;*/
+	position: relative;
+	/*display:flex;*/
+	/*height:1000px;*/
+}
+
+.basic-page .body > div {
+	display:block;
+}
+
+/*////////////////////////////////////////////////////////////////////////////
+Solution Page
+////////////////////////////////?//////////////////////////////////////////*/
+
+.basic-page .body .solution-top {
+	height:400px;
+	width:100%;
+	margin:auto;
+	/*background-color:green;*/
+}
+
+.basic-page .body .solution-top > div {
+	height:inherit;
+}
+
+.basic-page .solution-overview {
+	width:100%;
+	height:300px;
+	position:relative;
+}
+
+.basic-page .solution-overview div {
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:70%;
+	color:#706f6b;
+	transform: translate(-50%, -50%);
+	margin:auto;
+}
+
+#HQ_page .basic-page .solution-overview div p {
+	text-indent:2em;
+	font-size:2em;
+	font-weight:600;
+}
+
+.basic-page .solution-body {
+	width:100%;
+	display:flex;
+}
+
+.basic-page .solution-body .section{
+	padding:20px 0 20px 0;
+	display:flex;
+}
+
+.basic-page .solution-body .section:nth-child(odd) {
+		background-color:#dbdad4;
+}
+
+.basic-page .solution-body .section .wrapper {
+	margin:auto;
+	width:80%;
+}
+
+#HQ_page .basic-page .solution-body .section .wrapper h1 {
+	padding:0 0 10px 0;
+}
+
+#HQ_page .basic-page .solution-body .section .wrapper p{
+	font-size:1.15em;
+	text-indent: 2em;
+}
+
+.basic-page .solution-conc {
+	position:relative;
+	height: 300px;
+}
+
+.basic-page .solution-conc .wrapper {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width:80%;
+	margin:auto;
+}
+
+#HQ_page .basic-page .solution-conc .wrapper h1 {
+	color:#FE9A00;
+	font-weight:600;
+	font-size:3em;
+}
+
+#HQ_page .basic-page .solution-conc .wrapper p {
+	text-indent:2em;
+	font-size:2em;
+	font-weight:600;
+	color:#706f6b;
+}
+
+/*////////////////////////////////////////////////////////////////////////////
 Team Page
 ////////////////////////////////?//////////////////////////////////////////*/
 
@@ -1057,6 +1192,11 @@ Footer
 	flex-wrap:wrap;
 	padding-top:0px;
 	padding-bottom:0px;
+}
+
+.igem_2018_team_content {
+	z-index: 1;
+    background-color: #222222;
 }
 
 .footer .igem_2018_team_content .igem_2018_team_column_wrapper div h1{
