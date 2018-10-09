@@ -1,5 +1,6 @@
-// window.onload = function () {
-//     console.log('hi');
-// 	console.log(document.getElementsByClassName('menu')[0].style.offset.bottom);
-// 	document.getElementsByClassName('nav-menu-side')[0].style.top = document.getElementsByClassName('menu')[0].style.bottom;
-// };
+$(document).ready(() => {
+	console.log($('div.button'));
+	$("div.button").on("click", event => {
+		window.location.href = $(event.currentTarget)[0].getAttribute("href");
+	});
+});

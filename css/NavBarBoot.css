@@ -453,15 +453,15 @@ Basic Page and EZ stylings
 	margin:auto;
 }
 
-.basic-page .basic-page-body .references li {
+.basic-page .references li {
 	padding:10px 30px;
 }
 
-.basic-page .basic-page-body .references li:nth-child(even) {
+.basic-page .references li:nth-child(even) {
 	background-color:rgba(200,200,200,.5);
 }
 
-.basic-page .basic-page-body .references .highlight {
+.basic-page .references .highlight {
 	background-color:rgba(251,191,41,.5) !important;
 }
 
@@ -593,6 +593,7 @@ Header
 	font-weight: 500;
 	padding: 10px 60px;
 	border: solid 5px white;
+	text-align: center;
 }
 
 .basic-page .body {
@@ -806,6 +807,112 @@ Team Page
 .basic-page .team .alt-sections .col-container p:nth-child(4) {
 	padding-top:1em;
 }
+
+/*////////////////////////////////////////////////////////////////////////////
+General
+////////////////////////////////?//////////////////////////////////////////*/
+
+.basic-page .body .section {
+	width: 100%;
+	/*border: solid 1px black;*/
+	position: relative;
+	overflow: hidden;
+}
+
+.basic-page .body .section.light{
+	color:white;
+}
+
+.basic-page .body .section.large {
+	height: 800px;
+}
+
+.basic-page .body .section.medium {
+	height: 600px;
+}
+
+.basic-page .body .section.small {
+	height:400px;
+}
+
+.basic-page .body .section > img.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:auto;
+}
+
+.basic-page .body .section.large > img.background {
+	min-height:800px;
+}
+
+.basic-page .body .section .wrapper {
+	width: 80%;
+	margin:auto;
+	position:relative;
+}
+
+.basic-page .body .section .wrapper h1 {
+	text-align: center;
+	font-size: 3.5em;
+}
+
+.basic-page .body .section .wrapper .imageFrame {
+	margin:auto;
+	position: relative;
+	width:100%;
+	height:100%;
+}
+
+.basic-page .body .section .wrapper .imageFrame > img {
+	/*position: absolute;*/
+	width:100%;
+	top:50%;
+	left:50%;
+	transform:translate(-50% -50%);
+}
+
+.basic-page .body .section .wrapper img.center {
+	margin:auto;
+}
+
+.basic-page .body .section .wrapper p.center {
+	text-align: center;
+}
+
+.basic-page .body .section .wrapper div.button {
+	margin:auto;
+	/*white-space:nowrap;*/
+	/*display:inline;*/
+	color: inherit;
+	padding:5px 25px;
+	width: 100px;
+	background-color:#d9534f;
+	border-radius:10px;
+	text-align: center;
+}
+
+.basic-page .body .section .wrapper div.button.medium {
+	font-size: 2em;
+	padding:10px 30px;
+	border-radius:20px;
+	width:200px;
+}
+
+.basic-page .body .section .wrapper div.button.large {
+	font-size: 4em;
+	padding:20px 50px;
+	border-radius: 25px;
+	width:350px;
+}
+
+.basic-page .body .section .wrapper div.button:hover {
+	text-decoration: none;
+	background-color:#c9302c;
+	cursor: pointer;
+}
+
 
 /*////////////////////////////////////////////////////////////////////////////
 Home Page 2
