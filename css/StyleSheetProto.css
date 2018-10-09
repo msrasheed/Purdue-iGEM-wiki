@@ -891,6 +891,24 @@ Footer
 .social:hover {
 	filter:invert(100%);
 }
+/*////////////////////////////////////////////////////////////////////////////
+Team Page
+////////////////////////////////?//////////////////////////////////////////*/
+
+.basic-page .profile-wrap {
+	height:208px;
+	width:235px;
+	overflow:hidden;
+	display:block;
+	margin:auto;
+	position:relative;
+}
+
+.basic-page .profile-wrap .profile {
+	position:absolute;
+	width:235px;
+	height:auto;
+}
 
 /*////////////////////////////////////////////////////////////////////////////
 Media Queries

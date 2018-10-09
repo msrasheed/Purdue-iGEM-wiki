@@ -784,7 +784,7 @@ Team Page
 	background-color: rgba(251, 191, 41, .5);
 }
 
-.basic-page .team .alt-sections .profile-wrap {
+.basic-page .profile-wrap {
 	height:208px;
 	width:235px;
 	overflow:hidden;
@@ -793,7 +793,7 @@ Team Page
 	position:relative;
 }
 
-.basic-page .team .alt-sections .profile-wrap .profile {
+.basic-page .profile-wrap .profile {
 	position:absolute;
 	width:235px;
 	height:auto;
