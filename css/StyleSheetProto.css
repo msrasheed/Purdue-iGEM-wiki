@@ -162,7 +162,7 @@ Navigation Menu
 }	
 
 .menu-hamburger div {
-	background-color:#9d9d9d;
+	background-color:black;
 	height:5px;
 	width:80%;
 	margin:auto;
@@ -185,7 +185,7 @@ Navigation Menu
 	top:5.9em;
 	left:-300px;
 	/*opacity:.95;*/
-	background-color:#222222;
+	background-color:#cdd4ca;
 	overflow:auto;
 	-webkit-transition: left 0.3s;
     -moz-transition: left 0.3s;
@@ -209,7 +209,7 @@ Navigation Menu
 	/*width:300px;*/
 	padding:10px 0 10px 0;
 	display:block;
-	color:#9d9d9d;
+	color:black;
 	/*border-bottom:1px solid #9d9d9d;*/
 }
 
@@ -224,7 +224,7 @@ Navigation Menu
 
 .nav-menu-side .dropdown-menu-side {
 	display:none;
-	background-color:#444444;
+	background-color:#b8bcb7;
 }
 
 .basic-page .nav-story-Btns {
@@ -261,6 +261,10 @@ Navigation Menu
 .basic-page .nav-story-Btns > a:first-child > div:hover {
 	background-color:#ac2925;
 	/*text-decoration: none;*/
+}
+
+.slide-left-into-page {
+	left:0 !important;
 }
 
 /*////////////////////////////////////////////////////////////////////////////
@@ -892,7 +896,7 @@ Footer
 Media Queries
 ////////////////////////////////?//////////////////////////////////////////*/
 
-@media (max-width:1110px) {
+@media (max-width:1500px) {
 	.menu-items {
 		display:none;
 	}
