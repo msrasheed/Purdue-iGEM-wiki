@@ -790,6 +790,10 @@ General
 	display:block;
 }
 
+.basic-page .body .section .wrapper p {
+	text-indent: 2em;
+}
+
 .basic-page .body .section .wrapper p.center {
 	text-align: center;
 }
@@ -824,6 +828,31 @@ General
 	text-decoration: none;
 	background-color:#c9302c;
 	cursor: pointer;
+}
+
+.basic-page .body .section .table.problemBorder td, .basic-page .body .section .table.problemBorder th{
+	border:solid 1px black;
+}
+
+.basic-page .body .section .table td.green {
+	background-color: rgba(111, 227, 119, .5);
+}
+
+.basic-page .body .section .table td.red {
+	background-color: rgba(255, 80, 80, .5);
+}
+
+.basic-page .trigger:hover {
+	cursor: pointer;
+}
+
+.basic-page .body .dropdown {
+	display:none;
+}
+
+.basic-page .body .dropdown.border {
+	padding:15px 25px;
+	border:solid 1px black;
 }
 
 /*////////////////////////////////////////////////////////////////////////////
@@ -891,6 +920,7 @@ Footer
 .social:hover {
 	filter:invert(100%);
 }
+
 /*////////////////////////////////////////////////////////////////////////////
 Team Page
 ////////////////////////////////?//////////////////////////////////////////*/

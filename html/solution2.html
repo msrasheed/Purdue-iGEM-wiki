@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+  <script src="../bootstrap/jquery.min.js"></script>
+  <script src="../bootstrap/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="../css/StyleSheetProto.css">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="../js/notebookJQ.js"></script>
+  <script src="../js/general.js"></script>
+  <script src="../js/slideshowJQ.js"></script>
+  <script src='../js/navBtnsJQ.js'></script>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-inverse menu">
+	 	<div class="menu-container">
+			<!-- <div class="navbar-header"> -->
+				<div class="menu-logo-container">
+					<a href="http://2018.igem.org/Team:Purdue">
+						<img src="../photos/logo_cropped.png">
+					</a>
+				</div>
+	    	<!-- </div> -->
+	    	<div class="container menu-items">
+		    	<ul class="nav navbar-nav">
+		      		<li class="dropdown">
+		      			<a href="#">Team
+		      				<span class="caret"></span></a>
+		      			<ul class="dropdown-menu">
+		      				<li><a href="#">Team Members</a></li>
+		      				<li><a href="#">Collaborations</a></li>
+						</ul>
+		      		</li>
+					<li class="dropdown">
+						<a href="#">Project
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Description">Description</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Design">Design</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Experiments">Experiments</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Notebook">Notebook</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/InterLab">InterLab</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Demonstrate">Demonstrate</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Improve">Improve</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Attributions">Attributions</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#">Parts
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Parts">Parts Overview</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Basic_Part">Basic Parts</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Composite_Part">Composite Parts</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Part_Collection">Part Collection</a></li>
+						</ul>
+					</li>
+					<li><a href="http://2018.igem.org/Team:Purdue/Safety">Safety</a></li>
+					<li class="dropdown">
+						<a href="#">Human Practices
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Human_Practices">Human Practices</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Public_Engagement">Education &amp; Engagement</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#">Awards
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Applied_Design">Applied Design</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Entrepreneurship">Entrepreneurship</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Hardware">Hardware</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Measurement">Measurement</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Plant">Plant</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Software">Software</a></li>
+						</ul>
+					</li>
+					<li><a href="http://igem.org/2018_Judging_Form?team=Purdue">Judging Form</a></li>
+		    	</ul>
+	    	</div>
+	    	<div class="menu-hamburger">
+	    		<a href='#'>
+	    		<div></div>
+	    		<div></div>
+	    		<div></div>
+	    		</a>
+	    	</div>
+	 	</div>
+	</nav>
+
+	<!-- <div class="basic-page"> -->
+	<div class="nav-menu-side">
+		<ul>
+      		<li class="dropdown-side">
+      			<a href="#">Team
+      				<span class="caret"></span></a></li>
+  			<ul class="dropdown-menu-side">
+  				<li><a href="#">Team Members</a></li>
+  				<li><a href="#">Collaborations</a></li>
+			</ul>
+			<li class="dropdown-side">
+				<a href="#">Project
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Description">Description</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Design">Design</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Experiments">Experiments</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Notebook">Notebook</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/InterLab">InterLab</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Demonstrate">Demonstrate</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Improve">Improve</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Attributions">Attributions</a></li>
+			</ul>
+			<li class="dropdown-side">
+				<a href="#">Parts
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Parts">Parts Overview</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Basic_Part">Basic Parts</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Composite_Part">Composite Parts</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Part_Collection">Part Collection</a></li>
+			</ul>
+			<li><a href="http://2018.igem.org/Team:Purdue/Safety">Safety</a></li>
+			<li class="dropdown-side">
+				<a href="#">Human Practices
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Human_Practices">Human Practices</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Public_Engagement">Education &amp; Engagement</a></li>
+			</ul>
+			<li class="dropdown-side">
+				<a href="#">Awards
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Applied_Design">Applied Design</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Entrepreneurship">Entrepreneurship</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Hardware">Hardware</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Measurement">Measurement</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Plant">Plant</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Software">Software</a></li>
+			</ul>
+			<li><a href="http://igem.org/2018_Judging_Form?team=Purdue">Judging Form</a></li>
+    	</ul>
+	</div>
+</body>
+</html>
+
+<html>
+<body>
+	<div class="basic-page">
+		<div class='header'>
+			<img style="opacity:.75;" src='../photos/yellowAbs.jpg'/>
+			<div class='title'>Solution</div>
+		</div>
+		<div class='body alternate'>
+			<!-- <div class='section'>
+				<svg width='100vw' height='375px'>
+					<image xlink:href='../photos/orangeAbs.png' x='0' y='0' width='200%'/>
+					<g x="0" y="0">
+						<g transform="translate(196 50)">
+							<g transform="translate(50 0) scale(.75)" fill="white">
+								<circle cx="150" cy="150" r="150" stroke="white" stroke-width="16" fill="none"/>
+								<rect x='150' y='150' height='135' width='10' rx='15' ry='15' transform='translate(-5 -135) rotate(0)' transform-origin='155 285' stroke="white" stroke-width="4"/>
+								<rect x='150' y='150' height='75' width='10' rx='15' ry='15' transform='translate(-5 -75) rotate(120)' transform-origin='155 225' stroke="white" stroke-width="4"/>
+								<text x='50' y='375' font-size="70" font-weight="600">Speed</text>
+							</g>
+							<g stroke="white" stroke-width="16" fill="none" transform="translate(450, 0) scale(.75)">
+								<circle cx="150" cy="150" r="150"/>
+								<circle cx="150" cy="150" r="100"/>
+								<circle cx="150" cy="150" r="50"/>
+								<circle cx="150" cy="150" r="10" fill="white"/>
+								<text x='-5' y='375' font-size="70" font-weight="600"  stroke="none" fill="white">Accuracy</text>
+							</g>
+							<g transform="translate(800, -36)">
+								<g transform="scale(1.47)">
+									<g transform="translate(0.000000,200) scale(0.100000,-0.100000)" fill="white" stroke="none">
+										<path d="M847 1794 c-373 -67 -657 -411 -657 -794 0 -368 254 -692 615 -786
+										96 -25 294 -25 390 0 293 76 515 298 591 591 25 96 25 294 0 390 -110 421
+										-511 676 -939 599z m328 -84 c447 -114 683 -607 486 -1015 -78 -163 -184 -270
+										-346 -351 -120 -59 -209 -77 -350 -71 -118 6 -185 22 -281 69 -367 179 -518
+										619 -339 983 150 304 505 468 830 385z"/>
+										<path d="M955 1511 c-45 -20 -70 -60 -70 -112 0 -41 5 -53 32 -80 80 -81 218
+										-7 197 106 -12 65 -99 112 -159 86z"/>
+										<path d="M632 1294 c-25 -17 -30 -60 -9 -86 6 -9 68 -33 137 -53 172 -51 161
+										-42 154 -128 -8 -94 -23 -148 -89 -312 -30 -75 -55 -146 -55 -159 0 -46 70
+										-75 102 -42 7 7 38 63 68 125 30 61 57 111 60 111 3 0 28 -48 55 -107 27 -60
+										55 -116 64 -126 23 -27 81 -19 100 13 13 24 9 37 -52 190 -71 180 -87 240 -87
+										330 0 57 1 59 33 69 17 5 79 24 137 41 58 18 111 37 118 42 17 15 15 74 -4 92
+										-22 22 -35 21 -180 -19 -81 -22 -150 -35 -189 -35 -39 0 -108 13 -189 35 -147
+										40 -144 40 -174 19z"/>
+									</g>
+								</g>
+								<text x='-15' y='318' font-size="54" font-weight="600" fill="white">Accessibility</text>
+							</g>
+						</g>
+					</g>
+				</svg>
+			</div> -->
+			<div class='section'>
+				<div class="wrapper">
+					<div class="spacer-small"></div>
+					<p style="font-size:2em;">A paper-based assay containing proteins that have the ability to quickly detect C. Albicans more specifically. Let’s explain…</p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Speed</h1>
+					<div class="row">
+						<div class='col-sm-4'>
+							<svg width='300' height='300'>
+									<defs>
+									    <mask id="clock">
+									      <rect width="100%" height="100%" fill="black"/>
+									      <circle r="150" cx="150" cy="150" fill="white"/>
+									      <circle r="140" cx="150" cy="150" fill="black"/>
+									      <rect x='150' y='150' height='135' width='10' rx='15' ry='15' transform='translate(-5 -135) rotate(0)'transform-origin='155 285' fill="white"/>
+									      <rect x='150' y='150' height='75' width='10' rx='15' ry='15' transform='translate(-5 -75) rotate(120)' transform-origin='155 225' fill="white"/>
+									    </mask>
+									</defs>
+									<image xlink:href='../photos/yellowAbs.jpg' x='0' y='0' width='200%' mask='url(#clock)'/>
+									<!-- <circle cx='150' cy='150' r='1'/> -->
+								</svg>
+						</div>
+						<div class='col-sm-8'>
+							<p style="margin-top: 8em;">The time it takes to see the result of our test is simply limited to how fast our color indicating solution can move through the paper. Therefore, we’ve limited the wait time to minutes or even seconds. This allows a much faster diagnosis and decreases the wait time before a patient finally seeks accurate treatment.</p>
+						</div>
+					</div>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Accuracy</h1>
+					<div class="row">
+						<div class='col-sm-8'>
+							<p style="margin-top: 5em;">One of the biggest challenges in designing a diagnostic for C. albicans is striking a reasonable balance between sensitivity and specificity. The most reliable infection biomarker is some aspect of a yeast cell itself; this makes the limit of detection only as low as how many cells there are present. Thus, it is necessary to detect a biomarker both readily available in collected bodily samples and indicative of only C. albicans only as well.</p>
+							<p>Our protein construct is built to interact farnesol or tyrosol exclusively. Both of these molecules are specifically secreted by C. albicans in either their infectious bloodborne or mucosal stages. This specific interaction allows our assay to solely detect C. albicans and therefore avoid accidental misdiagnosis.</p>
+						</div>
+						<div class='col-sm-4'>
+							<svg width='300' height='300'>
+								<defs>
+								    <mask id="hole">
+								      <rect width="100%" height="100%" fill="black"/>
+								      <circle r="150" cx="150" cy="150" fill="white"/>
+								      <circle r="134" cx="150" cy="150" fill="black"/>
+								      <circle r="100" cx="150" cy="150" fill="white"/>
+								      <circle r="84" cx="150" cy="150" fill="black"/>
+								      <circle r="50" cx="150" cy="150" fill="white"/>
+								      <circle r="34" cx="150" cy="150" fill="black"/>
+								      <circle r="10" cx="150" cy="150" fill="white"/>
+								    </mask>
+								</defs>
+									<image xlink:href='../photos/yellowAbs.jpg' x='0' y='0' width='200%' mask='url(#hole)'/>
+							</svg>
+						</div>
+					</div>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Accessibility</h1>
+					<div class="row">
+						<div class='col-sm-4'>
+							<svg width='300' height='300'>
+								<defs>
+								    <mask id="access">
+								      	<g transform="scale(1.7) translate(-15 -15)">
+											<g transform="translate(0.000000,200) scale(0.100000,-0.100000)" fill="white" stroke="none">
+												<path d="M847 1794 c-373 -67 -657 -411 -657 -794 0 -368 254 -692 615 -786
+												96 -25 294 -25 390 0 293 76 515 298 591 591 25 96 25 294 0 390 -110 421
+												-511 676 -939 599z m328 -84 c447 -114 683 -607 486 -1015 -78 -163 -184 -270
+												-346 -351 -120 -59 -209 -77 -350 -71 -118 6 -185 22 -281 69 -367 179 -518
+												619 -339 983 150 304 505 468 830 385z"/>
+												<path d="M955 1511 c-45 -20 -70 -60 -70 -112 0 -41 5 -53 32 -80 80 -81 218
+												-7 197 106 -12 65 -99 112 -159 86z"/>
+												<path d="M632 1294 c-25 -17 -30 -60 -9 -86 6 -9 68 -33 137 -53 172 -51 161
+												-42 154 -128 -8 -94 -23 -148 -89 -312 -30 -75 -55 -146 -55 -159 0 -46 70
+												-75 102 -42 7 7 38 63 68 125 30 61 57 111 60 111 3 0 28 -48 55 -107 27 -60
+												55 -116 64 -126 23 -27 81 -19 100 13 13 24 9 37 -52 190 -71 180 -87 240 -87
+												330 0 57 1 59 33 69 17 5 79 24 137 41 58 18 111 37 118 42 17 15 15 74 -4 92
+												-22 22 -35 21 -180 -19 -81 -22 -150 -35 -189 -35 -39 0 -108 13 -189 35 -147
+												40 -144 40 -174 19z"/>
+											</g>
+										</g>
+								    </mask>
+								</defs>
+									<image xlink:href='../photos/yellowAbs.jpg' x='0' y='0' width='200%' mask='url(#access)'/>
+							</svg>
+						</div>
+						<div class='col-sm-8'>
+							<p style="margin-top: 6em;">The assay is made up of primarily protein, paper, and wax. Both the paper and the wax are cost-effective and stored at a larger range of conditions.These factors allow our assay to pose as a feasible, self-diagnostic option to the average women and to developing countries. The product could easily be stocked and stored in drug stores or the average home. It could also withstand travel and storage to assist those in developing countries. </p>
+							<p>The assay itself costs around 0.11$. This is affordable for most poorer people, though there is a bit of room for improvement. According to the Action Against Hunger.</p>
+						</div>
+					</div>
+					<div class="spacer-extrasmall"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>In Conclusion</h1>
+					<div class="spacer-extrasmall"></div>
+					<p style="font-size:1.5em;">If you compare our newly designed test to other testing options that are commonly used, our test is able to improve on these three factors to provide us a better solution to diagnosing yeast infections.</p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/StandardStyling.css"> 
+</head>
+<body>
+	<div class="footer">
+		<div class="igem_2018_team_content">
+			<div class="igem_2018_team_column_wrapper">
+				<div class="column third_size footer-thanks">
+					<h1>Special Thanks</h1>
+					<a class="footer-text-link" href="http://2018.igem.org/Team:Purdue/Acknowledgement">
+					<p>to all those that made this possible</p></a>
+					<img class="social social-purdue" src="../photos/Purdue.png" style="height:5em;width:auto;"/>
+				</div>
+				<div class="column third_size">
+					<h1>Follow Us On</h1>
+					<div class="footer-media-div">
+						<a href="https://twitter.com/purdueigem">
+						<img class="social" src="../photos/twitter.png"/></a>
+					</div>
+					<div class="footer-media-div">
+						<a href="https://www.instagram.com/purdueigem/">
+						<img class="social" src="../photos/instagram.png"/></a>
+					</div>
+					<div class="footer-media-div">
+						<a href="https://www.facebook.com/PurdueiGEM/">
+						<img class="social" src="../photos/facebook.png"/></a>
+					</div>
+				</div>
+				<div class="column third_size">
+					<h1>Contact Us</h1>
+					<a class="footer-text-link" href="mailto:igem@purdue.edu?cc=fitzge29@purdue.edu">
+					<p>igem@purdue.edu</p></a>
+					<p>Kevin Fitzferald, B025<br>1203 W State St.<br>West Lafayette, IN 47906</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
