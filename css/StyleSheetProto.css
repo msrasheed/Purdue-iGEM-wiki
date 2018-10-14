@@ -798,7 +798,7 @@ General
 	text-align: center;
 }
 
-.basic-page .body .section .wrapper div.button {
+.basic-page .body .section .wrapper div.myButton {
 	margin:auto;
 	/*white-space:nowrap;*/
 	/*display:inline;*/
@@ -810,21 +810,21 @@ General
 	text-align: center;
 }
 
-.basic-page .body .section .wrapper div.button.medium {
+.basic-page .body .section .wrapper div.myButton.medium {
 	font-size: 2em;
 	padding:10px 30px;
 	border-radius:20px;
 	width:200px;
 }
 
-.basic-page .body .section .wrapper div.button.large {
+.basic-page .body .section .wrapper div.myButton.large {
 	font-size: 4em;
 	padding:20px 50px;
 	border-radius: 25px;
 	width:350px;
 }
 
-.basic-page .body .section .wrapper div.button:hover {
+.basic-page .body .section .wrapper div.myButton:hover {
 	text-decoration: none;
 	background-color:#c9302c;
 	cursor: pointer;
