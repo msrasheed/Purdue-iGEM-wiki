@@ -765,7 +765,8 @@ General
 
 #HQ_page .basic-page .body .section .wrapper h1 {
 	text-align: center;
-	font-size: 3.5em;
+	font-size: 3em;
+	margin-top:0;
 }
 
 .basic-page .body .section .wrapper .imageFrame {
