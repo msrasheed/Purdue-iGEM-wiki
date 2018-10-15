@@ -52,7 +52,7 @@ Basic Page and EZ stylings
 
 .basic-page .spacer-extrasmall {
 	width:100%;
-	height:10px;
+	height:1em;
 }
 
 .basic-page .basic-page-body .col-container {
@@ -697,9 +697,10 @@ General
 	color:#153e5c;
 	font-size: 10em;
 	font-weight: 500;
-	padding: 75px 40px;
+	padding: 10px 60px;
 	border: solid 5px #153e5c;
 	text-align: center;
+	line-height: 1em;
 }
 
 .basic-page .body {
@@ -806,7 +807,7 @@ General
 	color: inherit;
 	padding:5px 25px;
 	width: 100px;
-	background-color:#d9534f;
+	background-color:#fec502;
 	border-radius:10px;
 	text-align: center;
 }
@@ -827,7 +828,7 @@ General
 
 .basic-page .body .section .wrapper div.myButton:hover {
 	text-decoration: none;
-	background-color:#c9302c;
+	background-color:#e69400;
 	cursor: pointer;
 }
 
@@ -847,6 +848,23 @@ General
 	background-color: rgba(255, 80, 80, .5);
 }
 
+.basic-page .body .contentIn {
+    border: solid 1px black;
+	border-radius:10px;
+}
+
+.basic-page .body .contentIn .trigger {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#HQ_page .basic-page .body .contentIn .trigger p {
+    margin-bottom: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
 .basic-page .trigger:hover {
 	cursor: pointer;
 }
@@ -858,6 +876,32 @@ General
 .basic-page .body .dropdown.border {
 	padding:15px 25px;
 	border:solid 1px black;
+}
+
+.basic-page .body .plus {
+	width:30px;
+	height:30px;
+	position:relative;
+}
+
+.basic-page .body .plus div {
+	width:100%;
+	height:20%;
+	background-color:black;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	border-radius:10px;
+	-webkit-transition-property: transform; /* Safari */
+    -webkit-transition-duration: .5s; /* Safari */
+    transition-property: transform;
+    transition-duration: .5s;
+}
+
+.basic-page .body .plus .active {
+	transform-origin: 50% 50%;
+	transform: translate(-50%, -50%) rotate(270deg);
 }
 
 /*////////////////////////////////////////////////////////////////////////////
