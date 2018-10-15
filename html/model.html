@@ -167,7 +167,7 @@
 	<div class="basic-page">
 		<div class='header'>
 			<img src='http://2018.igem.org/wiki/images/e/e9/T--Purdue--genericDNAHome.jpg'/>
-			<div class='title'>Human Practices</div>
+			<div class='title'>Model</div>
 		</div>
 		<div class='body alternate'>
 			<div class="section">
@@ -182,8 +182,53 @@
 					<p>The reaction that we are trying to optimize is shown below. Each half of our split protein is attached to a part of horseradish peroxidase (HRP). The halves of our protein form a complex with the biomarker. This brings the two parts of split HRP (sHRP) closer together and primed to reconstitute. After sHRP is reconstituted, it is functional and oxidizes tetramethyl benzidine with hydrogen peroxide to form a blue product for our colorimetric output.</p>
 					<img class="center" src="../photos/diagramwconstants.png"/>
 					<p>The reaction between the two halves of the protein complex and the biomarker, tyrosol/farnesol, were modeled as following two-step mass action kinetics (the biomarker first binds with on half to form a complex and then the complex binds with the other half). We assumed that once both halves of the protein bound together and formed a complex, the reconstitution of the split-HRP was instantaneous. Or in other words, the formation of the protein complex was the rate limiting step. The reconstituted HRP then oxidizes TMB into a blue compound for our colorimetric response. The reconstituted HRP was modeled as following Michaelis Menten kinetics.</p>
-					<p>The initial values for the parameters are listed in the table below along with their relative sources.</p>
-
+					<p>The initial values for the parameters are listed in the table below.</p>
+					<table class="table problemBorder" style="margin-bottom: 0">
+						<thead>
+							<tr>
+								<th>Constant</th>
+								<th>Value</th>
+								<th>Source</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Kd1</td>
+								<td>0.2 nM</td>
+								<td><a class="ref-link" href="#">[1]</a></td>
+							</tr>
+							<tr>
+								<td>Kd2</td>
+								<td>26 &micro;M</td>
+								<td><a class="ref-link" href="#">[1]</a></td>
+							</tr>
+							<tr>
+								<td>Kd3</td>
+								<td>12 nM</td>
+								<td><a class="ref-link" href="#">[1]</a></td>
+							</tr>
+							<tr>
+								<td>Kd1</td>
+								<td>100 fM</td>
+								<td><a class="ref-link" href="#">[1]</a></td>
+							</tr>
+							<tr>
+								<td>Kd (avg)</td>
+								<td>6.5 &micro;M</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>k_cat</td>
+								<td>435</td>
+								<td><a class="ref-link" href="#">[2]</a>
+							</tr>
+							<tr>
+								<td>Km</td>
+								<td>90 &micro;M</td>
+								<td><a class="ref-link" href="#">[2]</a>
+							</tr>
+						</tbody>
+					</table>
 					<p>The dissociation constants from the FRB, FKBP, and rapamycin reaction were used for the split protein reconstitution kinetics because of their similar interactions compared to our product.</p>
 					<p>The dissociation constants were then averaged to simplify our analysis later. It was determined that using the real dissociation constants versus using the average of them had very little effect on the color output over time graph. In the figure below, a simulation of the reaction was run with the real and averaged dissociation constants:</p>
 					<img class="center" src="../photos/realvsaveraged.png"/>
@@ -195,7 +240,7 @@
 					<h1>Protein Concentrations</h1>
 					<p>In modeling methods we wanted to implement in the future to better characterize our product, we would need to determine certain reaction constants which relies on known reagent concentrations, including protein concentrations. Since poly-histidine tags were not included in our genetic construct and comparing the colorimetric output between our sHRP and wild type HRP was not viable (since the difference in output could be attributed to different concentrations or activity levels), we had to figure out a different way to determine our protein concentrations once we lysed the cell.</p>
 					<p>Our model offered us one solution. It was observed in simulations of the reaction at fixed protein concentrations but varying biomarker concentrations, that the concentration of reconstituted sHRP at equilibrium was the greatest (around 80% of initial split protein concentration) when the protein halves and biomarker concentration were the same.</p>
-
+					<img class="center" src="../photos/reconstVSrap.png"/>
 					<p>This was an important observation to make because it allows us to “titrate” our lysate to determine the protein concentration.</p>
 				</div>
 			</div>
@@ -203,7 +248,7 @@
 				<div class="wrapper">
 					<h1>Sensitivity Analysis</h1>
 					<p>In our sensitivity analysis, we adjusted four parameters, the dissociation constant (averaged), the Michaelis Menten constants for split-HRP (k_cat and k_m), and the protein concentration. The purpose of the sensitivity analysis was to determine which of these parameters affected the time in which all the TMB was reacted the greatest. Each parameter except one was held constant at the initial values listed in the table above. The varied parameter was swept across 7 orders of magnitude in either direction.</p>
-
+					<img class="center" src="../photos/sensitivityAnalysis.png"/>
 					<p>We can see clearly that protein concentration and k_cat affect the time that it takes TMB to fully react the greatest, changing it by around 15 and 10 orders of magnitude respectively. Each lower the time considerably as they increase. K_m and k_d on the other hand don’t change the time as much or only do once they wander out of the domain of possible values.</p>
 					<p>In conclusion, according to our sensitivity analysis, it seems it would be crucial to determine our sHRP’s k_cat value and adjust our protein concentrations in order to meet our time constraint.</p>
 				</div>
@@ -216,9 +261,20 @@
 			</div>
 			<div class="section">
 				<div class="wrapper">
+					<h1>Reciever Operating Characteristic (ROC)</h1>
 					<p>The ROC is an important property of diagnostic tests in industry, plotting the true positive rate (sensitivity) over the false-positive rate (1 – specificity). The integral of this curve gives you the accuracy of your diagnostic test.</p>
 					<p>Whilst waiting for our wet lab crew to construct the actual protein construct, we were able to model its behavior and develop a plausible ROC for our product using the protein concentration estimation method described above.</p>
 
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>References</h1>
+					<ol class="references">
+						<li>Banaszynski, L. A., Liu, C. W., & Wandless, T. J. (2005). Characterization of the FKBP·Rapamycin·FRB Ternary Complex. J. Am. Chem. Soc. 127(13), p. 4721.</li>
+						<li>Brenda:<a>https://www.brenda-enzymes.org/enzyme.php?ecno=1.11.1.7</a></li>
+					</ol>
+					<div class="spacer-small"></div>
 				</div>
 			</div>
 		</div>
