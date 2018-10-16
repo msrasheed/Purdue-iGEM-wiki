@@ -1,0 +1,1934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+  <script src="../bootstrap/jquery.min.js"></script>
+  <script src="../bootstrap/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="../css/StyleSheetProto.css">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="../js/notebookJQ.js"></script>
+  <script src="../js/general.js"></script>
+  <script src="../js/slideshowJQ.js"></script>
+  <script src='../js/navBtnsJQ.js'></script>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-inverse menu">
+	 	<div class="menu-container">
+			<!-- <div class="navbar-header"> -->
+				<div class="menu-logo-container">
+					<a href="http://2018.igem.org/Team:Purdue">
+						<img src="../photos/logo_cropped.png">
+					</a>
+				</div>
+	    	<!-- </div> -->
+	    	<div class="container menu-items">
+		    	<ul class="nav navbar-nav">
+		      		<li class="dropdown">
+		      			<a href="#">Team
+		      				<span class="caret"></span></a>
+		      			<ul class="dropdown-menu">
+		      				<li><a href="#">Team Members</a></li>
+		      				<li><a href="#">Collaborations</a></li>
+						</ul>
+		      		</li>
+					<li class="dropdown">
+						<a href="#">Project
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Description">Description</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Design">Design</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Experiments">Experiments</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Notebook">Notebook</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/InterLab">InterLab</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Demonstrate">Demonstrate</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Improve">Improve</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Attributions">Attributions</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#">Parts
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Parts">Parts Overview</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Basic_Part">Basic Parts</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Composite_Part">Composite Parts</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Part_Collection">Part Collection</a></li>
+						</ul>
+					</li>
+					<li><a href="http://2018.igem.org/Team:Purdue/Safety">Safety</a></li>
+					<li class="dropdown">
+						<a href="#">Human Practices
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Human_Practices">Human Practices</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Public_Engagement">Education &amp; Engagement</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#">Awards
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Applied_Design">Applied Design</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Entrepreneurship">Entrepreneurship</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Hardware">Hardware</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Measurement">Measurement</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Plant">Plant</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Software">Software</a></li>
+						</ul>
+					</li>
+					<li><a href="http://igem.org/2018_Judging_Form?team=Purdue">Judging Form</a></li>
+		    	</ul>
+	    	</div>
+	    	<div class="menu-hamburger">
+	    		<a href='#'>
+	    		<div></div>
+	    		<div></div>
+	    		<div></div>
+	    		</a>
+	    	</div>
+	 	</div>
+	</nav>
+
+	<!-- <div class="basic-page"> -->
+	<div class="nav-menu-side">
+		<ul>
+      		<li class="dropdown-side">
+      			<a href="#">Team
+      				<span class="caret"></span></a></li>
+  			<ul class="dropdown-menu-side">
+  				<li><a href="#">Team Members</a></li>
+  				<li><a href="#">Collaborations</a></li>
+			</ul>
+			<li class="dropdown-side">
+				<a href="#">Project
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Description">Description</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Design">Design</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Experiments">Experiments</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Notebook">Notebook</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/InterLab">InterLab</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Demonstrate">Demonstrate</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Improve">Improve</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Attributions">Attributions</a></li>
+			</ul>
+			<li class="dropdown-side">
+				<a href="#">Parts
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Parts">Parts Overview</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Basic_Part">Basic Parts</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Composite_Part">Composite Parts</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Part_Collection">Part Collection</a></li>
+			</ul>
+			<li><a href="http://2018.igem.org/Team:Purdue/Safety">Safety</a></li>
+			<li class="dropdown-side">
+				<a href="#">Human Practices
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Human_Practices">Human Practices</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Public_Engagement">Education &amp; Engagement</a></li>
+			</ul>
+			<li class="dropdown-side">
+				<a href="#">Awards
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Applied_Design">Applied Design</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Entrepreneurship">Entrepreneurship</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Hardware">Hardware</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Measurement">Measurement</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Plant">Plant</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Software">Software</a></li>
+			</ul>
+			<li><a href="http://igem.org/2018_Judging_Form?team=Purdue">Judging Form</a></li>
+    	</ul>
+	</div>
+</body>
+</html>
+
+<html>
+<script src="../js/dropdownJQ.js"></script>
+<body>
+	<div class="basic-page">
+		<div class='header'>
+			<img src='http://2018.igem.org/wiki/images/e/e9/T--Purdue--genericDNAHome.jpg'/>
+			<div class='title'>Interlab</div>
+		</div>
+		<div class='body alternate'>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Introduction</h1>
+					<p>The iGEM InterLab Measurement Study is designed around the idea of developing a way to standardize measurement of fluorescence among several synthetic biology labs across the world. By completing the 2018 iGEM InterLab Study, Purdue iGEM is a part of an entire international force that has combined to continue that goal. This year’s interlab study involves reducing variability of fluorescent measurements by using colony-forming units (CFUs) rather than using optical density (OD).</p>
+					<h2>Characteristics of the FlexStation 3</h2>
+					<img class="center" style="width:80%;" src="http://2018.igem.org/wiki/images/9/92/T--Purdue--96wellplate.jpg"/>
+					<div class="spacer-small"></div>
+					<p>The plate reader used for Purdue iGEM’s InterLab Study was the Molecular Devices FlexStation 3. This modeluses top optics to read both absorbance and fluorescence. The device includes a pathlength correction ability, but it was disabled for conducting the InterLab Study. The device also has the ability to adjust the temperature before the plate is read, but all plate readings were conducted at room temperature. When measuring fluorescence, a filter with a 530nm/ 30nm bandpass, 25nm bandpass width, 485nm excitation, and 525nm emission was used. Black 96 well plates with transparent, flat bottoms were used for each of the measurements.</p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Calibrations</h1>
+					<div class="myButton medium" href="http://2018.igem.org/Team:Purdue/Survey" style="width:440px;">See iGEM 2018 InterLab Study Protocol</div>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Cell Measurement Protocol</h1>
+					<p>The cell measurement protocol was followed as defined in the iGEM 2018 InterLab Study Protocol with the exception of the Colony Forming Units per 0.1 OD600 E. Coli Cultures Step 2: Dilution Series protocol. Instead of using 2mL microcentrifuge tubes, only 1.5mL tubes were used. Therefore, all volumes used in the serial dilution were halved. However, 100uL of dilutions 3, 4, and 5 were still used for plating as described in the protocol.</p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Results</h1>
+					<h2>OD 600 Reference Point</h2>
+					<img class="center" style="width:80%;" src="http://2018.igem.org/wiki/images/f/f4/T--Purdue--od600referencepoint.png"/>
+					<div class="spacer-small"></div>
+					<h2>Particle Standard Curve</h2>
+					<img class="center" src="http://2018.igem.org/wiki/images/d/d2/T--Purdue--particleStandardCurve.png"/>
+					<div class="spacer-small"></div>
+					<img class="center" src="http://2018.igem.org/wiki/images/2/2c/T--Purdue--particleStandardCurveLog.png"/>
+					<div class="spacer-small"></div>
+					<h2>Fluorescein Standard Curve</h2>
+					<img class="center" src="http://2018.igem.org/wiki/images/2/2e/T--Purdue--floureceinStandardCurve.png"/>
+					<div class="spacer-small"></div>
+					<img class="center" src="http://2018.igem.org/wiki/images/a/ae/T--Purdue--floureceinStandardCurveLog.png"/>
+					<div class="spacer-small"></div>
+					<h2>Raw Plate Reader Measurements</h2>
+					<div style="overflow-x: scroll;border:solid 1px black;">
+						<div style="padding:10px;">
+						<table class="table problemBorder">
+							<tbody>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl72 colspan=3 style='height:15.75pt;mso-ignore:colspan'>Fluorescence
+							  Raw Readings:</td>
+							  <td colspan=8 style='mso-ignore:colspan'></td>
+							  <td class=xl72 colspan=2 style='mso-ignore:colspan'>Abs600 Raw Readings:</td>
+							  <td colspan=9 style='mso-ignore:colspan'></td>
+							 </tr>
+							 <tr height=20 style='height:15.0pt'>
+							  <td height=20 class=xl73 style='height:15.0pt'>Hour 0:</td>
+							  <td>Neg. Contr<span style='display:none'>ol</span></td>
+							  <td>Pos. Contr<span style='display:none'>ol</span></td>
+							  <td>Device 1</td>
+							  <td>Device 2</td>
+							  <td>Device 3</td>
+							  <td>Device 4</td>
+							  <td>Device 5</td>
+							  <td>Device 6</td>
+							  <td colspan=2 style='mso-ignore:colspan'>LB + Chlor (blank)</td>
+							  <td class=xl73>Hour 0:</td>
+							  <td>Neg. Contr<span style='display:none'>ol</span></td>
+							  <td>Pos. Contr<span style='display:none'>ol</span></td>
+							  <td>Device 1</td>
+							  <td>Device 2</td>
+							  <td>Device 3</td>
+							  <td>Device 4</td>
+							  <td>Device 5</td>
+							  <td>Device 6</td>
+							  <td colspan=2 style='mso-ignore:colspan'>LB + Chlor (blank)</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 1, Replicate<span
+							  style='display:none'> 1</span></td>
+							  <td class=xl74>3.8675</td>
+							  <td class=xl74>78.0275</td>
+							  <td class=xl74>175.3375</td>
+							  <td class=xl74>96.3575</td>
+							  <td class=xl74>-6.7025</td>
+							  <td class=xl74>219.2175</td>
+							  <td class=xl74>121.7075</td>
+							  <td class=xl74>40.9775</td>
+							  <td class=xl74>0.3275</td>
+							  <td></td>
+							  <td>Colony 1, Replicate<span style='display:none'> 1</span></td>
+							  <td class=xl74>0.01725</td>
+							  <td class=xl74>0.02625</td>
+							  <td class=xl74>0.01625</td>
+							  <td class=xl74>0.01625</td>
+							  <td class=xl74>0.01725</td>
+							  <td class=xl74>0.01425</td>
+							  <td class=xl74>0.01125</td>
+							  <td class=xl74>0.01525</td>
+							  <td class=xl74>0.00025</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 1, Replicate<span
+							  style='display:none'> 2</span></td>
+							  <td class=xl74>6.8075</td>
+							  <td class=xl74>69.7375</td>
+							  <td class=xl74>156.0075</td>
+							  <td class=xl74>135.6975</td>
+							  <td class=xl74>-6.5625</td>
+							  <td class=xl74>219.7075</td>
+							  <td class=xl74>111.1175</td>
+							  <td class=xl74>40.6875</td>
+							  <td class=xl74>-2.6225</td>
+							  <td></td>
+							  <td>Colony 1, Replicate<span style='display:none'> 2</span></td>
+							  <td class=xl74>0.01525</td>
+							  <td class=xl74>0.01425</td>
+							  <td class=xl74>0.01325</td>
+							  <td class=xl74>0.01425</td>
+							  <td class=xl74>0.01925</td>
+							  <td class=xl74>0.01525</td>
+							  <td class=xl74>0.01025</td>
+							  <td class=xl74>0.01625</td>
+							  <td class=xl74>0.00025</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 1, Replicate<span
+							  style='display:none'> 3</span></td>
+							  <td class=xl74>4.4175</td>
+							  <td class=xl74>72.8675</td>
+							  <td class=xl74>144.2075</td>
+							  <td class=xl74>84.0775</td>
+							  <td class=xl74>-12.0925</td>
+							  <td class=xl74>226.2175</td>
+							  <td class=xl74>96.2175</td>
+							  <td class=xl74>37.1075</td>
+							  <td class=xl74>1.2675</td>
+							  <td></td>
+							  <td>Colony 1, Replicate<span style='display:none'> 3</span></td>
+							  <td class=xl74>0.01425</td>
+							  <td class=xl74>0.01325</td>
+							  <td class=xl74>0.01125</td>
+							  <td class=xl74>0.01725</td>
+							  <td class=xl74>0.01425</td>
+							  <td class=xl74>0.01625</td>
+							  <td class=xl74>0.00925</td>
+							  <td class=xl74>0.01325</td>
+							  <td class=xl74>0.00225</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 1, Replicate<span
+							  style='display:none'> 4</span></td>
+							  <td class=xl74>5.3375</td>
+							  <td class=xl74>77.6475</td>
+							  <td class=xl74>190.9275</td>
+							  <td class=xl74>88.1575</td>
+							  <td class=xl74>-6.1825</td>
+							  <td class=xl74>253.0975</td>
+							  <td class=xl74>95.0875</td>
+							  <td class=xl74>41.6775</td>
+							  <td class=xl74>1.9975</td>
+							  <td></td>
+							  <td>Colony 1, Replicate<span style='display:none'> 4</span></td>
+							  <td class=xl74>0.01625</td>
+							  <td class=xl74>0.01425</td>
+							  <td class=xl74>0.01425</td>
+							  <td class=xl74>0.01525</td>
+							  <td class=xl74>0.01525</td>
+							  <td class=xl74>0.04225</td>
+							  <td class=xl74>0.01025</td>
+							  <td class=xl74>0.01425</td>
+							  <td class=xl74>-0.00075</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 2, Replicate<span
+							  style='display:none'> 1</span></td>
+							  <td class=xl74>5.7075</td>
+							  <td class=xl74>57.0875</td>
+							  <td class=xl74>166.5475</td>
+							  <td class=xl74>120.5275</td>
+							  <td class=xl74>-0.8325</td>
+							  <td class=xl74>209.8475</td>
+							  <td class=xl74>124.3075</td>
+							  <td class=xl74>23.2075</td>
+							  <td class=xl74>-0.7125</td>
+							  <td></td>
+							  <td>Colony 2, Replicate<span style='display:none'> 1</span></td>
+							  <td class=xl74>0.01425</td>
+							  <td class=xl74>0.01425</td>
+							  <td class=xl74>0.01925</td>
+							  <td class=xl74>0.01525</td>
+							  <td class=xl74>0.01725</td>
+							  <td class=xl74>0.01325</td>
+							  <td class=xl74>0.01225</td>
+							  <td class=xl74>0.00825</td>
+							  <td class=xl74>0.00025</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 2, Replicate<span
+							  style='display:none'> 2</span></td>
+							  <td class=xl74>6.4375</td>
+							  <td class=xl74>64.7975</td>
+							  <td class=xl74>123.7975</td>
+							  <td class=xl74>115.4075</td>
+							  <td class=xl74>-2.1425</td>
+							  <td class=xl74>158.4275</td>
+							  <td class=xl74>107.7175</td>
+							  <td class=xl74>23.7275</td>
+							  <td class=xl74>-2.2425</td>
+							  <td></td>
+							  <td>Colony 2, Replicate<span style='display:none'> 2</span></td>
+							  <td class=xl74>0.02525</td>
+							  <td class=xl74>0.02025</td>
+							  <td class=xl74>0.01125</td>
+							  <td class=xl74>0.01525</td>
+							  <td class=xl74>0.01425</td>
+							  <td class=xl74>0.06025</td>
+							  <td class=xl74>0.01025</td>
+							  <td class=xl74>0.01525</td>
+							  <td class=xl74>-0.00075</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 2, Replicate<span
+							  style='display:none'> 3</span></td>
+							  <td class=xl74>0.0075</td>
+							  <td class=xl74>54.7275</td>
+							  <td class=xl74>167.3475</td>
+							  <td class=xl74>127.5475</td>
+							  <td class=xl74>-3.5425</td>
+							  <td class=xl74>173.3975</td>
+							  <td class=xl74>102.6375</td>
+							  <td class=xl74>19.4575</td>
+							  <td class=xl74>2.2475</td>
+							  <td></td>
+							  <td>Colony 2, Replicate<span style='display:none'> 3</span></td>
+							  <td class=xl74>0.01525</td>
+							  <td class=xl74>0.01925</td>
+							  <td class=xl74>0.03825</td>
+							  <td class=xl74>0.01425</td>
+							  <td class=xl74>0.01425</td>
+							  <td class=xl74>0.01225</td>
+							  <td class=xl74>0.01025</td>
+							  <td class=xl74>0.01325</td>
+							  <td class=xl74>-0.00075</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 2, Replicate<span
+							  style='display:none'> 4</span></td>
+							  <td class=xl74>9.7775</td>
+							  <td class=xl74>64.9275</td>
+							  <td class=xl74>125.1075</td>
+							  <td class=xl74>139.2775</td>
+							  <td class=xl74>-12.9025</td>
+							  <td class=xl74>175.6275</td>
+							  <td class=xl74>129.8875</td>
+							  <td class=xl74>20.2475</td>
+							  <td class=xl74>-0.2625</td>
+							  <td></td>
+							  <td>Colony 2, Replicate<span style='display:none'> 4</span></td>
+							  <td class=xl74>0.01225</td>
+							  <td class=xl74>0.01325</td>
+							  <td class=xl74>0.00825</td>
+							  <td class=xl74>0.01625</td>
+							  <td class=xl74>0.01525</td>
+							  <td class=xl74>0.01025</td>
+							  <td class=xl74>0.01225</td>
+							  <td class=xl74>0.01425</td>
+							  <td class=xl74>-0.00075</td>
+							 </tr>
+							 <tr height=20 style='height:15.0pt'>
+							  <td height=20 colspan=22 style='height:15.0pt;mso-ignore:colspan'></td>
+							 </tr>
+							 <tr height=20 style='height:15.0pt'>
+							  <td height=20 class=xl73 style='height:15.0pt'>Hour 6:</td>
+							  <td>Neg. Contr<span style='display:none'>ol</span></td>
+							  <td>Pos. Contr<span style='display:none'>ol</span></td>
+							  <td>Device 1</td>
+							  <td>Device 2</td>
+							  <td>Device 3</td>
+							  <td>Device 4</td>
+							  <td>Device 5</td>
+							  <td>Device 6</td>
+							  <td colspan=2 style='mso-ignore:colspan'>LB + Chlor (blank)</td>
+							  <td class=xl73>Hour 6:</td>
+							  <td>Neg. Contr<span style='display:none'>ol</span></td>
+							  <td>Pos. Contr<span style='display:none'>ol</span></td>
+							  <td>Device 1</td>
+							  <td>Device 2</td>
+							  <td>Device 3</td>
+							  <td>Device 4</td>
+							  <td>Device 5</td>
+							  <td>Device 6</td>
+							  <td colspan=2 style='mso-ignore:colspan'>LB + Chlor (blank)</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 1, Replicate<span
+							  style='display:none'> 1</span></td>
+							  <td class=xl74>45.4775</td>
+							  <td class=xl74>1983.898</td>
+							  <td class=xl74>363.8275</td>
+							  <td class=xl74>2256.998</td>
+							  <td class=xl74>53.5275</td>
+							  <td class=xl74>686.8375</td>
+							  <td class=xl74>194.1975</td>
+							  <td class=xl74>544.8175</td>
+							  <td class=xl74>9.6475</td>
+							  <td></td>
+							  <td>Colony 1, Replicate<span style='display:none'> 1</span></td>
+							  <td class=xl74>0.43375</td>
+							  <td class=xl74>0.31375</td>
+							  <td class=xl74>0.01975</td>
+							  <td class=xl74>0.43775</td>
+							  <td class=xl74>0.40375</td>
+							  <td class=xl74>0.02575</td>
+							  <td class=xl74>0.02375</td>
+							  <td class=xl74>0.31775</td>
+							  <td class=xl74>-0.00025</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 1, Replicate<span
+							  style='display:none'> 2</span></td>
+							  <td class=xl74>27.2675</td>
+							  <td class=xl74>1958.998</td>
+							  <td class=xl74>377.7875</td>
+							  <td class=xl74>2168.898</td>
+							  <td class=xl74>44.9875</td>
+							  <td class=xl74>745.2175</td>
+							  <td class=xl74>191.4975</td>
+							  <td class=xl74>555.6675</td>
+							  <td class=xl74>-11.3325</td>
+							  <td></td>
+							  <td>Colony 1, Replicate<span style='display:none'> 2</span></td>
+							  <td class=xl74>0.39775</td>
+							  <td class=xl74>0.25675</td>
+							  <td class=xl74>0.01675</td>
+							  <td class=xl74>0.44275</td>
+							  <td class=xl74>0.40175</td>
+							  <td class=xl74>0.02775</td>
+							  <td class=xl74>0.01175</td>
+							  <td class=xl74>0.30675</td>
+							  <td class=xl74>0.00275</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 1, Replicate<span
+							  style='display:none'> 3</span></td>
+							  <td class=xl74>38.7975</td>
+							  <td class=xl74>2054.698</td>
+							  <td class=xl74>328.0475</td>
+							  <td class=xl74>1760.998</td>
+							  <td class=xl74>25.6075</td>
+							  <td class=xl74>760.1675</td>
+							  <td class=xl74>181.9875</td>
+							  <td class=xl74>543.6175</td>
+							  <td class=xl74>-7.6925</td>
+							  <td></td>
+							  <td>Colony 1, Replicate<span style='display:none'> 3</span></td>
+							  <td class=xl74>0.42175</td>
+							  <td class=xl74>0.27375</td>
+							  <td class=xl74>0.01575</td>
+							  <td class=xl74>0.32275</td>
+							  <td class=xl74>0.31675</td>
+							  <td class=xl74>0.02975</td>
+							  <td class=xl74>0.01575</td>
+							  <td class=xl74>0.31175</td>
+							  <td class=xl74>0.00375</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 1, Replicate<span
+							  style='display:none'> 4</span></td>
+							  <td class=xl74>40.4975</td>
+							  <td class=xl74>2051.698</td>
+							  <td class=xl74>308.0075</td>
+							  <td class=xl74>2095.498</td>
+							  <td class=xl74>46.1175</td>
+							  <td class=xl74>743.3175</td>
+							  <td class=xl74>228.3375</td>
+							  <td class=xl74>667.3075</td>
+							  <td class=xl74>-5.8425</td>
+							  <td></td>
+							  <td>Colony 1, Replicate<span style='display:none'> 4</span></td>
+							  <td class=xl74>0.41375</td>
+							  <td class=xl74>0.25475</td>
+							  <td class=xl74>0.01475</td>
+							  <td class=xl74>0.38975</td>
+							  <td class=xl74>0.39675</td>
+							  <td class=xl74>0.02975</td>
+							  <td class=xl74>0.01675</td>
+							  <td class=xl74>0.35375</td>
+							  <td class=xl74>0.00975</td>
+							 </tr>
+							 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 2, Replicate<span
+							  style='display:none'> 1</span></td>
+							  <td class=xl74>46.5475</td>
+							  <td class=xl74>1235.198</td>
+							  <td class=xl74>240.2175</td>
+							  <td class=xl74>2156.898</td>
+							  <td class=xl74>65.5375</td>
+							  <td class=xl74>387.5275</td>
+							  <td class=xl74>362.6575</td>
+							  <td class=xl74>673.0775</td>
+							  <td class=xl74>-2.2225</td>
+							  <td></td>
+							  <td>Colony 2, Replicate<span style='display:none'> 1</span></td>
+							  <td class=xl74>0.43075</td>
+							  <td class=xl74>0.35175</td>
+							  <td class=xl74>0.00975</td>
+							  <td class=xl74>0.34775</td>
+							  <td class=xl74>0.45275</td>
+							  <td class=xl74>0.01975</td>
+							  <td class=xl74>0.02575</td>
+							  <td class=xl74>0.35775</td>
+							  <td class=xl74>-0.00325</td>
+							 </tr>
+							 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 2, Replicate<span
+							  style='display:none'> 2</span></td>
+							  <td class=xl74>43.6975</td>
+							  <td class=xl74>1510.898</td>
+							  <td class=xl74>309.5175</td>
+							  <td class=xl74>2124.598</td>
+							  <td class=xl74>60.9975</td>
+							  <td class=xl74>407.4775</td>
+							  <td class=xl74>453.4975</td>
+							  <td class=xl74>853.0275</td>
+							  <td class=xl74>9.4875</td>
+							  <td></td>
+							  <td>Colony 2, Replicate<span style='display:none'> 2</span></td>
+							  <td class=xl74>0.48375</td>
+							  <td class=xl74>0.32875</td>
+							  <td class=xl74>0.01275</td>
+							  <td class=xl74>0.44775</td>
+							  <td class=xl74>0.49475</td>
+							  <td class=xl74>0.01275</td>
+							  <td class=xl74>0.02975</td>
+							  <td class=xl74>0.47075</td>
+							  <td class=xl74>-0.00325</td>
+							 </tr>
+							 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 2, Replicate<span
+							  style='display:none'> 3</span></td>
+							  <td class=xl74>38.0875</td>
+							  <td class=xl74>1617.498</td>
+							  <td class=xl74>302.7175</td>
+							  <td class=xl74>2604.498</td>
+							  <td class=xl74>59.4275</td>
+							  <td class=xl74>384.8775</td>
+							  <td class=xl74>406.2575</td>
+							  <td class=xl74>856.5075</td>
+							  <td class=xl74>5.8775</td>
+							  <td></td>
+							  <td>Colony 2, Replicate<span style='display:none'> 3</span></td>
+							  <td class=xl74>0.47375</td>
+							  <td class=xl74>0.41975</td>
+							  <td class=xl74>0.01275</td>
+							  <td class=xl74>0.41275</td>
+							  <td class=xl74>0.47875</td>
+							  <td class=xl74>0.01275</td>
+							  <td class=xl74>0.02875</td>
+							  <td class=xl74>0.46675</td>
+							  <td class=xl74>-0.00425</td>
+							 </tr>
+							 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+							  <td height=21 style='height:15.75pt'>Colony 2, Replicate<span
+							  style='display:none'> 4</span></td>
+							  <td class=xl74>53.5775</td>
+							  <td class=xl74>1604.198</td>
+							  <td class=xl74>258.8175</td>
+							  <td class=xl74>2834.498</td>
+							  <td class=xl74>51.4375</td>
+							  <td class=xl74>354.0175</td>
+							  <td class=xl74>452.7775</td>
+							  <td class=xl74>907.7975</td>
+							  <td class=xl74>2.0775</td>
+							  <td></td>
+							  <td>Colony 2, Replicate<span style='display:none'> 4</span></td>
+							  <td class=xl74>0.46875</td>
+							  <td class=xl74>0.42675</td>
+							  <td class=xl74>0.01175</td>
+							  <td class=xl74>0.45075</td>
+							  <td class=xl74>0.48275</td>
+							  <td class=xl74>0.01275</td>
+							  <td class=xl74>0.02775</td>
+							  <td class=xl74>0.43675</td>
+							  <td class=xl74>-0.00525</td>
+							 </tr>
+							</tbody>	
+						</table>
+						</div>
+					</div>
+					<div class="spacer-small"></div>
+					<h2>Flourescense per OD</h2>
+					<div style="overflow-x: scroll;border:solid 1px black;">
+						<div style="padding:10px;">
+					<table class="table problemBorder">
+						 <tr height=21 style='height:15.75pt'>
+						  <td height=21 class=xl72 style='height:15.75pt'>&micro;M Fluorescein / OD</td>
+						  <td colspan=9 style='mso-ignore:colspan'></td>
+						  <td class=xl72 colspan=3 style='mso-ignore:colspan'>Net Fluorescein a.u.</td>
+						  <td colspan=6 style='mso-ignore:colspan'></td>
+						  <td class=xl73 colspan=2 style='mso-ignore:colspan'>Net Abs 600</td>
+						  <td colspan=6 style='mso-ignore:colspan'></td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl73 style='height:15.0pt'>Hour 0:</td>
+						  <td>Neg. Contr<span style='display:none'>ol</span></td>
+						  <td>Pos. Contr<span style='display:none'>ol</span></td>
+						  <td>Device 1</td>
+						  <td>Device 2</td>
+						  <td>Device 3</td>
+						  <td>Device 4</td>
+						  <td>Device 5</td>
+						  <td>Device 6</td>
+						  <td></td>
+						  <td>Neg. Contr<span style='display:none'>ol</span></td>
+						  <td>Pos. Contr<span style='display:none'>ol</span></td>
+						  <td>Device 1</td>
+						  <td>Device 2</td>
+						  <td>Device 3</td>
+						  <td>Device 4</td>
+						  <td>Device 5</td>
+						  <td>Device 6</td>
+						  <td></td>
+						  <td>Neg. Contr<span style='display:none'>ol</span></td>
+						  <td>Pos. Contr<span style='display:none'>ol</span></td>
+						  <td>Device 1</td>
+						  <td>Device 2</td>
+						  <td>Device 3</td>
+						  <td>Device 4</td>
+						  <td>Device 5</td>
+						  <td>Device 6</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 1, Replicate 1</td>
+						  <td class=xl67 align=right>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.242</td>
+						  <td class=xl67 align=right style='border-left:none'>0.884</td>
+						  <td class=xl67 align=right style='border-left:none'>0.485</td>
+						  <td class=xl67 align=right style='border-left:none'>-0.033</td>
+						  <td class=xl67 align=right style='border-left:none'>1.264</td>
+						  <td class=xl67 align=right style='border-left:none'>0.892</td>
+						  <td class=xl67 align=right style='border-left:none'>0.219</td>
+						  <td></td>
+						  <td class=xl76 align=right>3.54</td>
+						  <td class=xl76 align=right style='border-left:none'>77.70</td>
+						  <td class=xl76 align=right style='border-left:none'>175.01</td>
+						  <td class=xl76 align=right style='border-left:none'>96.03</td>
+						  <td class=xl76 align=right style='border-left:none'>-7.03</td>
+						  <td class=xl76 align=right style='border-left:none'>218.89</td>
+						  <td class=xl76 align=right style='border-left:none'>121.38</td>
+						  <td class=xl76 align=right style='border-left:none'>40.65</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.026</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 1, Replicate 2</td>
+						  <td class=xl67 align=right>0.051</td>
+						  <td class=xl67 align=right style='border-left:none'>0.418</td>
+						  <td class=xl67 align=right style='border-left:none'>0.986</td>
+						  <td class=xl67 align=right style='border-left:none'>0.798</td>
+						  <td class=xl67 align=right style='border-left:none'>-0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>1.198</td>
+						  <td class=xl67 align=right style='border-left:none'>0.919</td>
+						  <td class=xl67 align=right style='border-left:none'>0.219</td>
+						  <td></td>
+						  <td class=xl76 align=right>9.43</td>
+						  <td class=xl76 align=right style='border-left:none'>72.36</td>
+						  <td class=xl76 align=right style='border-left:none'>158.63</td>
+						  <td class=xl76 align=right style='border-left:none'>138.32</td>
+						  <td class=xl76 align=right style='border-left:none'>-3.94</td>
+						  <td class=xl76 align=right style='border-left:none'>222.33</td>
+						  <td class=xl76 align=right style='border-left:none'>113.74</td>
+						  <td class=xl76 align=right style='border-left:none'>43.31</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.013</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.019</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.010</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 1, Replicate 3</td>
+						  <td class=xl67 align=right>0.021</td>
+						  <td class=xl67 align=right style='border-left:none'>0.526</td>
+						  <td class=xl67 align=right style='border-left:none'>1.284</td>
+						  <td class=xl67 align=right style='border-left:none'>0.446</td>
+						  <td class=xl67 align=right style='border-left:none'>-0.090</td>
+						  <td class=xl67 align=right style='border-left:none'>1.299</td>
+						  <td class=xl67 align=right style='border-left:none'>1.096</td>
+						  <td class=xl67 align=right style='border-left:none'>0.263</td>
+						  <td></td>
+						  <td class=xl76 align=right>3.15</td>
+						  <td class=xl76 align=right style='border-left:none'>71.60</td>
+						  <td class=xl76 align=right style='border-left:none'>142.94</td>
+						  <td class=xl76 align=right style='border-left:none'>82.81</td>
+						  <td class=xl76 align=right style='border-left:none'>-13.36</td>
+						  <td class=xl76 align=right style='border-left:none'>224.95</td>
+						  <td class=xl76 align=right style='border-left:none'>94.95</td>
+						  <td class=xl76 align=right style='border-left:none'>35.84</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.012</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>0.009</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.012</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.007</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 1, Replicate 4</td>
+						  <td class=xl67 align=right>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.408</td>
+						  <td class=xl67 align=right style='border-left:none'>1.018</td>
+						  <td class=xl67 align=right style='border-left:none'>0.435</td>
+						  <td class=xl67 align=right style='border-left:none'>-0.041</td>
+						  <td class=xl67 align=right style='border-left:none'>0.472</td>
+						  <td class=xl67 align=right style='border-left:none'>0.684</td>
+						  <td class=xl67 align=right style='border-left:none'>0.214</td>
+						  <td></td>
+						  <td class=xl76 align=right>3.34</td>
+						  <td class=xl76 align=right style='border-left:none'>75.65</td>
+						  <td class=xl76 align=right style='border-left:none'>188.93</td>
+						  <td class=xl76 align=right style='border-left:none'>86.16</td>
+						  <td class=xl76 align=right style='border-left:none'>-8.18</td>
+						  <td class=xl76 align=right style='border-left:none'>251.10</td>
+						  <td class=xl76 align=right style='border-left:none'>93.09</td>
+						  <td class=xl76 align=right style='border-left:none'>39.68</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.043</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 2, Replicate 1</td>
+						  <td class=xl67 align=right>0.037</td>
+						  <td class=xl67 align=right style='border-left:none'>0.334</td>
+						  <td class=xl67 align=right style='border-left:none'>0.711</td>
+						  <td class=xl67 align=right style='border-left:none'>0.653</td>
+						  <td class=xl67 align=right style='border-left:none'>-0.001</td>
+						  <td class=xl67 align=right style='border-left:none'>1.309</td>
+						  <td class=xl67 align=right style='border-left:none'>0.842</td>
+						  <td class=xl67 align=right style='border-left:none'>0.242</td>
+						  <td></td>
+						  <td class=xl76 align=right>6.42</td>
+						  <td class=xl76 align=right style='border-left:none'>57.80</td>
+						  <td class=xl76 align=right style='border-left:none'>167.26</td>
+						  <td class=xl76 align=right style='border-left:none'>121.24</td>
+						  <td class=xl76 align=right style='border-left:none'>-0.12</td>
+						  <td class=xl76 align=right style='border-left:none'>210.56</td>
+						  <td class=xl76 align=right style='border-left:none'>125.02</td>
+						  <td class=xl76 align=right style='border-left:none'>23.92</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.019</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.013</td>
+						  <td class=xl67 align=right style='border-left:none'>0.012</td>
+						  <td class=xl67 align=right style='border-left:none'>0.008</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 2, Replicate 2</td>
+						  <td class=xl67 align=right>0.027</td>
+						  <td class=xl67 align=right style='border-left:none'>0.258</td>
+						  <td class=xl67 align=right style='border-left:none'>0.849</td>
+						  <td class=xl67 align=right style='border-left:none'>0.594</td>
+						  <td class=xl67 align=right style='border-left:none'>0.001</td>
+						  <td class=xl67 align=right style='border-left:none'>0.213</td>
+						  <td class=xl67 align=right style='border-left:none'>0.808</td>
+						  <td class=xl67 align=right style='border-left:none'>0.131</td>
+						  <td></td>
+						  <td class=xl76 align=right>8.68</td>
+						  <td class=xl76 align=right style='border-left:none'>67.04</td>
+						  <td class=xl76 align=right style='border-left:none'>126.04</td>
+						  <td class=xl76 align=right style='border-left:none'>117.65</td>
+						  <td class=xl76 align=right style='border-left:none'>0.10</td>
+						  <td class=xl76 align=right style='border-left:none'>160.67</td>
+						  <td class=xl76 align=right style='border-left:none'>109.96</td>
+						  <td class=xl76 align=right style='border-left:none'>25.97</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.026</td>
+						  <td class=xl67 align=right style='border-left:none'>0.021</td>
+						  <td class=xl67 align=right style='border-left:none'>0.012</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.061</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 2, Replicate 3</td>
+						  <td class=xl67 align=right>-0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>0.212</td>
+						  <td class=xl67 align=right style='border-left:none'>0.342</td>
+						  <td class=xl67 align=right style='border-left:none'>0.675</td>
+						  <td class=xl67 align=right style='border-left:none'>-0.031</td>
+						  <td class=xl67 align=right style='border-left:none'>1.064</td>
+						  <td class=xl67 align=right style='border-left:none'>0.738</td>
+						  <td class=xl67 align=right style='border-left:none'>0.099</td>
+						  <td></td>
+						  <td class=xl76 align=right>-2.24</td>
+						  <td class=xl76 align=right style='border-left:none'>52.48</td>
+						  <td class=xl76 align=right style='border-left:none'>165.10</td>
+						  <td class=xl76 align=right style='border-left:none'>125.30</td>
+						  <td class=xl76 align=right style='border-left:none'>-5.79</td>
+						  <td class=xl76 align=right style='border-left:none'>171.15</td>
+						  <td class=xl76 align=right style='border-left:none'>100.39</td>
+						  <td class=xl76 align=right style='border-left:none'>17.21</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.020</td>
+						  <td class=xl67 align=right style='border-left:none'>0.039</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.013</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 2, Replicate 4</td>
+						  <td class=xl67 align=right>0.062</td>
+						  <td class=xl67 align=right style='border-left:none'>0.376</td>
+						  <td class=xl67 align=right style='border-left:none'>1.126</td>
+						  <td class=xl67 align=right style='border-left:none'>0.663</td>
+						  <td class=xl67 align=right style='border-left:none'>-0.064</td>
+						  <td class=xl67 align=right style='border-left:none'>1.292</td>
+						  <td class=xl67 align=right style='border-left:none'>0.809</td>
+						  <td class=xl67 align=right style='border-left:none'>0.111</td>
+						  <td></td>
+						  <td class=xl76 align=right>10.04</td>
+						  <td class=xl76 align=right style='border-left:none'>65.19</td>
+						  <td class=xl76 align=right style='border-left:none'>125.37</td>
+						  <td class=xl76 align=right style='border-left:none'>139.54</td>
+						  <td class=xl76 align=right style='border-left:none'>-12.64</td>
+						  <td class=xl76 align=right style='border-left:none'>175.89</td>
+						  <td class=xl76 align=right style='border-left:none'>130.15</td>
+						  <td class=xl76 align=right style='border-left:none'>20.51</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.013</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.009</td>
+						  <td class=xl67 align=right style='border-left:none'>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>0.013</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl73 style='height:15.0pt'>Hour 6:</td>
+						  <td class=xl79>Neg. Contr<span style='display:none'>ol</span></td>
+						  <td class=xl79>Pos. Contr<span style='display:none'>ol</span></td>
+						  <td class=xl79>Device 1</td>
+						  <td class=xl79>Device 2</td>
+						  <td class=xl79>Device 3</td>
+						  <td class=xl79>Device 4</td>
+						  <td class=xl79>Device 5</td>
+						  <td class=xl79>Device 6</td>
+						  <td></td>
+						  <td class=xl78>Neg. Contr<span style='display:none'>ol</span></td>
+						  <td class=xl78>Pos. Contr<span style='display:none'>ol</span></td>
+						  <td class=xl78>Device 1</td>
+						  <td class=xl78>Device 2</td>
+						  <td class=xl78>Device 3</td>
+						  <td class=xl78>Device 4</td>
+						  <td class=xl78>Device 5</td>
+						  <td class=xl78>Device 6</td>
+						  <td class=xl78></td>
+						  <td class=xl79>Neg. Contr<span style='display:none'>ol</span></td>
+						  <td class=xl79>Pos. Contr<span style='display:none'>ol</span></td>
+						  <td class=xl79>Device 1</td>
+						  <td class=xl79>Device 2</td>
+						  <td class=xl79>Device 3</td>
+						  <td class=xl79>Device 4</td>
+						  <td class=xl79>Device 5</td>
+						  <td class=xl79>Device 6</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 1, Replicate 1</td>
+						  <td class=xl67 align=right>0.007</td>
+						  <td class=xl67 align=right style='border-left:none'>0.508</td>
+						  <td class=xl67 align=right style='border-left:none'>1.431</td>
+						  <td class=xl67 align=right style='border-left:none'>0.415</td>
+						  <td class=xl67 align=right style='border-left:none'>0.009</td>
+						  <td class=xl67 align=right style='border-left:none'>2.105</td>
+						  <td class=xl67 align=right style='border-left:none'>0.621</td>
+						  <td class=xl67 align=right style='border-left:none'>0.136</td>
+						  <td></td>
+						  <td class=xl76 align=right>35.83</td>
+						  <td class=xl76 align=right style='border-left:none'>1974.25</td>
+						  <td class=xl76 align=right style='border-left:none'>354.18</td>
+						  <td class=xl76 align=right style='border-left:none'>2247.35</td>
+						  <td class=xl76 align=right style='border-left:none'>43.88</td>
+						  <td class=xl76 align=right style='border-left:none'>677.19</td>
+						  <td class=xl76 align=right style='border-left:none'>184.55</td>
+						  <td class=xl76 align=right style='border-left:none'>535.17</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.434</td>
+						  <td class=xl67 align=right style='border-left:none'>0.314</td>
+						  <td class=xl67 align=right style='border-left:none'>0.020</td>
+						  <td class=xl67 align=right style='border-left:none'>0.438</td>
+						  <td class=xl67 align=right style='border-left:none'>0.404</td>
+						  <td class=xl67 align=right style='border-left:none'>0.026</td>
+						  <td class=xl67 align=right style='border-left:none'>0.024</td>
+						  <td class=xl67 align=right style='border-left:none'>0.318</td>
+						 </tr>
+						 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+						  <td height=21 style='height:15.75pt'>Colony 1, Replicate 2</td>
+						  <td class=xl67 align=right>0.008</td>
+						  <td class=xl67 align=right style='border-left:none'>0.627</td>
+						  <td class=xl67 align=right style='border-left:none'>2.246</td>
+						  <td class=xl67 align=right style='border-left:none'>0.400</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>2.446</td>
+						  <td class=xl67 align=right style='border-left:none'>1.821</td>
+						  <td class=xl67 align=right style='border-left:none'>0.151</td>
+						  <td></td>
+						  <td class=xl76 align=right>38.60</td>
+						  <td class=xl76 align=right style='border-left:none'>1970.33</td>
+						  <td class=xl76 align=right style='border-left:none'>389.12</td>
+						  <td class=xl76 align=right style='border-left:none'>2180.23</td>
+						  <td class=xl76 align=right style='border-left:none'>56.32</td>
+						  <td class=xl76 align=right style='border-left:none'>756.55</td>
+						  <td class=xl76 align=right style='border-left:none'>202.83</td>
+						  <td class=xl76 align=right style='border-left:none'>567.00</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.395</td>
+						  <td class=xl67 align=right style='border-left:none'>0.254</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.440</td>
+						  <td class=xl67 align=right style='border-left:none'>0.399</td>
+						  <td class=xl67 align=right style='border-left:none'>0.025</td>
+						  <td class=xl67 align=right style='border-left:none'>0.009</td>
+						  <td class=xl67 align=right style='border-left:none'>0.304</td>
+						 </tr>
+						 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+						  <td height=21 style='height:15.75pt'>Colony 1, Replicate 3</td>
+						  <td class=xl67 align=right>0.009</td>
+						  <td class=xl67 align=right style='border-left:none'>0.617</td>
+						  <td class=xl67 align=right style='border-left:none'>2.261</td>
+						  <td class=xl67 align=right style='border-left:none'>0.448</td>
+						  <td class=xl67 align=right style='border-left:none'>0.009</td>
+						  <td class=xl67 align=right style='border-left:none'>2.387</td>
+						  <td class=xl67 align=right style='border-left:none'>1.277</td>
+						  <td class=xl67 align=right style='border-left:none'>0.145</td>
+						  <td></td>
+						  <td class=xl76 align=right>46.49</td>
+						  <td class=xl76 align=right style='border-left:none'>2062.39</td>
+						  <td class=xl76 align=right style='border-left:none'>335.74</td>
+						  <td class=xl76 align=right style='border-left:none'>1768.69</td>
+						  <td class=xl76 align=right style='border-left:none'>33.30</td>
+						  <td class=xl76 align=right style='border-left:none'>767.86</td>
+						  <td class=xl76 align=right style='border-left:none'>189.68</td>
+						  <td class=xl76 align=right style='border-left:none'>551.31</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.418</td>
+						  <td class=xl67 align=right style='border-left:none'>0.270</td>
+						  <td class=xl67 align=right style='border-left:none'>0.012</td>
+						  <td class=xl67 align=right style='border-left:none'>0.319</td>
+						  <td class=xl67 align=right style='border-left:none'>0.313</td>
+						  <td class=xl67 align=right style='border-left:none'>0.026</td>
+						  <td class=xl67 align=right style='border-left:none'>0.012</td>
+						  <td class=xl67 align=right style='border-left:none'>0.308</td>
+						 </tr>
+						 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+						  <td height=21 style='height:15.75pt'>Colony 1, Replicate 4</td>
+						  <td class=xl67 align=right>0.009</td>
+						  <td class=xl67 align=right style='border-left:none'>0.679</td>
+						  <td class=xl67 align=right style='border-left:none'>5.073</td>
+						  <td class=xl67 align=right style='border-left:none'>0.447</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>3.027</td>
+						  <td class=xl67 align=right style='border-left:none'>2.704</td>
+						  <td class=xl67 align=right style='border-left:none'>0.158</td>
+						  <td></td>
+						  <td class=xl76 align=right>46.34</td>
+						  <td class=xl76 align=right style='border-left:none'>2057.54</td>
+						  <td class=xl76 align=right style='border-left:none'>313.85</td>
+						  <td class=xl76 align=right style='border-left:none'>2101.34</td>
+						  <td class=xl76 align=right style='border-left:none'>51.96</td>
+						  <td class=xl76 align=right style='border-left:none'>749.16</td>
+						  <td class=xl76 align=right style='border-left:none'>234.18</td>
+						  <td class=xl76 align=right style='border-left:none'>673.15</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.404</td>
+						  <td class=xl67 align=right style='border-left:none'>0.245</td>
+						  <td class=xl67 align=right style='border-left:none'>0.005</td>
+						  <td class=xl67 align=right style='border-left:none'>0.380</td>
+						  <td class=xl67 align=right style='border-left:none'>0.387</td>
+						  <td class=xl67 align=right style='border-left:none'>0.020</td>
+						  <td class=xl67 align=right style='border-left:none'>0.007</td>
+						  <td class=xl67 align=right style='border-left:none'>0.344</td>
+						 </tr>
+						 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+						  <td height=21 style='height:15.75pt'>Colony 2, Replicate 1</td>
+						  <td class=xl67 align=right>0.009</td>
+						  <td class=xl67 align=right style='border-left:none'>0.282</td>
+						  <td class=xl67 align=right style='border-left:none'>1.507</td>
+						  <td class=xl67 align=right style='border-left:none'>0.497</td>
+						  <td class=xl67 align=right style='border-left:none'>0.012</td>
+						  <td class=xl67 align=right style='border-left:none'>1.369</td>
+						  <td class=xl67 align=right style='border-left:none'>1.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.151</td>
+						  <td></td>
+						  <td class=xl76 align=right>48.77</td>
+						  <td class=xl76 align=right style='border-left:none'>1237.42</td>
+						  <td class=xl76 align=right style='border-left:none'>242.44</td>
+						  <td class=xl76 align=right style='border-left:none'>2159.12</td>
+						  <td class=xl76 align=right style='border-left:none'>67.76</td>
+						  <td class=xl76 align=right style='border-left:none'>389.75</td>
+						  <td class=xl76 align=right style='border-left:none'>364.88</td>
+						  <td class=xl76 align=right style='border-left:none'>675.30</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.434</td>
+						  <td class=xl67 align=right style='border-left:none'>0.355</td>
+						  <td class=xl67 align=right style='border-left:none'>0.013</td>
+						  <td class=xl67 align=right style='border-left:none'>0.351</td>
+						  <td class=xl67 align=right style='border-left:none'>0.456</td>
+						  <td class=xl67 align=right style='border-left:none'>0.023</td>
+						  <td class=xl67 align=right style='border-left:none'>0.029</td>
+						  <td class=xl67 align=right style='border-left:none'>0.361</td>
+						 </tr>
+						 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+						  <td height=21 style='height:15.75pt'>Colony 2, Replicate 2</td>
+						  <td class=xl67 align=right>0.006</td>
+						  <td class=xl67 align=right style='border-left:none'>0.365</td>
+						  <td class=xl67 align=right style='border-left:none'>1.515</td>
+						  <td class=xl67 align=right style='border-left:none'>0.379</td>
+						  <td class=xl67 align=right style='border-left:none'>0.008</td>
+						  <td class=xl67 align=right style='border-left:none'>2.010</td>
+						  <td class=xl67 align=right style='border-left:none'>1.087</td>
+						  <td class=xl67 align=right style='border-left:none'>0.144</td>
+						  <td></td>
+						  <td class=xl76 align=right>34.21</td>
+						  <td class=xl76 align=right style='border-left:none'>1501.41</td>
+						  <td class=xl76 align=right style='border-left:none'>300.03</td>
+						  <td class=xl76 align=right style='border-left:none'>2115.11</td>
+						  <td class=xl76 align=right style='border-left:none'>51.51</td>
+						  <td class=xl76 align=right style='border-left:none'>397.99</td>
+						  <td class=xl76 align=right style='border-left:none'>444.01</td>
+						  <td class=xl76 align=right style='border-left:none'>843.54</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.487</td>
+						  <td class=xl67 align=right style='border-left:none'>0.332</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.451</td>
+						  <td class=xl67 align=right style='border-left:none'>0.498</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.033</td>
+						  <td class=xl67 align=right style='border-left:none'>0.474</td>
+						 </tr>
+						 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+						  <td height=21 style='height:15.75pt'>Colony 2, Replicate 3</td>
+						  <td class=xl67 align=right>0.005</td>
+						  <td class=xl67 align=right style='border-left:none'>0.307</td>
+						  <td class=xl67 align=right style='border-left:none'>1.411</td>
+						  <td class=xl67 align=right style='border-left:none'>0.504</td>
+						  <td class=xl67 align=right style='border-left:none'>0.009</td>
+						  <td class=xl67 align=right style='border-left:none'>1.802</td>
+						  <td class=xl67 align=right style='border-left:none'>0.981</td>
+						  <td class=xl67 align=right style='border-left:none'>0.146</td>
+						  <td></td>
+						  <td class=xl76 align=right>32.21</td>
+						  <td class=xl76 align=right style='border-left:none'>1611.62</td>
+						  <td class=xl76 align=right style='border-left:none'>296.84</td>
+						  <td class=xl76 align=right style='border-left:none'>2598.62</td>
+						  <td class=xl76 align=right style='border-left:none'>53.55</td>
+						  <td class=xl76 align=right style='border-left:none'>379.00</td>
+						  <td class=xl76 align=right style='border-left:none'>400.38</td>
+						  <td class=xl76 align=right style='border-left:none'>850.63</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.478</td>
+						  <td class=xl67 align=right style='border-left:none'>0.424</td>
+						  <td class=xl67 align=right style='border-left:none'>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.417</td>
+						  <td class=xl67 align=right style='border-left:none'>0.483</td>
+						  <td class=xl67 align=right style='border-left:none'>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.033</td>
+						  <td class=xl67 align=right style='border-left:none'>0.471</td>
+						 </tr>
+						 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+						  <td height=21 style='height:15.75pt'>Colony 2, Replicate 4</td>
+						  <td class=xl67 align=right>0.009</td>
+						  <td class=xl67 align=right style='border-left:none'>0.300</td>
+						  <td class=xl67 align=right style='border-left:none'>1.221</td>
+						  <td class=xl67 align=right style='border-left:none'>0.502</td>
+						  <td class=xl67 align=right style='border-left:none'>0.008</td>
+						  <td class=xl67 align=right style='border-left:none'>1.580</td>
+						  <td class=xl67 align=right style='border-left:none'>1.104</td>
+						  <td class=xl67 align=right style='border-left:none'>0.166</td>
+						  <td></td>
+						  <td class=xl76 align=right>51.50</td>
+						  <td class=xl76 align=right style='border-left:none'>1602.12</td>
+						  <td class=xl76 align=right style='border-left:none'>256.74</td>
+						  <td class=xl76 align=right style='border-left:none'>2832.42</td>
+						  <td class=xl76 align=right style='border-left:none'>49.36</td>
+						  <td class=xl76 align=right style='border-left:none'>351.94</td>
+						  <td class=xl76 align=right style='border-left:none'>450.70</td>
+						  <td class=xl76 align=right style='border-left:none'>905.72</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.474</td>
+						  <td class=xl67 align=right style='border-left:none'>0.432</td>
+						  <td class=xl67 align=right style='border-left:none'>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.456</td>
+						  <td class=xl67 align=right style='border-left:none'>0.488</td>
+						  <td class=xl67 align=right style='border-left:none'>0.018</td>
+						  <td class=xl67 align=right style='border-left:none'>0.033</td>
+						  <td class=xl67 align=right style='border-left:none'>0.442</td>
+						 </tr>
+					</table>
+					</div>
+					</div>
+					<div class="spacer-small"></div>
+					<h2>Flourescense per Particle</h2>
+					<div style="overflow-x: scroll;border:solid 1px black;">
+						<div style="padding:10px;">
+					<table class="table problemBorder">
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl73 style='height:15.0pt'>Hour 0:</td>
+						  <td>Neg. Contr<span style='display:none'>ol</span></td>
+						  <td>Pos. Contr<span style='display:none'>ol</span></td>
+						  <td>Device 1</td>
+						  <td>Device 2</td>
+						  <td>Device 3</td>
+						  <td>Device 4</td>
+						  <td>Device 5</td>
+						  <td>Device 6</td>
+						  <td></td>
+						  <td>Neg. Contr<span style='display:none'>ol</span></td>
+						  <td>Pos. Contr<span style='display:none'>ol</span></td>
+						  <td>Device 1</td>
+						  <td>Device 2</td>
+						  <td>Device 3</td>
+						  <td>Device 4</td>
+						  <td>Device 5</td>
+						  <td>Device 6</td>
+						  <td></td>
+						  <td>Neg. Contr<span style='display:none'>ol</span></td>
+						  <td>Pos. Contr<span style='display:none'>ol</span></td>
+						  <td>Device 1</td>
+						  <td>Device 2</td>
+						  <td>Device 3</td>
+						  <td>Device 4</td>
+						  <td>Device 5</td>
+						  <td>Device 6</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 1, Replicate 1</td>
+						  <td class=xl77 align=right>1.63E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>2.34E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>8.57E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>4.70E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>-3.24E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>1.22E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>8.64E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>2.12E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>3.54</td>
+						  <td class=xl76 align=right style='border-left:none'>77.70</td>
+						  <td class=xl76 align=right style='border-left:none'>175.01</td>
+						  <td class=xl76 align=right style='border-left:none'>96.03</td>
+						  <td class=xl76 align=right style='border-left:none'>-7.03</td>
+						  <td class=xl76 align=right style='border-left:none'>218.89</td>
+						  <td class=xl76 align=right style='border-left:none'>121.38</td>
+						  <td class=xl76 align=right style='border-left:none'>40.65</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.026</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 1, Replicate 2</td>
+						  <td class=xl77 align=right>4.92E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>4.05E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>9.56E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>7.74E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>-1.62E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>1.16E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>8.91E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>2.12E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>9.43</td>
+						  <td class=xl76 align=right style='border-left:none'>72.36</td>
+						  <td class=xl76 align=right style='border-left:none'>158.63</td>
+						  <td class=xl76 align=right style='border-left:none'>138.32</td>
+						  <td class=xl76 align=right style='border-left:none'>-3.94</td>
+						  <td class=xl76 align=right style='border-left:none'>222.33</td>
+						  <td class=xl76 align=right style='border-left:none'>113.74</td>
+						  <td class=xl76 align=right style='border-left:none'>43.31</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.013</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.019</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.010</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 1, Replicate 3</td>
+						  <td class=xl77 align=right>2.06E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>5.10E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.24E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>4.32E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>-8.72E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>1.26E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>1.06E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>2.55E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>3.15</td>
+						  <td class=xl76 align=right style='border-left:none'>71.60</td>
+						  <td class=xl76 align=right style='border-left:none'>142.94</td>
+						  <td class=xl76 align=right style='border-left:none'>82.81</td>
+						  <td class=xl76 align=right style='border-left:none'>-13.36</td>
+						  <td class=xl76 align=right style='border-left:none'>224.95</td>
+						  <td class=xl76 align=right style='border-left:none'>94.95</td>
+						  <td class=xl76 align=right style='border-left:none'>35.84</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.012</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>0.009</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.012</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.007</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 1, Replicate 4</td>
+						  <td class=xl77 align=right>1.54E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>3.95E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>9.87E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>4.22E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>-4.00E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>4.57E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>6.63E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>2.07E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>3.34</td>
+						  <td class=xl76 align=right style='border-left:none'>75.65</td>
+						  <td class=xl76 align=right style='border-left:none'>188.93</td>
+						  <td class=xl76 align=right style='border-left:none'>86.16</td>
+						  <td class=xl76 align=right style='border-left:none'>-8.18</td>
+						  <td class=xl76 align=right style='border-left:none'>251.10</td>
+						  <td class=xl76 align=right style='border-left:none'>93.09</td>
+						  <td class=xl76 align=right style='border-left:none'>39.68</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.043</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 2, Replicate 1</td>
+						  <td class=xl77 align=right>3.59E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>3.23E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>6.90E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>6.33E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>-5.53E+00</td>
+						  <td class=xl77 align=right style='border-left:none'>1.27E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>8.16E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>2.34E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>6.42</td>
+						  <td class=xl76 align=right style='border-left:none'>57.80</td>
+						  <td class=xl76 align=right style='border-left:none'>167.26</td>
+						  <td class=xl76 align=right style='border-left:none'>121.24</td>
+						  <td class=xl76 align=right style='border-left:none'>-0.12</td>
+						  <td class=xl76 align=right style='border-left:none'>210.56</td>
+						  <td class=xl76 align=right style='border-left:none'>125.02</td>
+						  <td class=xl76 align=right style='border-left:none'>23.92</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.019</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.013</td>
+						  <td class=xl67 align=right style='border-left:none'>0.012</td>
+						  <td class=xl67 align=right style='border-left:none'>0.008</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 2, Replicate 2</td>
+						  <td class=xl77 align=right>2.61E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>2.50E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>8.23E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>5.76E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>5.22E+00</td>
+						  <td class=xl77 align=right style='border-left:none'>2.06E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>7.83E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.27E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>8.68</td>
+						  <td class=xl76 align=right style='border-left:none'>67.04</td>
+						  <td class=xl76 align=right style='border-left:none'>126.04</td>
+						  <td class=xl76 align=right style='border-left:none'>117.65</td>
+						  <td class=xl76 align=right style='border-left:none'>0.10</td>
+						  <td class=xl76 align=right style='border-left:none'>160.67</td>
+						  <td class=xl76 align=right style='border-left:none'>109.96</td>
+						  <td class=xl76 align=right style='border-left:none'>25.97</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.026</td>
+						  <td class=xl67 align=right style='border-left:none'>0.021</td>
+						  <td class=xl67 align=right style='border-left:none'>0.012</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.061</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 2, Replicate 3</td>
+						  <td class=xl77 align=right>-1.10E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>2.06E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>3.32E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>6.54E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>-3.02E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>1.03E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>7.15E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>9.63E+02</td>
+						  <td></td>
+						  <td class=xl76 align=right>-2.24</td>
+						  <td class=xl76 align=right style='border-left:none'>52.48</td>
+						  <td class=xl76 align=right style='border-left:none'>165.10</td>
+						  <td class=xl76 align=right style='border-left:none'>125.30</td>
+						  <td class=xl76 align=right style='border-left:none'>-5.79</td>
+						  <td class=xl76 align=right style='border-left:none'>171.15</td>
+						  <td class=xl76 align=right style='border-left:none'>100.39</td>
+						  <td class=xl76 align=right style='border-left:none'>17.21</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.020</td>
+						  <td class=xl67 align=right style='border-left:none'>0.039</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						  <td class=xl67 align=right style='border-left:none'>0.013</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 2, Replicate 4</td>
+						  <td class=xl77 align=right>6.05E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>3.65E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.09E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>6.43E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>-6.19E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>1.25E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>7.84E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.07E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>10.04</td>
+						  <td class=xl76 align=right style='border-left:none'>65.19</td>
+						  <td class=xl76 align=right style='border-left:none'>125.37</td>
+						  <td class=xl76 align=right style='border-left:none'>139.54</td>
+						  <td class=xl76 align=right style='border-left:none'>-12.64</td>
+						  <td class=xl76 align=right style='border-left:none'>175.89</td>
+						  <td class=xl76 align=right style='border-left:none'>130.15</td>
+						  <td class=xl76 align=right style='border-left:none'>20.51</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.013</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.009</td>
+						  <td class=xl67 align=right style='border-left:none'>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.011</td>
+						  <td class=xl67 align=right style='border-left:none'>0.013</td>
+						  <td class=xl67 align=right style='border-left:none'>0.015</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 colspan=10 style='height:15.0pt;mso-ignore:colspan'></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl78></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						  <td class=xl79></td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl73 style='height:15.0pt'>Hour 6:</td>
+						  <td>Neg. Contr<span style='display:none'>ol</span></td>
+						  <td>Pos. Contr<span style='display:none'>ol</span></td>
+						  <td>Device 1</td>
+						  <td>Device 2</td>
+						  <td>Device 3</td>
+						  <td>Device 4</td>
+						  <td>Device 5</td>
+						  <td>Device 6</td>
+						  <td></td>
+						  <td class=xl78>Neg. Contr<span style='display:none'>ol</span></td>
+						  <td class=xl78>Pos. Contr<span style='display:none'>ol</span></td>
+						  <td class=xl78>Device 1</td>
+						  <td class=xl78>Device 2</td>
+						  <td class=xl78>Device 3</td>
+						  <td class=xl78>Device 4</td>
+						  <td class=xl78>Device 5</td>
+						  <td class=xl78>Device 6</td>
+						  <td class=xl78></td>
+						  <td class=xl79>Neg. Contr<span style='display:none'>ol</span></td>
+						  <td class=xl79>Pos. Contr<span style='display:none'>ol</span></td>
+						  <td class=xl79>Device 1</td>
+						  <td class=xl79>Device 2</td>
+						  <td class=xl79>Device 3</td>
+						  <td class=xl79>Device 4</td>
+						  <td class=xl79>Device 5</td>
+						  <td class=xl79>Device 6</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 style='height:15.0pt'>Colony 1, Replicate 1</td>
+						  <td class=xl77 align=right>6.47E+01</td>
+						  <td class=xl77 align=right style='border-left:none'>4.92E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.39E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>4.02E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>8.51E+01</td>
+						  <td class=xl77 align=right style='border-left:none'>2.04E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>6.02E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.32E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>35.83</td>
+						  <td class=xl76 align=right style='border-left:none'>1974.25</td>
+						  <td class=xl76 align=right style='border-left:none'>354.18</td>
+						  <td class=xl76 align=right style='border-left:none'>2247.35</td>
+						  <td class=xl76 align=right style='border-left:none'>43.88</td>
+						  <td class=xl76 align=right style='border-left:none'>677.19</td>
+						  <td class=xl76 align=right style='border-left:none'>184.55</td>
+						  <td class=xl76 align=right style='border-left:none'>535.17</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.434</td>
+						  <td class=xl67 align=right style='border-left:none'>0.314</td>
+						  <td class=xl67 align=right style='border-left:none'>0.020</td>
+						  <td class=xl67 align=right style='border-left:none'>0.438</td>
+						  <td class=xl67 align=right style='border-left:none'>0.404</td>
+						  <td class=xl67 align=right style='border-left:none'>0.026</td>
+						  <td class=xl67 align=right style='border-left:none'>0.024</td>
+						  <td class=xl67 align=right style='border-left:none'>0.318</td>
+						 </tr>
+						 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+						  <td height=21 style='height:15.75pt'>Colony 1, Replicate 2</td>
+						  <td class=xl77 align=right>7.65E+01</td>
+						  <td class=xl77 align=right style='border-left:none'>6.08E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>2.18E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>3.88E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.11E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>2.37E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>1.77E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>1.46E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>38.60</td>
+						  <td class=xl76 align=right style='border-left:none'>1970.33</td>
+						  <td class=xl76 align=right style='border-left:none'>389.12</td>
+						  <td class=xl76 align=right style='border-left:none'>2180.23</td>
+						  <td class=xl76 align=right style='border-left:none'>56.32</td>
+						  <td class=xl76 align=right style='border-left:none'>756.55</td>
+						  <td class=xl76 align=right style='border-left:none'>202.83</td>
+						  <td class=xl76 align=right style='border-left:none'>567.00</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.395</td>
+						  <td class=xl67 align=right style='border-left:none'>0.254</td>
+						  <td class=xl67 align=right style='border-left:none'>0.014</td>
+						  <td class=xl67 align=right style='border-left:none'>0.440</td>
+						  <td class=xl67 align=right style='border-left:none'>0.399</td>
+						  <td class=xl67 align=right style='border-left:none'>0.025</td>
+						  <td class=xl67 align=right style='border-left:none'>0.009</td>
+						  <td class=xl67 align=right style='border-left:none'>0.304</td>
+						 </tr>
+						 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+						  <td height=21 style='height:15.75pt'>Colony 1, Replicate 3</td>
+						  <td class=xl77 align=right>8.71E+01</td>
+						  <td class=xl77 align=right style='border-left:none'>5.98E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>2.19E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>4.34E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>8.33E+01</td>
+						  <td class=xl77 align=right style='border-left:none'>2.31E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>1.24E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>1.40E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>46.49</td>
+						  <td class=xl76 align=right style='border-left:none'>2062.39</td>
+						  <td class=xl76 align=right style='border-left:none'>335.74</td>
+						  <td class=xl76 align=right style='border-left:none'>1768.69</td>
+						  <td class=xl76 align=right style='border-left:none'>33.30</td>
+						  <td class=xl76 align=right style='border-left:none'>767.86</td>
+						  <td class=xl76 align=right style='border-left:none'>189.68</td>
+						  <td class=xl76 align=right style='border-left:none'>551.31</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.418</td>
+						  <td class=xl67 align=right style='border-left:none'>0.270</td>
+						  <td class=xl67 align=right style='border-left:none'>0.012</td>
+						  <td class=xl67 align=right style='border-left:none'>0.319</td>
+						  <td class=xl67 align=right style='border-left:none'>0.313</td>
+						  <td class=xl67 align=right style='border-left:none'>0.026</td>
+						  <td class=xl67 align=right style='border-left:none'>0.012</td>
+						  <td class=xl67 align=right style='border-left:none'>0.308</td>
+						 </tr>
+						 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+						  <td height=21 style='height:15.75pt'>Colony 1, Replicate 4</td>
+						  <td class=xl77 align=right>8.98E+01</td>
+						  <td class=xl77 align=right style='border-left:none'>6.58E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>4.92E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>4.33E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.05E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>2.93E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>2.62E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>1.53E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>46.34</td>
+						  <td class=xl76 align=right style='border-left:none'>2057.54</td>
+						  <td class=xl76 align=right style='border-left:none'>313.85</td>
+						  <td class=xl76 align=right style='border-left:none'>2101.34</td>
+						  <td class=xl76 align=right style='border-left:none'>51.96</td>
+						  <td class=xl76 align=right style='border-left:none'>749.16</td>
+						  <td class=xl76 align=right style='border-left:none'>234.18</td>
+						  <td class=xl76 align=right style='border-left:none'>673.15</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.404</td>
+						  <td class=xl67 align=right style='border-left:none'>0.245</td>
+						  <td class=xl67 align=right style='border-left:none'>0.005</td>
+						  <td class=xl67 align=right style='border-left:none'>0.380</td>
+						  <td class=xl67 align=right style='border-left:none'>0.387</td>
+						  <td class=xl67 align=right style='border-left:none'>0.020</td>
+						  <td class=xl67 align=right style='border-left:none'>0.007</td>
+						  <td class=xl67 align=right style='border-left:none'>0.344</td>
+						 </tr>
+						 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+						  <td height=21 style='height:15.75pt'>Colony 2, Replicate 1</td>
+						  <td class=xl77 align=right>8.80E+01</td>
+						  <td class=xl77 align=right style='border-left:none'>2.73E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.46E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>4.82E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.16E+02</td>
+						  <td class=xl77 align=right style='border-left:none'>1.33E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>9.85E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.47E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>48.77</td>
+						  <td class=xl76 align=right style='border-left:none'>1237.42</td>
+						  <td class=xl76 align=right style='border-left:none'>242.44</td>
+						  <td class=xl76 align=right style='border-left:none'>2159.12</td>
+						  <td class=xl76 align=right style='border-left:none'>67.76</td>
+						  <td class=xl76 align=right style='border-left:none'>389.75</td>
+						  <td class=xl76 align=right style='border-left:none'>364.88</td>
+						  <td class=xl76 align=right style='border-left:none'>675.30</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.434</td>
+						  <td class=xl67 align=right style='border-left:none'>0.355</td>
+						  <td class=xl67 align=right style='border-left:none'>0.013</td>
+						  <td class=xl67 align=right style='border-left:none'>0.351</td>
+						  <td class=xl67 align=right style='border-left:none'>0.456</td>
+						  <td class=xl67 align=right style='border-left:none'>0.023</td>
+						  <td class=xl67 align=right style='border-left:none'>0.029</td>
+						  <td class=xl67 align=right style='border-left:none'>0.361</td>
+						 </tr>
+						 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+						  <td height=21 style='height:15.75pt'>Colony 2, Replicate 2</td>
+						  <td class=xl77 align=right>5.50E+01</td>
+						  <td class=xl77 align=right style='border-left:none'>3.54E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.47E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>3.67E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>8.10E+01</td>
+						  <td class=xl77 align=right style='border-left:none'>1.95E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>1.05E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>1.39E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>34.21</td>
+						  <td class=xl76 align=right style='border-left:none'>1501.41</td>
+						  <td class=xl76 align=right style='border-left:none'>300.03</td>
+						  <td class=xl76 align=right style='border-left:none'>2115.11</td>
+						  <td class=xl76 align=right style='border-left:none'>51.51</td>
+						  <td class=xl76 align=right style='border-left:none'>397.99</td>
+						  <td class=xl76 align=right style='border-left:none'>444.01</td>
+						  <td class=xl76 align=right style='border-left:none'>843.54</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.487</td>
+						  <td class=xl67 align=right style='border-left:none'>0.332</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.451</td>
+						  <td class=xl67 align=right style='border-left:none'>0.498</td>
+						  <td class=xl67 align=right style='border-left:none'>0.016</td>
+						  <td class=xl67 align=right style='border-left:none'>0.033</td>
+						  <td class=xl67 align=right style='border-left:none'>0.474</td>
+						 </tr>
+						 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+						  <td height=21 style='height:15.75pt'>Colony 2, Replicate 3</td>
+						  <td class=xl77 align=right>5.28E+01</td>
+						  <td class=xl77 align=right style='border-left:none'>2.98E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.37E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>4.88E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>8.68E+01</td>
+						  <td class=xl77 align=right style='border-left:none'>1.75E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>9.50E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.41E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>32.21</td>
+						  <td class=xl76 align=right style='border-left:none'>1611.62</td>
+						  <td class=xl76 align=right style='border-left:none'>296.84</td>
+						  <td class=xl76 align=right style='border-left:none'>2598.62</td>
+						  <td class=xl76 align=right style='border-left:none'>53.55</td>
+						  <td class=xl76 align=right style='border-left:none'>379.00</td>
+						  <td class=xl76 align=right style='border-left:none'>400.38</td>
+						  <td class=xl76 align=right style='border-left:none'>850.63</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.478</td>
+						  <td class=xl67 align=right style='border-left:none'>0.424</td>
+						  <td class=xl67 align=right style='border-left:none'>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.417</td>
+						  <td class=xl67 align=right style='border-left:none'>0.483</td>
+						  <td class=xl67 align=right style='border-left:none'>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.033</td>
+						  <td class=xl67 align=right style='border-left:none'>0.471</td>
+						 </tr>
+						 <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+						  <td height=21 style='height:15.75pt'>Colony 2, Replicate 4</td>
+						  <td class=xl77 align=right>8.51E+01</td>
+						  <td class=xl77 align=right style='border-left:none'>2.90E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>1.18E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>4.87E+03</td>
+						  <td class=xl77 align=right style='border-left:none'>7.92E+01</td>
+						  <td class=xl77 align=right style='border-left:none'>1.53E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>1.07E+04</td>
+						  <td class=xl77 align=right style='border-left:none'>1.60E+03</td>
+						  <td></td>
+						  <td class=xl76 align=right>51.50</td>
+						  <td class=xl76 align=right style='border-left:none'>1602.12</td>
+						  <td class=xl76 align=right style='border-left:none'>256.74</td>
+						  <td class=xl76 align=right style='border-left:none'>2832.42</td>
+						  <td class=xl76 align=right style='border-left:none'>49.36</td>
+						  <td class=xl76 align=right style='border-left:none'>351.94</td>
+						  <td class=xl76 align=right style='border-left:none'>450.70</td>
+						  <td class=xl76 align=right style='border-left:none'>905.72</td>
+						  <td class=xl78></td>
+						  <td class=xl67 align=right>0.474</td>
+						  <td class=xl67 align=right style='border-left:none'>0.432</td>
+						  <td class=xl67 align=right style='border-left:none'>0.017</td>
+						  <td class=xl67 align=right style='border-left:none'>0.456</td>
+						  <td class=xl67 align=right style='border-left:none'>0.488</td>
+						  <td class=xl67 align=right style='border-left:none'>0.018</td>
+						  <td class=xl67 align=right style='border-left:none'>0.033</td>
+						  <td class=xl67 align=right style='border-left:none'>0.442</td>
+						 </tr>
+						</table>
+						</div>
+					</div>
+					<div class="spacer-small"></div>
+					<h2>Colony Forming Unit Data and Calculations</h2>
+					<table class="table problemBorder">
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 width=101 style='height:15.0pt;width:76pt'></td>
+						  <td colspan=3 class=xl93 width=303 style='width:228pt'>Number of Colonies
+						  Found on Plates</td>
+						  <td width=101 style='width:76pt'></td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl90 style='height:15.0pt'>Sample</td>
+						  <td class=xl90>10^4 Dilution</td>
+						  <td class=xl90>10^5 Dilution</td>
+						  <td class=xl90>10^6 Dilution</td>
+						  <td class=xl90 colspan=1 style='mso-ignore:colspan'>CFU Calculations</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl90 align=right style='height:15.0pt'>1.1</td>
+						  <td class=xl91>285</td>
+						  <td class=xl90 align=right>31</td>
+						  <td class=xl90 align=right>3</td>
+						  <td class=xl92 align=right>2.28E+07</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl90 align=right style='height:15.0pt'>1.2</td>
+						  <td class=xl91>276</td>
+						  <td class=xl90 align=right>34</td>
+						  <td class=xl90 align=right>2</td>
+						  <td class=xl92 align=right>2.21E+07</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl90 align=right style='height:15.0pt'>1.3</td>
+						  <td class=xl91>188</td>
+						  <td class=xl90 align=right>39</td>
+						  <td class=xl90 align=right>3</td>
+						  <td class=xl92 align=right>1.50E+07</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl90 align=right style='height:15.0pt'>2.1</td>
+						  <td class=xl91>282</td>
+						  <td class=xl90 align=right>62</td>
+						  <td class=xl90 align=right>11</td>
+						  <td class=xl92 align=right>2.26E+07</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl90 align=right style='height:15.0pt'>2.2</td>
+						  <td class=xl91>TNTC</td>
+						  <td class=xl90 align=right>30</td>
+						  <td class=xl90 align=right>11</td>
+						  <td class=xl92 align=right>2.40E+07</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl90 align=right style='height:15.0pt'>2.3</td>
+						  <td class=xl91>TNTC</td>
+						  <td class=xl90 align=right>106</td>
+						  <td class=xl90 align=right>4</td>
+						  <td class=xl92 align=right>8.48E+07</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl90 align=right style='height:15.0pt'>3.1</td>
+						  <td class=xl91>TNTC</td>
+						  <td class=xl90 align=right>34</td>
+						  <td class=xl90 align=right>2</td>
+						  <td class=xl92 align=right>2.72E+07</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl90 align=right style='height:15.0pt'>3.2</td>
+						  <td class=xl91>TNTC</td>
+						  <td class=xl90 align=right>116</td>
+						  <td class=xl90 align=right>2</td>
+						  <td class=xl92 align=right>9.28E+07</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl90 align=right style='height:15.0pt'>3.3</td>
+						  <td class=xl91>152</td>
+						  <td class=xl90 align=right>3</td>
+						  <td class=xl90 align=right>0</td>
+						  <td class=xl92 align=right>1.22E+07</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl90 align=right style='height:15.0pt'>4.1</td>
+						  <td class=xl91>TNTC</td>
+						  <td class=xl90 align=right>42</td>
+						  <td class=xl90 align=right>6</td>
+						  <td class=xl92 align=right>3.36E+07</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl90 align=right style='height:15.0pt'>4.2</td>
+						  <td class=xl91>TNTC</td>
+						  <td class=xl90 align=right>38</td>
+						  <td class=xl90 align=right>6</td>
+						  <td class=xl92 align=right>3.04E+07</td>
+						 </tr>
+						 <tr height=20 style='height:15.0pt'>
+						  <td height=20 class=xl90 align=right style='height:15.0pt'>4.3</td>
+						  <td class=xl91>TNTC</td>
+						  <td class=xl90 align=right>46</td>
+						  <td class=xl90 align=right>17</td>
+						  <td class=xl92 align=right>3.68E+07</td>
+						 </tr>
+						</table>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+		<div class="footer body" style="border-top:solid 2px white;">
+			<div class="section">
+				<div class="wrapper">
+					<div class="spacer-extrasmall"></div>
+					<div class="row">
+						<div class="col-sm-4 footer-thanks">
+							<h1>Special Thanks</h1>
+							<a class="footer-text-link" href="http://2018.igem.org/Team:Purdue/Acknowledgement"><p>to all those that made this possible</p></a>
+							<img class="social social-purdue" src="../photos/Purdue.png" style="display:block;margin:auto;height:5em;"/>
+						</div>
+						<div class="col-sm-4">
+							<h1>Follow Us On</h1>
+							<div class="socialRow">
+								<div class="socialWrap">
+									<a href="https://twitter.com/purdueigem"><img class="social" src="../photos/twitter.png"/></a>
+								</div>
+								<div class="socialWrap">
+									<a href="https://www.instagram.com/purdueigem/"><img class="social" src="../photos/instagram.png"/></a>
+								</div>
+								<div class="socialWrap">
+									<a href="https://www.facebook.com/PurdueiGEM/"><img class="social" src="../photos/facebook.png"/></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 third_size">
+							<h1>Contact Us</h1>
+							<a class="footer-text-link" href="mailto:igem@purdue.edu?cc=fitzge29@purdue.edu">
+							<p>igem@purdue.edu</p></a>
+							<p style="margin-bottom:0;">Kevin Fitzferald, B025</p>
+							<p style="margin-bottom:0;">1203 W State St.</p>
+							<p>West Lafayette, IN 47906</p>
+						</div>
+					</div>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -167,113 +167,137 @@
 	<div class="basic-page">
 		<div class='header'>
 			<img src='http://2018.igem.org/wiki/images/e/e9/T--Purdue--genericDNAHome.jpg'/>
-			<div class='title'>Model</div>
+			<div class='title'>Parts</div>
 		</div>
 		<div class='body alternate'>
 			<div class="section">
 				<div class="wrapper">
-					<h1>Overview</h1>
-					<p>The goal of the model was to determine what parameters were pertinent to the speed and accuracy of our design. We wanted to our model to speed up the experimentation process in the lab and give us a good idea of the characteristics of our construct. We also wanted to determine the optimal protein to biomarker ratio to meet our time constraint of 5 mins, since our survey indicated users prefer a fast test.</p>
-				</div>
-			</div>
-			<div class="section">
-				<div class="wrapper">
-					<h1>Reaction</h1>
-					<p>The reaction that we are trying to optimize is shown below. Each half of our split protein is attached to a part of horseradish peroxidase (HRP). The halves of our protein form a complex with the biomarker. This brings the two parts of split HRP (sHRP) closer together and primed to reconstitute. After sHRP is reconstituted, it is functional and oxidizes tetramethyl benzidine with hydrogen peroxide to form a blue product for our colorimetric output.</p>
-					<img class="center" src="../photos/diagramwconstants.png"/>
-					<p>The reaction between the two halves of the protein complex and the biomarker, tyrosol/farnesol, were modeled as following two-step mass action kinetics (the biomarker first binds with on half to form a complex and then the complex binds with the other half). We assumed that once both halves of the protein bound together and formed a complex, the reconstitution of the split-HRP was instantaneous. Or in other words, the formation of the protein complex was the rate limiting step. The reconstituted HRP then oxidizes TMB into a blue compound for our colorimetric response. The reconstituted HRP was modeled as following Michaelis Menten kinetics.</p>
-					<p>The initial values for the parameters are listed in the table below.</p>
-					<table class="table problemBorder" style="margin-bottom: 0">
+					<div class="spacer-small"></div>
+					<table class="table problemBorder">
 						<thead>
 							<tr>
-								<th>Constant</th>
-								<th>Value</th>
-								<th>Source</th>
+								<th>Part Name</th>
+								<th>Description</th>
+								<th>Type</th>
+								<th>Function</th>
+								<th style="width:120px;">Length (bp)</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Kd1</td>
-								<td>0.2 nM</td>
-								<td><a class="ref-link" href="#">[1]</a></td>
+								<td>BBa_K2696000</td>
+								<td>Gal 1 Promoter</td>
+								<td>Regulatory</td>
+								<td>Galactose inducible promoter. Curran, Kathleen A., et al. “Short Synthetic Terminators for Improved Heterologous Gene Expression in Yeast.” ACS Synthetic Biology, vol. 4, no. 7, 2015, pp. 824–832., doi:10.1021/sb5003357.</td>
+								<td>442</td>
 							</tr>
 							<tr>
-								<td>Kd2</td>
-								<td>26 &micro;M</td>
-								<td><a class="ref-link" href="#">[1]</a></td>
+								<td>BBa_K2696001</td>
+								<td>Full Length Horseradish Peroxidase (HRP-FL)</td>
+								<td>Coding</td>
+								<td>A peroxidase commonly used in ELISA and related assays for its ability to catalyze reactions which convert colorless substrates like tetramethylbenzidine (TMB) to colored products. Martell, Jeffrey D, et al. “A Split Horseradish Peroxidase for the Detection of Intercellular Protein–Protein Interactions and Sensitive Visualization of Synapses.” Nature Biotechnology, vol. 34, no. 7, 2016, pp. 774–780., doi:10.1038/nbt.3563.</td>
+								<td>927</td>
 							</tr>
 							<tr>
-								<td>Kd3</td>
-								<td>12 nM</td>
-								<td><a class="ref-link" href="#">[1]</a></td>
+								<td>BBa_K2696002</td>
+								<td>Terminator 8 </td>
+								<td>Terminator</td>
+								<td>A eukaryotic terminator derived from a native terminator in Saccharomyces cerevisiae. Curran, Kathleen A., et al. “Short Synthetic Terminators for Improved Heterologous Gene Expression in Yeast.” ACS Synthetic Biology, vol. 4, no. 7, 2015, pp. 824–832., doi:10.1021/sb5003357.</td>
+								<td>49</td>
 							</tr>
 							<tr>
-								<td>Kd1</td>
-								<td>100 fM</td>
-								<td><a class="ref-link" href="#">[1]</a></td>
+								<td>BBa_K2696003</td>
+								<td>HRP Yeast Operon</td>
+								<td>Composite</td>
+								<td>Composed of a Gal1 Promoter (Induced by galactose in absence of other energy sources), Horseradish peroxidase, and a synthetic terminator originally derived from S. cerevisiae.</td>
+								<td>1434</td>
 							</tr>
 							<tr>
-								<td>Kd (avg)</td>
-								<td>6.5 &micro;M</td>
-								<td></td>
+								<td>BBa_K2696004</td>
+								<td>Gyp 7 Terminator</td>
+								<td>Terminator</td>
+								<td>Terminator derived from the gyp 7 gene.</td>
+								<td>112</td>
 							</tr>
 							<tr>
-								<td>k_cat</td>
-								<td>435</td>
-								<td><a class="ref-link" href="#">[2]</a></td>
+								<td>BBa_K2696005</td>
+								<td>His 5 Promoter</td>
+								<td>Promoter</td>
+								<td>Constitutive promoter</td>
+								<td>500</td>
 							</tr>
 							<tr>
-								<td>Km</td>
-								<td>90 &micro;M</td>
-								<td><a class="ref-link" href="#">[2]</a></td>
+								<td>BBa_K2696006</td>
+								<td>HRP (59-308) </td>
+								<td>Coding</td>
+								<td>Codes for the later half of horseradish peroxidase from amino acids 59 through 308. Selected for its ability to reconstitute at room temperature. Martell, Jeffrey D, et al. “A Split Horseradish Peroxidase for the Detection of Intercellular Protein–Protein Interactions and Sensitive Visualization of Synapses.” Nature Biotechnology, vol. 34, no. 7, 2016, pp. 774–780., doi:10.1038/nbt.3563.</td>
+								<td>753</td>
+							</tr>
+							<tr>
+								<td>BBa_K2696007</td>
+								<td>HRP (start + 1-58)</td>
+								<td>Coding</td>
+								<td>Codes for the first half of horseradish peroxidase from amino acids 1 through 58. It also includes a start codon. Selected for its ability to reconstitute at room temperature.  Martell, Jeffrey D, et al. “A Split Horseradish Peroxidase for the Detection of Intercellular Protein–Protein Interactions and Sensitive Visualization of Synapses.” Nature Biotechnology, vol. 34, no. 7, 2016, pp. 774–780., doi:10.1038/nbt.3563.</td>
+								<td>117</td>
+							</tr>
+							<tr>
+								<td>BBa_K2696008</td>
+								<td>Igk-flag-FRP-HRP(1-58)</td>
+								<td>Coding</td>
+								<td>First part of the locking mechanism. "Igk-flag" represents the tag on the protein. Martell, Jeffrey D, et al. “A Split Horseradish Peroxidase for the Detection of Intercellular Protein–Protein Interactions and Sensitive Visualization of Synapses.” Nature Biotechnology, vol. 34, no. 7, 2016, pp. 774–780., doi:10.1038/nbt.3563.</td>
+								<td>585</td>
+							</tr>
+							<tr>
+								<td>BBa_K2696009</td>
+								<td>Igk-myc-FKB12-HRP(59-308)</td>
+								<td>Coding</td>
+								<td>Second part of locking mechanism. “Igk-myc” represents the tag on the protein.  Martell, Jeffrey D, et al. “A Split Horseradish Peroxidase for the Detection of Intercellular Protein–Protein Interactions and Sensitive Visualization of Synapses.” Nature Biotechnology, vol. 34, no. 7, 2016, pp. 774–780., doi:10.1038/nbt.3563.</td>
+								<td>1209</td>
+							</tr>
+							<tr>
+								<td>BBa_K2696009</td>
+								<td>Igk-myc-FKB12-HRP(59-308)</td>
+								<td>Coding</td>
+								<td>Igk-flag-FRP-HRP(1-58) function goes here Martell, Jeffrey D, et al. “A Split Horseradish Peroxidase for the Detection of Intercellular Protein–Protein Interactions and Sensitive Visualization of Synapses.” Nature Biotechnology, vol. 34, no. 7, 2016, pp. 774–780., doi:10.1038/nbt.3563.</td>
+								<td>1209</td>
+							</tr>
+							<tr>
+								<td>BBa_K2696010</td>
+								<td>pqsR</td>
+								<td>Coding</td>
+								<td>pqsR function goes here</td>
+								<td>999</td>
+							</tr>
+							<tr>
+								<td>BBa_K2696011</td>
+								<td>Terminator 6</td>
+								<td>Terminator</td>
+								<td>Terminator 6 function goes here</td>
+								<td>32</td>
+							</tr>
+							<tr>
+								<td>BBa_K2696012</td>
+								<td>TetO-Cyc1 promoter (Tet-Off)</td>
+								<td>Regulatory</td>
+								<td>TetO-Cyc1 promoter (Tet-Off) function goes here</td>
+								<td>160</td>
+							</tr>
+							<tr>
+								<td>BBa_K2696013</td>
+								<td>TetR-VP16</td>
+								<td>Signaling</td>
+								<td>TetR-VP16 function goes here</td>
+								<td>1008</td>
+							</tr>
+							<tr>
+								<td>BBa_K2696014</td>
+								<td>Tyrosinase</td>
+								<td>Coding</td>
+								<td>Tyrosinase function goes here</td>
+								<td>1836</td>
 							</tr>
 						</tbody>
 					</table>
-					<p>The dissociation constants from the FRB, FKBP, and rapamycin reaction were used for the split protein reconstitution kinetics because of their similar interactions compared to our product.</p>
-					<p>The dissociation constants were then averaged to simplify our analysis later. It was determined that using the real dissociation constants versus using the average of them had very little effect on the color output over time graph. In the figure below, a simulation of the reaction was run with the real and averaged dissociation constants:</p>
-					<img class="center" src="../photos/realvsaveraged.png"/>
-					<p>As you can see, there is little difference between the two curves, and the calculated standard square error (SSE) between them was around 1E-5. This led us to conclude that matlab cannot be as precise with such small numbers and that the use of real or averaged k_d didn’t matter that much.</p>
-				</div>
-			</div>
-			<div class="section">
-				<div class="wrapper">
-					<h1>Protein Concentrations</h1>
-					<p>In modeling methods we wanted to implement in the future to better characterize our product, we would need to determine certain reaction constants which relies on known reagent concentrations, including protein concentrations. Since poly-histidine tags were not included in our genetic construct and comparing the colorimetric output between our sHRP and wild type HRP was not viable (since the difference in output could be attributed to different concentrations or activity levels), we had to figure out a different way to determine our protein concentrations once we lysed the cell.</p>
-					<p>Our model offered us one solution. It was observed in simulations of the reaction at fixed protein concentrations but varying biomarker concentrations, that the concentration of reconstituted sHRP at equilibrium was the greatest (around 80% of initial split protein concentration) when the protein halves and biomarker concentration were the same.</p>
-					<img class="center" src="../photos/reconstVSrap.png"/>
-					<p>This was an important observation to make because it allows us to “titrate” our lysate to determine the protein concentration.</p>
-				</div>
-			</div>
-			<div class="section">
-				<div class="wrapper">
-					<h1>Sensitivity Analysis</h1>
-					<p>In our sensitivity analysis, we adjusted four parameters, the dissociation constant (averaged), the Michaelis Menten constants for split-HRP (k_cat and k_m), and the protein concentration. The purpose of the sensitivity analysis was to determine which of these parameters affected the time in which all the TMB was reacted the greatest. Each parameter except one was held constant at the initial values listed in the table above. The varied parameter was swept across 7 orders of magnitude in either direction.</p>
-					<img class="center" src="../photos/sensitivityAnalysis.png"/>
-					<p>We can see clearly that protein concentration and k_cat affect the time that it takes TMB to fully react the greatest, changing it by around 15 and 10 orders of magnitude respectively. Each lower the time considerably as they increase. K_m and k_d on the other hand don’t change the time as much or only do once they wander out of the domain of possible values.</p>
-					<p>In conclusion, according to our sensitivity analysis, it seems it would be crucial to determine our sHRP’s k_cat value and adjust our protein concentrations in order to meet our time constraint.</p>
-				</div>
-			</div>
-			<div class="section">
-				<div class="wrapper">
-					<h1>Future Modeling</h1>
-					<p>Now that we have determined the important parameters, we know what to focus on once our protein construct is synthesized. We can find k_cat of our sHRP by producing a Lineweaver Burk plot. Then, we can run multiple simulations at different protein to biomarker concentrations (at both infected and healthy concentration levels) to determine the optimal ratio that performs under 5 mins. but still has a large enough difference in complete reaction time to distinguish between a positive and negative test.</p>
-				</div>
-			</div>
-			<div class="section">
-				<div class="wrapper">
-					<h1>Reciever Operating Characteristic (ROC)</h1>
-					<p>The ROC is an important property of diagnostic tests in industry, plotting the true positive rate (sensitivity) over the false-positive rate (1 – specificity). The integral of this curve gives you the accuracy of your diagnostic test.</p>
-					<p>Whilst waiting for our wet lab crew to construct the actual protein construct, we were able to model its behavior and develop a plausible ROC for our product using the protein concentration estimation method described above.</p>
-
-				</div>
-			</div>
-			<div class="section">
-				<div class="wrapper">
-					<h1>References</h1>
-					<ol class="references">
-						<li>Banaszynski, L. A., Liu, C. W., & Wandless, T. J. (2005). Characterization of the FKBP·Rapamycin·FRB Ternary Complex. J. Am. Chem. Soc. 127(13), p. 4721.</li>
-						<li>Brenda:<a>https://www.brenda-enzymes.org/enzyme.php?ecno=1.11.1.7</a></li>
-					</ol>
 					<div class="spacer-small"></div>
 				</div>
 			</div>

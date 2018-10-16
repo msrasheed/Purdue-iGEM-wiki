@@ -167,113 +167,99 @@
 	<div class="basic-page">
 		<div class='header'>
 			<img src='http://2018.igem.org/wiki/images/e/e9/T--Purdue--genericDNAHome.jpg'/>
-			<div class='title'>Model</div>
+			<div class='title'>Notebook</div>
 		</div>
+		<style>
+			.basic-page .body .section .wrapper {
+				width: 60%;
+			}
+		</style>
 		<div class='body alternate'>
 			<div class="section">
 				<div class="wrapper">
-					<h1>Overview</h1>
-					<p>The goal of the model was to determine what parameters were pertinent to the speed and accuracy of our design. We wanted to our model to speed up the experimentation process in the lab and give us a good idea of the characteristics of our construct. We also wanted to determine the optimal protein to biomarker ratio to meet our time constraint of 5 mins, since our survey indicated users prefer a fast test.</p>
+					<h1>Week 1 (5/24/18)</h1>
+					<div class="spacer-extrasmall"></div>
+					<p>Created GANTT chart, went over lab protocols, researched background information for yeast infections, discussed researchers and companies to reach out to for integrated human practices, made media, resuspended g blocks, created navigation and footer for wiki, purchased plane tickets, and reached out to companies for sponsorships.</p>
+					<div class="spacer-small"></div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="wrapper">
-					<h1>Reaction</h1>
-					<p>The reaction that we are trying to optimize is shown below. Each half of our split protein is attached to a part of horseradish peroxidase (HRP). The halves of our protein form a complex with the biomarker. This brings the two parts of split HRP (sHRP) closer together and primed to reconstitute. After sHRP is reconstituted, it is functional and oxidizes tetramethyl benzidine with hydrogen peroxide to form a blue product for our colorimetric output.</p>
-					<img class="center" src="../photos/diagramwconstants.png"/>
-					<p>The reaction between the two halves of the protein complex and the biomarker, tyrosol/farnesol, were modeled as following two-step mass action kinetics (the biomarker first binds with on half to form a complex and then the complex binds with the other half). We assumed that once both halves of the protein bound together and formed a complex, the reconstitution of the split-HRP was instantaneous. Or in other words, the formation of the protein complex was the rate limiting step. The reconstituted HRP then oxidizes TMB into a blue compound for our colorimetric response. The reconstituted HRP was modeled as following Michaelis Menten kinetics.</p>
-					<p>The initial values for the parameters are listed in the table below.</p>
-					<table class="table problemBorder" style="margin-bottom: 0">
-						<thead>
-							<tr>
-								<th>Constant</th>
-								<th>Value</th>
-								<th>Source</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Kd1</td>
-								<td>0.2 nM</td>
-								<td><a class="ref-link" href="#">[1]</a></td>
-							</tr>
-							<tr>
-								<td>Kd2</td>
-								<td>26 &micro;M</td>
-								<td><a class="ref-link" href="#">[1]</a></td>
-							</tr>
-							<tr>
-								<td>Kd3</td>
-								<td>12 nM</td>
-								<td><a class="ref-link" href="#">[1]</a></td>
-							</tr>
-							<tr>
-								<td>Kd1</td>
-								<td>100 fM</td>
-								<td><a class="ref-link" href="#">[1]</a></td>
-							</tr>
-							<tr>
-								<td>Kd (avg)</td>
-								<td>6.5 &micro;M</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>k_cat</td>
-								<td>435</td>
-								<td><a class="ref-link" href="#">[2]</a></td>
-							</tr>
-							<tr>
-								<td>Km</td>
-								<td>90 &micro;M</td>
-								<td><a class="ref-link" href="#">[2]</a></td>
-							</tr>
-						</tbody>
-					</table>
-					<p>The dissociation constants from the FRB, FKBP, and rapamycin reaction were used for the split protein reconstitution kinetics because of their similar interactions compared to our product.</p>
-					<p>The dissociation constants were then averaged to simplify our analysis later. It was determined that using the real dissociation constants versus using the average of them had very little effect on the color output over time graph. In the figure below, a simulation of the reaction was run with the real and averaged dissociation constants:</p>
-					<img class="center" src="../photos/realvsaveraged.png"/>
-					<p>As you can see, there is little difference between the two curves, and the calculated standard square error (SSE) between them was around 1E-5. This led us to conclude that matlab cannot be as precise with such small numbers and that the use of real or averaged k_d didn’t matter that much.</p>
+					<h1>Week 2 (6/1/19)</h1>
+					<div class="spacer-extrasmall"></div>
+					<p>Began cloning of gBlocks into E. coli, contacted planned parenthood, local hospitals, and a gynecologist, began Promega and Learning Beyond the Classroom grant, created wiki quiz and updated aesthetics, ordered lab supplies, met with colleges to discuss iGEM funding.</p>
+					<div class="spacer-small"></div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="wrapper">
-					<h1>Protein Concentrations</h1>
-					<p>In modeling methods we wanted to implement in the future to better characterize our product, we would need to determine certain reaction constants which relies on known reagent concentrations, including protein concentrations. Since poly-histidine tags were not included in our genetic construct and comparing the colorimetric output between our sHRP and wild type HRP was not viable (since the difference in output could be attributed to different concentrations or activity levels), we had to figure out a different way to determine our protein concentrations once we lysed the cell.</p>
-					<p>Our model offered us one solution. It was observed in simulations of the reaction at fixed protein concentrations but varying biomarker concentrations, that the concentration of reconstituted sHRP at equilibrium was the greatest (around 80% of initial split protein concentration) when the protein halves and biomarker concentration were the same.</p>
-					<img class="center" src="../photos/reconstVSrap.png"/>
-					<p>This was an important observation to make because it allows us to “titrate” our lysate to determine the protein concentration.</p>
+					<h1>Week 3 (6/7/18)</h1>
+					<div class="spacer-extrasmall"></div>
+					<p>Used ampicillin plates to select for successfully cloned gBlocks, began model development using protein mass balance equation, scheduled meetings with professors on campus to discuss project, rough drafts for wiki content worked on, and began research on paper-based assay including discussions of design, type of paper, and characteristics.</p>
+					<div class="spacer-small"></div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="wrapper">
-					<h1>Sensitivity Analysis</h1>
-					<p>In our sensitivity analysis, we adjusted four parameters, the dissociation constant (averaged), the Michaelis Menten constants for split-HRP (k_cat and k_m), and the protein concentration. The purpose of the sensitivity analysis was to determine which of these parameters affected the time in which all the TMB was reacted the greatest. Each parameter except one was held constant at the initial values listed in the table above. The varied parameter was swept across 7 orders of magnitude in either direction.</p>
-					<img class="center" src="../photos/sensitivityAnalysis.png"/>
-					<p>We can see clearly that protein concentration and k_cat affect the time that it takes TMB to fully react the greatest, changing it by around 15 and 10 orders of magnitude respectively. Each lower the time considerably as they increase. K_m and k_d on the other hand don’t change the time as much or only do once they wander out of the domain of possible values.</p>
-					<p>In conclusion, according to our sensitivity analysis, it seems it would be crucial to determine our sHRP’s k_cat value and adjust our protein concentrations in order to meet our time constraint.</p>
+					<h1>Week 4 (6/14/18)</h1>
+					<div class="spacer-extrasmall"></div>
+					<p>Ran digests of gBlocks to confirm transformation, PCR failed for positive control development, furthered model development to account for speed of liquid falling through paper assay and rate of enzyme reaction, modeled capillary action with washburn equation and enzyme kinetics with michaelis-menten, discussed mechanisms of paper-based assay with professors on campus, created navigation bar on wiki, worked on questions for IRB survey, met with College of Engineering for funding request.</p>
+					<div class="spacer-small"></div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="wrapper">
-					<h1>Future Modeling</h1>
-					<p>Now that we have determined the important parameters, we know what to focus on once our protein construct is synthesized. We can find k_cat of our sHRP by producing a Lineweaver Burk plot. Then, we can run multiple simulations at different protein to biomarker concentrations (at both infected and healthy concentration levels) to determine the optimal ratio that performs under 5 mins. but still has a large enough difference in complete reaction time to distinguish between a positive and negative test.</p>
+					<h1>Week 5 (6/19/18)</h1>
+					<div class="spacer-extrasmall"></div>
+					<p>Successfully cloned most gBlocks into E. coli, discovered positive control development failed due to incorrect primers being ordered, contacted statistics department for preparation of IRB survey, began human subjects training, developed method to discover parameters for modeling, added navigational buttons to wiki, began training with professors for paper-based assay development.</p>
+					<div class="spacer-small"></div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="wrapper">
-					<h1>Reciever Operating Characteristic (ROC)</h1>
-					<p>The ROC is an important property of diagnostic tests in industry, plotting the true positive rate (sensitivity) over the false-positive rate (1 – specificity). The integral of this curve gives you the accuracy of your diagnostic test.</p>
-					<p>Whilst waiting for our wet lab crew to construct the actual protein construct, we were able to model its behavior and develop a plausible ROC for our product using the protein concentration estimation method described above.</p>
-
+					<h1>Week 6 (6/28/18)</h1>
+					<div class="spacer-extrasmall"></div>
+					<p>Met with Purdue Research Foundation to discuss potential of getting patents for research, decided on parameters, paper, and design for paper-based assay, did restyling of wiki, learned how to use flex station for biological and paper-based assay.</p>
+					<div class="spacer-small"></div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="wrapper">
-					<h1>References</h1>
-					<ol class="references">
-						<li>Banaszynski, L. A., Liu, C. W., & Wandless, T. J. (2005). Characterization of the FKBP·Rapamycin·FRB Ternary Complex. J. Am. Chem. Soc. 127(13), p. 4721.</li>
-						<li>Brenda:<a>https://www.brenda-enzymes.org/enzyme.php?ecno=1.11.1.7</a></li>
-					</ol>
+					<h1>Week 7 (7/5/18)</h1>
+					<div class="spacer-extrasmall"></div>
+					<p>Performed half of standardization experiments for interlab study, determined protein protein interaction constants for modeling, discovered error between simulation data and real parameter values, new positive control dimers continued to dimerize, casing PCR complications, met with girl scouts for potential human practices opportunity, applied design section added to wiki, and discussed paper-based assay shelf life and surfactant complications, as well as how to improve on cost, accuracy, durability, and speed.</p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Week 8 (7/12/18)</h1>
+					<div class="spacer-extrasmall"></div>
+					<p>Began photo scanner training for paper-based assay, began TMB biological assay development, restarted interlab study due to accidental freezing of microspheres, ran MCMC bayesian parameter estimation code, ran sensitivity analyses for parameters, contacted vice-provost for potential funding, brainstormed project acronyms, and discussed target audience for project.</p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Week 9 (7/19/18)</h1>
+					<div class="spacer-extrasmall"></div>
+					<p>Began aging experiments with TMB, characterized device using food colored water glucose solutions, whatman #1 chosen as paper-based assay paper, specifically 3mm thick due to ability to filter out red blood cells, projected costs ignoring reagents to roughly 8 cents, using plate reader we were able to quantify assay parameters with glucose solutions, adjusted parameters for developing positive control by changing annealing temperature of primers in PCR, completed all 3 calibrations for interlab study, and received Learning Beyond the Classroom Grant.</p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Week 10 (7/26/18)</h1>
+					<div class="spacer-extrasmall"></div>
+					<p>Created HRP calibration curve, discovered HRP is extremely reactive and will react in minutes if left in aerobic environment, needs peroxide to react, discovered red/orange intermediate is formed before fully oxidized, set experiment for adjusting TMB, HRP, and peroxide concentration to improve assay, discovered frb-fkbp interactions are rate-limited, used Markov Chain Monte Carlo to assess Bayesian Parameter Estimation, successfully cloned positive control into E.coli, completed interlab study, and ran escape room with DNA scouts on campus.</p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Week 11 (8/2/18)</h1>
+					<div class="spacer-extrasmall"></div>
+					<p>Sequenced positive control, proved successful transformation into E.coli, and transformed plasmid into yeast cells to be used in biological assay.</p>
 					<div class="spacer-small"></div>
 				</div>
 			</div>

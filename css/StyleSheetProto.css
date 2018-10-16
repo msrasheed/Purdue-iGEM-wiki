@@ -842,6 +842,11 @@ General
 	background-color: rgba(255, 80, 80, .5);
 }
 
+.basic-page .body .section .table.small {
+	width:60%;
+	margin:auto;
+}
+
 .basic-page .body .contentIn {
     border: solid 1px black;
 	border-radius:10px;
