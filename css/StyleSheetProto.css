@@ -416,7 +416,7 @@ Slideshow
 	left:0;
 	width:100%;
 	height:100%;
-	background-color: #222222;
+	background-color:white;
 }
 
 .basic-page .slideshow .right-arrow-pane, .basic-page .slideshow .left-arrow-pane{
@@ -862,6 +862,8 @@ General
     margin-bottom: 0;
     font-size: 1.5em;
     font-weight: 600;
+    text-indent:0;
+    padding-left:2em;
 }
 
 .basic-page .trigger:hover {
@@ -870,6 +872,7 @@ General
 
 .basic-page .body .dropdown {
 	display:none;
+	padding:10px;
 }
 
 .basic-page .body .dropdown.border {
@@ -1000,6 +1003,7 @@ Media Queries
 		height:100%;
 		width:auto;
 	}
+
 	.basic-page .splash .title {
 		top:50%;
 		left:50%;
