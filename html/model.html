@@ -180,7 +180,9 @@
 				<div class="wrapper">
 					<h1>Reaction</h1>
 					<p>The reaction that we are trying to optimize is shown below. Each half of our split protein is attached to a part of horseradish peroxidase (HRP). The halves of our protein form a complex with the biomarker. This brings the two parts of split HRP (sHRP) closer together and primed to reconstitute. After sHRP is reconstituted, it is functional and oxidizes tetramethyl benzidine with hydrogen peroxide to form a blue product for our colorimetric output.</p>
-					<img class="center" src="../photos/diagramwconstants.png"/>
+					<img class="center" src="http://2018.igem.org/wiki/images/0/02/T--Purdue--diagrmwconstants.png"/>
+					<p>Each arrow represents a reaction and the HRP_reconst at the end converts TMP into our blue, colorimetric output.</p>
+					<img class="center" style="width:60%;" src="http://2018.igem.org/wiki/images/5/58/T--Purdue--equations.png"/>
 					<p>The reaction between the two halves of the protein complex and the biomarker, tyrosol/farnesol, were modeled as following two-step mass action kinetics (the biomarker first binds with on half to form a complex and then the complex binds with the other half). We assumed that once both halves of the protein bound together and formed a complex, the reconstitution of the split-HRP was instantaneous. Or in other words, the formation of the protein complex was the rate limiting step. The reconstituted HRP then oxidizes TMB into a blue compound for our colorimetric response. The reconstituted HRP was modeled as following Michaelis Menten kinetics.</p>
 					<p>The initial values for the parameters are listed in the table below.</p>
 					<table class="table problemBorder" style="margin-bottom: 0">
@@ -240,7 +242,7 @@
 					<h1>Protein Concentrations</h1>
 					<p>In modeling methods we wanted to implement in the future to better characterize our product, we would need to determine certain reaction constants which relies on known reagent concentrations, including protein concentrations. Since poly-histidine tags were not included in our genetic construct and comparing the colorimetric output between our sHRP and wild type HRP was not viable (since the difference in output could be attributed to different concentrations or activity levels), we had to figure out a different way to determine our protein concentrations once we lysed the cell.</p>
 					<p>Our model offered us one solution. It was observed in simulations of the reaction at fixed protein concentrations but varying biomarker concentrations, that the concentration of reconstituted sHRP at equilibrium was the greatest (around 80% of initial split protein concentration) when the protein halves and biomarker concentration were the same.</p>
-					<img class="center" src="../photos/reconstVSrap.png"/>
+					<img class="center" src="http://2018.igem.org/wiki/images/0/09/T--Purdue--reconstVSrap2.png"/>
 					<p>This was an important observation to make because it allows us to “titrate” our lysate to determine the protein concentration.</p>
 				</div>
 			</div>

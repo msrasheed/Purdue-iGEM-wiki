@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+  <script src="../bootstrap/jquery.min.js"></script>
+  <script src="../bootstrap/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="../css/StyleSheetProto.css">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="../js/notebookJQ.js"></script>
+  <script src="../js/general.js"></script>
+  <script src="../js/slideshowJQ.js"></script>
+  <script src='../js/navBtnsJQ.js'></script>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-inverse menu">
+	 	<div class="menu-container">
+			<!-- <div class="navbar-header"> -->
+				<div class="menu-logo-container">
+					<a href="http://2018.igem.org/Team:Purdue">
+						<img src="../photos/logo_cropped.png">
+					</a>
+				</div>
+	    	<!-- </div> -->
+	    	<div class="container menu-items">
+		    	<ul class="nav navbar-nav">
+		      		<li class="dropdown">
+		      			<a href="#">Team
+		      				<span class="caret"></span></a>
+		      			<ul class="dropdown-menu">
+		      				<li><a href="#">Team Members</a></li>
+		      				<li><a href="#">Collaborations</a></li>
+						</ul>
+		      		</li>
+					<li class="dropdown">
+						<a href="#">Project
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Description">Description</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Design">Design</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Experiments">Experiments</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Notebook">Notebook</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/InterLab">InterLab</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Demonstrate">Demonstrate</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Improve">Improve</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Attributions">Attributions</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#">Parts
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Parts">Parts Overview</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Basic_Part">Basic Parts</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Composite_Part">Composite Parts</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Part_Collection">Part Collection</a></li>
+						</ul>
+					</li>
+					<li><a href="http://2018.igem.org/Team:Purdue/Safety">Safety</a></li>
+					<li class="dropdown">
+						<a href="#">Human Practices
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Human_Practices">Human Practices</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Public_Engagement">Education &amp; Engagement</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#">Awards
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://2018.igem.org/Team:Purdue/Applied_Design">Applied Design</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Entrepreneurship">Entrepreneurship</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Hardware">Hardware</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Measurement">Measurement</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Plant">Plant</a></li>
+							<li><a href="http://2018.igem.org/Team:Purdue/Software">Software</a></li>
+						</ul>
+					</li>
+					<li><a href="http://igem.org/2018_Judging_Form?team=Purdue">Judging Form</a></li>
+		    	</ul>
+	    	</div>
+	    	<div class="menu-hamburger">
+	    		<a href='#'>
+	    		<div></div>
+	    		<div></div>
+	    		<div></div>
+	    		</a>
+	    	</div>
+	 	</div>
+	</nav>
+
+	<!-- <div class="basic-page"> -->
+	<div class="nav-menu-side">
+		<ul>
+      		<li class="dropdown-side">
+      			<a href="#">Team
+      				<span class="caret"></span></a></li>
+  			<ul class="dropdown-menu-side">
+  				<li><a href="#">Team Members</a></li>
+  				<li><a href="#">Collaborations</a></li>
+			</ul>
+			<li class="dropdown-side">
+				<a href="#">Project
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Description">Description</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Design">Design</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Experiments">Experiments</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Notebook">Notebook</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/InterLab">InterLab</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Demonstrate">Demonstrate</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Improve">Improve</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Attributions">Attributions</a></li>
+			</ul>
+			<li class="dropdown-side">
+				<a href="#">Parts
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Parts">Parts Overview</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Basic_Part">Basic Parts</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Composite_Part">Composite Parts</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Part_Collection">Part Collection</a></li>
+			</ul>
+			<li><a href="http://2018.igem.org/Team:Purdue/Safety">Safety</a></li>
+			<li class="dropdown-side">
+				<a href="#">Human Practices
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Human_Practices">Human Practices</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Public_Engagement">Education &amp; Engagement</a></li>
+			</ul>
+			<li class="dropdown-side">
+				<a href="#">Awards
+					<span class="caret"></span></a></li>
+			<ul class="dropdown-menu-side">
+				<li><a href="http://2018.igem.org/Team:Purdue/Applied_Design">Applied Design</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Entrepreneurship">Entrepreneurship</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Hardware">Hardware</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Measurement">Measurement</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Model">Model</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Plant">Plant</a></li>
+				<li><a href="http://2018.igem.org/Team:Purdue/Software">Software</a></li>
+			</ul>
+			<li><a href="http://igem.org/2018_Judging_Form?team=Purdue">Judging Form</a></li>
+    	</ul>
+	</div>
+</body>
+</html>
+
+<html>
+<script src="../js/dropdownJQ.js"></script>
+<body>
+	<div class="basic-page">
+		<div class="header">
+			<img src='http://2018.igem.org/wiki/images/9/99/T--Purdue--drugs.jpg'/>
+			<div class='title' style="size:1em;">Paper-Based Assay</div>
+		</div>
+		<div class='body alternate'>
+			<div class="section">
+				<div class="wrapper">	
+					<h1> Paper-Based Microfluid Devices</h1>
+					<p>Paper-based micro-fluid devices (PMD’s) can be used to help create robust, affordable, and modular diagnostics for the detection of a wide range of compounds and pathogens. The success of such tests in the detection of Ebola and Zika virus, dangerous organisms mainly affecting those in remote areas, has established PMD’s as an emerging leader in accessible diagnostic platforms. In accordance with our accessibility criteria, we thus chose a PMD as the foundation of our diagnostic assay. </p>
+					<p>At the most basic level PMD’s rely on liquid test samples flowing through predefined paths lined with dried reagents. Ideally, differences in the colorimetric output of this reaction can be used to confidently determine the presence or absence of a target compound in the sample. The functionality of a PMD is therefore reliant on process design, sample flow, reagent quantity, and reagent distribution.</p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1> Paper Based-Assay Design </h1>
+						<p> The final product started with a simple early prototype. Before setting out to create this product, criteria needed to be set. This led us to create a table for our design criteria</p>
+						<table class="table problemBorder">
+							<thead>
+							    <tr>
+							        <th>Customer Need</th>
+							        <th>Technical Need</th>
+							        <th>Technical Requirement</th>
+							        <th>Target value</th>
+							    </tr>
+							</thead>
+							<tbody>
+							    <tr>
+							        <td>The test should give results fast</td>
+							        <td>How fast the reaction occurs once the sample is applied</td>
+							        <td>2 minutes</td>
+							        <td>1.5 minutes</td>
+							    </tr>
+							    <tr>
+							        <td>The test should be cheap</td>
+							        <td>The test needs to cost little USD</td>
+							        <td>The test will be less than 5$</td>
+							        <td>The test will be less than 2$</td>
+							    </tr>
+							    <tr>
+							        <td>The test should be easy to use</td>
+							        <td>Test will require little steps top use</td>
+							        <td>Test will have less than 4 steps</td>
+							        <td>Test will have less than 3 steps</td>
+							    </tr>
+							    <tr>
+						           <td> Test needs to be able to be shipped worldwide </td>
+						           <td> Test can last several days after creation </td>
+						           <td> test can last 28 days </td>
+						           <td> test will last 31 days</td>
+							    </tr>
+							    <tr>
+							        <td>test needs to be accurate</td>
+							        <td> Test will very sensitive</td>
+							        <td> Test will have 90% sensitivity</td>
+							        <td> test will have 95% sensitivity</td>
+							    </tr>
+						    </tbody> 
+					</table>
+					<h4> Now that we know what our targets are, it is time to come up with several designs.</h4>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1> Generation 0 </h1>
+					<img class="center" style="width:25%;" src="http://2018.igem.org/wiki/images/3/35/T--Purdue--EarlyDesign.png"></img>
+					<p style="text-align:center;"> This device was an early model for an idea of a 2D design</p>
+					<h2> Question 1</h2>
+					<p>Should we accommodate testing sites for both vulvovaginal and invasive candidiasis on a single PMD, or should we create individual tests for each disease?</p>
+					<p> Due to large phenotypic differences between the Candida albicans responsible for vulvovaginal and invasive infections, we were forced to select different biomarkers for each disease. As a consequence, a PMD testing for one type of candidiasis would require different reagents than a PMD testing for the other. </p>
+					<p>Answer: After meeting with Dr.Linnes, an assistant professor at Purdue University in the department of Biomedical Engineering, we decided to design a modular PMD which could be used to diagnose a single form of candidiasis, not both, depending on the reagents loaded into it.</p>
+					<h2> Question 2</h2>
+					<p> Should our assay be 2D or 3D? </p>
+					<p>Answer : Dr. Linnes indicated that a simple 3D flow through assay would be the best place to start </p>
+					<p>With these basic questions answered, it was time to start getting experience in assembling and testing PMD’s. We printed a 96-well plate format on printer paper using a wax printer and tested the lanes for leaking to ensure the printing process went smoothly.</p>
+					<img class="center" src="http://2018.igem.org/wiki/images/5/5b/T--purdue--96wellplate.png"/>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1> Generation 1</h1>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="imageFrame">
+								<img src="http://2018.igem.org/wiki/images/7/73/T--Purdue--MK1Top.jpeg" style="margin:auto;width:50%;"/>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="imageFrame">
+								<img src="http://2018.igem.org/wiki/images/d/de/T--Purdue--MK1Mid.jpeg" style="margin:auto;width:50%;"/>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="imageFrame">
+								<img src="http://2018.igem.org/wiki/images/4/48/T--Purdue--MK1Bot.jpeg" style="margin:auto;width:50%;"/>
+							</div>
+						</div>
+					</div>
+					<h2> Question 3 </h2>
+					<p>How will patients know whether they test positive or negative for a yeast infection?</p>
+					<p>Initial experiments with HRP and TMB showed that the colorimetric reaction is highly sensitive, meaning small variations in reactant concentration could lead to differences in output color. This finding combined with the inability of printed color scales, as one would use with pH strips, to clearly indicate a binary ‘yes’ or ‘no’ led us to add channels for positive and negative controls to our original flowthrough model. With this modification, variations in PMD reactant concentration shouldn’t detract from a user’s ability to analyze test results</p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1> Generation 2</h1>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="imageFrame">
+								<img src="http://2018.igem.org/wiki/images/f/f2/T--Purdue--MK2Top.jpeg"></img>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<h2> Question 4</h2>
+							<p> Is the intermittent spacing between layers responsible for slower, inconsistent flow rates? </p>
+							<p> Answer: Yes; when paper with adhesive backing was used to assemble layers, the spacing between layers disappeared and flow rates became faster and more consistent </p>
+						</div>
+					</div>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>96 Well Plate Assay</h1>
+					<p>This revealed that there was no water leaking.</p>
+					<p>The next problem we needed to tackle was the deign needed to allow for a positive and negative control to be tested. This led to a three spoke middle layer to three holes on the bottom layer. There was a flow test done again to see if the device would flow well. The results were promising with flow taking less than two minutes which was our target. This design was put together using double-sided tape. This left gaps where the paper was loose between layers. In order to improve this, the assay was redesigned. </p>
+					<p>The next part was to test the paper permeation and flow. In order to emulate the viscosity of blood, 10% glucose with food coloring was made. This would help test the flow of blood on the design, proving that it would likely be absorbed through the whole assay. In addition for this test, we also tried using honey to emulate viscosity of mucus if the design was going to be used for vaginal yeast infection. </p>
+					<p>These pictures show that glucose was absorbed, but the areas with honey was not absorbed. This means that the design would likely work as is for blood, but vaginal mucus would need to be treated with surfractants. Also, the test showed some leakage between the zones. Further inspection revealed that liquid traveling through different layers transferred between the layers outside the zone. This allowed the water to travel through then back up through the layers. To solve this issue, we printed wax to the entire background leaving only the areas where we wanted the sample to travel through. In anticipation of having issues with our adhesive blocking the zones, the holes in the adhesive were made slightly larger than the actual zones to allow for better flow and anticipate human error when assembling.</p> 
+					<p>At this point we received store bough HRP since we wanted to test our device with our control enzyme. Testing revealed that there was an issue with the overall procedure, before hand, tape was covering everywhere except for the areas that the liquid would flow to pass to the next layer. However, this was covering part of the spokes where the water would flow between. This actually meant that the reaction occurred and stuck in the second layer with the third layer not revealing any results. </p>
+					<p>This was fixed to change the pattern of the layers, but also the order of the reactants. The TMB and HRP are placed on the bottom layer. H2O2 was placed in the second layer. Also, it was observed that the TMB would react on its own with air over time. This would mean that the lifetime for the design could be relatively short lived. In order to help test this as well as to inform the user, a freshness zone was created on the bottom layer where TMB would be added and the zone would be separate from the rest of the sites.</p>
+					<p>At this point, tests were sent out for the collaboration. This test was to test how well the devices would ship. 3 treatments were done. 1 was shipped wrapped with a opaque cover that could slide out and a bottom layer plastic sheet that was made to help prevent air from oxidizing the reaction. Another was shipped without the opaque cover, but with the plastic sheet. The last one was shipped without the plastic sheet on the bottom nor the cover. Before the results were received from this. We sent out a survey and received results from it. The results were very clear on a few things.</p>
+					<ol>
+					    <li> People were concerned with not being able to tell the differences between the reaction zones of the samples</li>
+					    <li> People are concerned with possibly looking too late to read the test, this is because the TMB that doesn't react with the HRP will react with the air over time, ruining the reading. </li>
+					    <li> Not being able to tell the difference between the positive control and the sample. This is so people can actually read the results </li>
+					    <li> Buying the Test and afterwards learning it's expired.</li>
+					</ol>
+					<p>In order to tackle these concerns, a few things can be done.</p>
+					<ol>
+					    <li> Labels to each zone was added to tell them apart.</li>
+					    <li> This is not too much of a concern as it does take some time to have the interference occur. Currently there is an estimated 15 minute window to read the results. </li>
+					    <li> A color guide will be included in the product so people can read the results a bit better, and in the future, there are cheap devices that can actually read the color with a quantitative value.</li>
+					    <li> This can be introduced in a package design. The part of the test that has the freshness zone can be covered with an amber slip that will keep out most of the light which will reduce the effect it has on the TMB making it last longer, but also allowing would be purchasers to see the zone before they pick the test up. Also it could be possible for the company that produces these tests to offer a program for expired tests to be replaced for free. </li>
+					</ol>
+					<p>After this, we got back the results on the collaboration, which more can be read here <!-- link-->. It was clear that although we were not able to received the desired data, it was clear that the test and directions were unclear. Thus, we changed the assay to include which sides samples should be put on. The next step that was done was to determine the accuracy of the assay, which would determine the concentration of reagents that we would be using and therefore that would determine the cost of the device. This was test done using 9 variations of different concentrations of HRP and 8 repeats with the range being centered linearly around the minimum amount of Farnesol in the infected blood stream. This test can be seen below. The bar graph of the average intensity of the results.</p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section" id="Decision Matrix">
+				<div class="wrapper">
+					<h1>Decision Matrix</h1>
+					<p> The next step after testing was to evaluate our designs using a decision matrix. This is seen below</p>
+					<table class="table problemBorder">
+						<thead>
+					      <tr>
+					          <th>Characteristics</th>
+					          <th>Weight</th>
+					          <th>Assay MK5</th>
+					          <th>Assay MK4</th>
+					          <th>Assay MK3</th>
+					          <th>Assay MK2</th>
+					          <th>Assay MK1</th>
+					      </tr>
+					  </thead>
+					  <tbody>
+					      <tr>
+					          <th>Speed</th>
+					          <td>4</td>
+					          <td>4</td>
+					          <td>4</td>
+					          <td>4</td>
+					          <td>3</td>
+					          <td>3</td>
+					      </tr>
+					      <tr>
+					          <th>Complexity</th>
+					          <td>4</td>
+					          <td>5</td>
+					          <td>4</td>
+					          <td>4</td>
+					          <td>4</td>
+					          <td>5</td>
+					      </tr>
+					      <tr>
+					          <th>Accuracy</th>
+					          <td>5</td>
+					          <td>4</td>
+					          <td>4</td>
+					          <td>N/A</td>
+					          <td>N/A</td>
+					          <td>N/A</td>
+					      </tr>
+					      <tr>
+					          <th>Durability</th>
+					          <td>4</td>
+					          <td>5</td>
+					          <td>5</td>
+					          <td>3</td>
+					          <td>3</td>
+					          <td>2</td>
+					      </tr>
+					      <tr>
+					          <th>Cost</th>
+					          <td>3</td>
+					          <td>2</td>
+					          <td>3</td>
+					          <td>4</td>
+					          <td>4</td>
+					          <td>4</td>
+					      </tr>
+					      <tr>
+					          <th> Total</th>
+					          <td> </td>
+					          <td>82</td>
+					          <td>81</td>
+					          <td>56</td>
+					          <td>52</td>
+					          <td>52</td>
+					      </tr>
+					  </tbody>
+					</table>
+					<p> We ended up choosing the last design since it </p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Second Technical Table</h1>
+					<p> With the survey and collaboration, we also found the new technical requirements we needed to meet. Below is the table with new data gathered from HP as well as data gathered from the experiments we conducted from the chosen design</p>
+					<table class="table problemBorder">
+						<thead>
+						    <tr>
+						        <th> Customer Need</th>
+						        <th>Technical Need</th>
+						        <th>Technical Requirement</th>
+						        <th>Target value</th>
+						        <th>Actual Value</th>
+						    </tr>
+						</thead>
+						<tbody>
+						    <tr>
+						        <td>The overall test should be fast</td>
+						        <td>Time it takes for the test from sample harvesting to reading.</td>
+						        <td>30 minutes</td>
+						        <td>5 minutes</td>
+						        <td>TBD</td>
+						    </tr>
+						    <tr>
+						        <td>The test should be cheap</td>
+						        <td>The test needs to cost little USD</td>
+						        <td>The test will be less than 10$</td>
+						        <td>The test will be less than 2$</td>
+						        <td>TBD</td>
+						    </tr>
+						    <tr>
+						        <td>The test should be easy to use</td>
+						        <td>Test will require little steps top use</td>
+						        <td>Test will have less than 3 steps</td>
+						        <td>Test will have less than 3 steps</td>
+						        <td>3 Steps, 1. Prick the blood on finger, 2. Put Blood on Sample Sites, 3. Read Results.</td>
+						    </tr>
+						    <tr>
+						       <td> Test needs to be able to be shipped worldwide </td>
+						       <td> Test can last several days after creation </td>
+						       <td> test can last 1 year </td>
+						       <td> test will last 1 year </td>
+						       <td>TBD</td>
+						    </tr>
+						    <tr>
+						    	<td>test needs to be accurate</td>
+						        <td> Test will very accuracy</td>
+						        <td> Test will have 90% accuracy</td>
+						        <td> test will have 95% accuracy</td>
+						        <td>TBD</td>
+						    </tr>
+					  	</tbody>
+					</table>
+					<p> Due to the survey, it was determined that people didn't want to spend more than 30 minutes on this test. Also, it was determined that we needed the device to cost less than 10$. This package should come with two tests as well. After discussing things with Dr.Linnes, her experience says that in order to approved for over the counter use to approved, the device needs to be less than 3 steps. Also, the expiration needs to be about a year for the FDA to like the drug. The test also was dired to be over 90% in accuracy.</p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Conclusion</h1>
+					<p> In conclusion, the novelness of the design presents useful opportunities for others in the field of science. Should sample testing need to be done, this hardware presents an easy and cheap way of assessing multiple samples. The user can load almost any type of reaction. They can then use the assay and scan the reaction using a photoscanner and imageJ, a free program. This presents a much cheaper alternative than using a 96 well plate with a flexx station, especially should the lab not have a flexx station. Unlike some paper-based diagnostic designs, this design differs from others due to clear labeling and fast flow and built-in filtering properties due to the different types of paper. Furthermore, this overall design can be used for other colormetric diagnostic tests. This design could revolutionize certain over the counter tests, such as pregnancy tests, std tests, glucose tests and many more in the future.</p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+		<div class="footer body" style="border-top:solid 2px white;">
+			<div class="section">
+				<div class="wrapper">
+					<div class="spacer-extrasmall"></div>
+					<div class="row">
+						<div class="col-sm-4 footer-thanks">
+							<h1>Special Thanks</h1>
+							<a class="footer-text-link" href="http://2018.igem.org/Team:Purdue/Acknowledgement"><p>to all those that made this possible</p></a>
+							<img class="social social-purdue" src="../photos/Purdue.png" style="display:block;margin:auto;height:5em;"/>
+						</div>
+						<div class="col-sm-4">
+							<h1>Follow Us On</h1>
+							<div class="socialRow">
+								<div class="socialWrap">
+									<a href="https://twitter.com/purdueigem"><img class="social" src="../photos/twitter.png"/></a>
+								</div>
+								<div class="socialWrap">
+									<a href="https://www.instagram.com/purdueigem/"><img class="social" src="../photos/instagram.png"/></a>
+								</div>
+								<div class="socialWrap">
+									<a href="https://www.facebook.com/PurdueiGEM/"><img class="social" src="../photos/facebook.png"/></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 third_size">
+							<h1>Contact Us</h1>
+							<a class="footer-text-link" href="mailto:igem@purdue.edu?cc=fitzge29@purdue.edu">
+							<p>igem@purdue.edu</p></a>
+							<p style="margin-bottom:0;">Kevin Fitzferald, B025</p>
+							<p style="margin-bottom:0;">1203 W State St.</p>
+							<p>West Lafayette, IN 47906</p>
+						</div>
+					</div>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -686,7 +686,7 @@ General
 	top:0;
 	left:0;
 	width:100%;
-	opacity:.30;
+	opacity:.50;
 }
 
 .basic-page .header .title {
@@ -790,6 +790,7 @@ General
 .basic-page .body .section .wrapper img.center {
 	margin:auto;
 	display:block;
+	width:50%;
 }
 
 #HQ_page .basic-page .body .section .wrapper p {
