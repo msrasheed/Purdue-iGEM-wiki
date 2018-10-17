@@ -98,10 +98,11 @@
   crossorigin="anonymous"></script>
 <script src="../js/notebookJQ.js"></script>
 <script src="../js/teamJQ.js"></script>
+<script src="../js/dropdownJQ.js"></script>
 <body>
 	<div class = "basic-page">
 		<div class='header'>
-			<img src='../photos/bread3.jpg'/>
+			<img src='http://2018.igem.org/wiki/images/c/c3/T--Purdue--bread3.jpg'/>
 			<div class='title'>Survey</div>
 		</div>
 		<div class="body alternate">
@@ -113,110 +114,226 @@
 						<li>Assess the factors that people consider when deciding if and how to diagnose their yeast infection</li>
 						<li>Develop design criteria for our paper-based yeast infection detection system and determine possible points of concern</li>
 					</ul>
+					<div class="spacer-small"></div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="wrapper">
 					<h1>Institutional Review Board Approval</h1>
 					<p>Our survey was approved by Purdue University’s Institutional Review Board Human Research Protection Program (# 31228808) as a Category 2 Exemption, which covers human subjects studies involving survey procedures.</p>
+					<div class="spacer-small"></div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="wrapper">
 					<h1>Survey Design</h1>
-					<h3>Demographic questions:</h3>
-					<ul>
-						<li>What is your sex?</li>
-						<li>What is your age?</li>
-						<li>Do you live in the United States?</li>
-						<li style="list-style-type:none;">
+					<p>Feedback for survey design was provided by Dr. Bruce A Craig from Purdue’s Statistical Consulting Service to ensure survey was not biased and easy to follow.</p>
+					<div class="spacer-extrasmall"></div>
+					<div class="contentIn">
+						<div class="trigger" id="Q1">
+							<div class="plus">
+								<div></div>
+								<div class="active"></div>
+							</div>
+							<p>Demographic questions:</p>
+						</div>
+						<div class="dropdown" id="Q1">
+							<div class="spacer-extrasmall" style="border-top:solid 1px black"></div>
 							<ul>
-								<li>If no: What country do you live in?</li>
-								<li>If yes: What state or territory do you live in?</li>
+								<li>What is your sex?</li>
+								<li>What is your age?</li>
+								<li>Do you live in the United States?</li>
+								<li style="list-style-type:none;">
+									<ul>
+										<li>If no: What country do you live in?</li>
+										<li>If yes: What state or territory do you live in?</li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-					</ul>
-					<h3>Questions about attitudes towards yeast infections:</h3>
-					<ul>
-						<li>How strongly do you agree with the following statements (1:strongly disagree - 10:strongly agree):</li>
-						<li style="list-style-type:none;">
+						</div>
+					</div>
+					<div class="spacer-extrasmall"></div>
+					<div class="contentIn">
+						<div class="trigger" id="Q2">
+							<div class="plus">
+								<div></div>
+								<div class="active"></div>
+							</div>
+							<p>Questions about attitudes towards yeast infections:</p>
+						</div>
+						<div class="dropdown" id="Q2">
+							<div class="spacer-extrasmall" style="border-top:solid 1px black"></div>
 							<ul>
-								<li>A yeast infection is a sexually transmitted infection?</li>
-								<li>I know how to treat a genital yeast infection?</li>
+								<li>How strongly do you agree with the following statements (1:strongly disagree - 10:strongly agree):</li>
+								<li style="list-style-type:none;">
+									<ul>
+										<li>A yeast infection is a sexually transmitted infection?</li>
+										<li>I know how to treat a genital yeast infection?</li>
+									</ul>
+								</li>
+								<li>What is the lowest percentage for accuracy in a standard yeast infection detection test?</li>
 							</ul>
-						</li>
-						<li>What is the lowest percentage for accuracy in a standard yeast infection detection test?</li>
-					</ul>
-					<h3>Questions about experiences with yeast infections:Questions about preferences for diagnosing yeast infections:</h3>
-					<ul>
-						<li>Have you had the following in your lifetime?</li>
-						<li style="list-style-type:none;">
+						</div>
+					</div>
+					<div class="spacer-extrasmall"></div>
+					<div class="contentIn">
+						<div class="trigger" id="Q3">
+							<div class="plus">
+								<div></div>
+								<div class="active"></div>
+							</div>
+							<p>Questions about experiences with yeast infections:Questions about preferences for diagnosing yeast infections:</p>
+						</div>
+						<div class="dropdown" id="Q3">
+							<div class="spacer-extrasmall" style="border-top:solid 1px black"></div>
 							<ul>
-								<li>Genital yeast infection</li>
-								<li>Oral yeast infection (oral thrush)</li>
-								<li>I have had both of these infections</li>
-								<li>No, I haven’t had any of these infections</li>
+								<li>Have you had the following in your lifetime?</li>
+								<li style="list-style-type:none;">
+									<ul>
+										<li>Genital yeast infection</li>
+										<li>Oral yeast infection (oral thrush)</li>
+										<li>I have had both of these infections</li>
+										<li>No, I haven’t had any of these infections</li>
+									</ul>
+								</li>
+								<li>What symptoms do you usually get? - this question is designed to assess survey validity by ensuring that the respondents check symptoms appropriate to their yeast infection experiences</li>
+								<li style="list-style-type:none;">
+									<ul>
+										<li>Itching</li>
+										<li>Pain or discomfort when urinating</li>
+										<li>Abnormal genital discharge</li>
+										<li>Redness and soreness</li>
+										<li>White patches in mouth</li>
+										<li>Loss of taste</li>
+										<li>Pain when eating or swallowing</li>
+										<li>Cottony feeling in mouth</li>
+										<li>Cracking and redness in corners of mouth</li>
+										<li>Headache</li>
+										<li>Other: please explain</li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-						<li>What symptoms do you usually get? - this question is designed to assess survey validity by ensuring that the respondents check symptoms appropriate to their yeast infection experiences</li>
-						<li style="list-style-type:none;">
+						</div>
+					</div>
+					<div class="spacer-extrasmall"></div>
+					<div class="contentIn">
+						<div class="trigger" id="Q4">
+							<div class="plus">
+								<div></div>
+								<div class="active"></div>
+							</div>
+							<p>Questions about preferences for diagnosing yeast infections:</p>
+						</div>
+						<div class="dropdown" id="Q4">
+							<div class="spacer-extrasmall" style="border-top:solid 1px black"></div>
 							<ul>
-								<li>Itching</li>
-								<li>Pain or discomfort when urinating</li>
-								<li>Abnormal genital discharge</li>
-								<li>Redness and soreness</li>
-								<li>White patches in mouth</li>
-								<li>Loss of taste</li>
-								<li>Pain when eating or swallowing</li>
-								<li>Cottony feeling in mouth</li>
-								<li>Cracking and redness in corners of mouth</li>
-								<li>Headache</li>
-								<li>Other: please explain</li>
+								<li>Select all resources in the past that you have sought in the past to diagnose your yeast infection.</li>
+								<li style="list-style-type: none">
+									<ul>
+										<li>I don’t seek an official diagnosis/self-diagnose based on symptoms</li>
+										<li>Over-the-counter diagnosis test</li>
+										<li>Healthcare professional</li>
+										<li>Other: please explain</li>
+									</ul>
+								</li>
+								<li>Rank the previously-listed resources based on preference.</li>
+								<li>Why is that your preferred option? What do you like/dislike about those resources that you selected?</li>
+								<li>Would you do something differently to diagnose your yeast infection next time? If yes, Why?</li>
 							</ul>
-						</li>
-					</ul>
-					<h3>Questions about preferences for diagnosing yeast infections:</h3>
-					<ul>
-						<li>Select all resources in the past that you have sought in the past to diagnose your yeast infection.</li>
-						<li style="list-style-type: none">
+						</div>
+					</div>
+					<div class="spacer-extrasmall"></div>
+					<div class="contentIn">
+						<div class="trigger" id="Q5">
+							<div class="plus">
+								<div></div>
+								<div class="active"></div>
+							</div>
+							<p>Questions about design criteria for an over-the-counter diagnostic test:</p>
+						</div>
+						<div class="dropdown" id="Q5">
+							<div class="spacer-extrasmall" style="border-top:solid 1px black"></div>
 							<ul>
-								<li>I don’t seek an official diagnosis/self-diagnose based on symptoms</li>
-								<li>Over-the-counter diagnosis test</li>
-								<li>Healthcare professional</li>
-								<li>Other: please explain</li>
+								<li>What is the largest amount of time you would be willing to spend waiting on a result from a $5 over-the-counter test diagnostic test?</li>
+								<li>What is the highest amount you are willing to pay (in US dollars) for a test to diagnose your yeast infection?</li>
 							</ul>
-						</li>
-						<li>Rank the previously-listed resources based on preference.</li>
-						<li>Why is that your preferred option? What do you like/dislike about those resources that you selected?</li>
-						<li>Would you do something differently to diagnose your yeast infection next time? If yes, Why?</li>
-					</ul>
-					<h3>Questions about design criteria for an over-the-counter diagnostic test:</h3>
-					<ul>
-						<li>What is the largest amount of time you would be willing to spend waiting on a result from a $5 over-the-counter test diagnostic test?</li>
-						<li>What is the highest amount you are willing to pay (in US dollars) for a test to diagnose your yeast infection?</li>
-					</ul>
-					<h3>Sample instructions for our paper-based over-the-counter diagnostic test?</h3>
-					<p>A hypothetical over-the-counter, paper-based diagnostic test for yeast infections includes the following instructions. The test is able to detect yeast based on molecules the yeast produce.</p>
-					<ol>
-						<li>Check the "expiration" spot on the paper test. If the spot is blue, the test has expired. </li>
-						<li>Take a genital or oral swab (depending on location of potential yeast infection).</li>
-						<li>Swirl the swab for at least 30 seconds in the provided test solution.</li>
-						<li>Use the provided dropper to add a drop of the test solution to the "test" dot on the paper.</li>
-						<li>Observe the negative control, positive control and test dot. If a yeast infection is present, the test dot will become blue quicker than the negative control dot. If the positive control dot does not turn blue, the test is not working properly.</li>
-						<li>Do not wait more than 10 minutes to compare the test and control dots. After ten minutes, the negative control dot will slowly turn blue and cannot be compared against the test dot to see if an infection is present.</li>
-					</ol>
-					<h3>Questions about opinions on our paper-based assay:</h3>
-					<ul>
-						<li>How likely are you to use this product? (0: highly unlikely to 100: highly likely)</li>
-						<li>Assuming that this product has an average of 90% accuracy, how many separate tests would you like to take to feel confident in your results? Each test uses its own individual genital or oral swab. Pretend any additional test you take is free.</li>
-						<li>Do you have any problems or concerns about using this test? If yes, what?</li>
-					</ul>
+						</div>
+					</div>
+					<div class="spacer-extrasmall"></div>
+					<div class="contentIn">
+						<div class="trigger" id="Q6">
+							<div class="plus">
+								<div></div>
+								<div class="active"></div>
+							</div>
+							<p>Sample instructions for our paper-based over-the-counter diagnostic test?</p>
+						</div>
+						<div class="dropdown" id="Q6">
+							<div class="spacer-extrasmall" style="border-top:solid 1px black"></div>
+							<p>A hypothetical over-the-counter, paper-based diagnostic test for yeast infections includes the following instructions. The test is able to detect yeast based on molecules the yeast produce.</p>
+							<ol>
+								<li>Check the "expiration" spot on the paper test. If the spot is blue, the test has expired. </li>
+								<li>Take a genital or oral swab (depending on location of potential yeast infection).</li>
+								<li>Swirl the swab for at least 30 seconds in the provided test solution.</li>
+								<li>Use the provided dropper to add a drop of the test solution to the "test" dot on the paper.</li>
+								<li>Observe the negative control, positive control and test dot. If a yeast infection is present, the test dot will become blue quicker than the negative control dot. If the positive control dot does not turn blue, the test is not working properly.</li>
+								<li>Do not wait more than 10 minutes to compare the test and control dots. After ten minutes, the negative control dot will slowly turn blue and cannot be compared against the test dot to see if an infection is present.</li>
+							</ol>
+						</div>
+					</div>
+					<div class="spacer-extrasmall"></div>
+					<div class="contentIn">
+						<div class="trigger" id="Q7">
+							<div class="plus">
+								<div></div>
+								<div class="active"></div>
+							</div>
+							<p>Questions about opinions on our paper-based assay:</p>
+						</div>
+						<div class="dropdown" id="Q7">
+							<div class="spacer-extrasmall" style="border-top:solid 1px black"></div>
+							<p>A hypothetical over-the-counter, paper-based diagnostic test for yeast infections includes the following instructions. The test is able to detect yeast based on molecules the yeast produce.</p>
+							<ul>
+								<li>How likely are you to use this product? (0: highly unlikely to 100: highly likely)</li>
+								<li>Assuming that this product has an average of 90% accuracy, how many separate tests would you like to take to feel confident in your results? Each test uses its own individual genital or oral swab. Pretend any additional test you take is free.</li>
+								<li>Do you have any problems or concerns about using this test? If yes, what?</li>
+							</ul>
+						</div>
+					</div>
+					<div class="spacer-small"></div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="wrapper">
 					<h1>Survey Distribution</h1>
 					<p>Our survey was distributed with Amazon Mechanical Turk, although the survey itself was hosted on Qualtrics in accordance with the University of California-Berkeley Committee for Protection of Human Subject’s recommedation for using Amazon Mechanical Turk for academic surveys.<a class="ref-link" href="#">[1]</a></p>
+					<p>Studies have shown that the Amazon Mechanical Turk Demographic is diverse, yet compared to the world population, MTurk workers tends to be</p>
+					<ul>
+						<li>More heavily concentrated in the United States of America and India MTurk users from the United States, compared to the general population of the United States, tend to be</li>
+					</ul>
+					<div class="spacer-extrasmall"></div>
+					<div class="row">
+						<div class="col-sm-6">
+							<p>MTurk users from the United States, compared to the general population of the United States, tend to be</p>
+							<ul>
+								<li>More educated</li>
+								<li>More female</li>
+								<li>Younger</li>
+								<li>Lower-income</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<p>MTurk workers from India, compared to the population of India, tend to be</p>
+							<ul>
+								<li>More educated</li>
+								<li>More male</li>
+								<li>Younger <a class="ref-link" href="#">[2]</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="spacer-extrasmall"></div>
+					<p>Still, Amazon Mechanical Turk was chosen as a survey distribution method due to it being a fairly cheap, non-labor intensive way to achieve a large sample size without relying upon a convenience sample.</p>
+					<p>Several studies have found evidence indicating that Amazon Mechanical Turk survey data can be just as valid as other common methods for collecting academic survey data <a class="ref-link" href="#">[3]</a>.</p>
 					<div class="row">
 						<div class="col-sm-6">
 							<h3>Demographics</h3>
@@ -227,14 +344,16 @@
 						</div>
 						<div class="col-sm-6">
 							<div class="imageFrame">
-								<img src="../photos/placeholder.png" style="margin:auto;width:50%;"/>
+								<img src="http://2018.igem.org/wiki/images/b/b0/T--Purdue--ageOfSurveyRespondents.png" style="margin:auto;width:50%;"/>
 							</div>
+							<div class="spacer-small"></div>
 						</div>
 					</div>
 					<ul>
 						<li>The vast majority of respondents were from the United States of America (85.8%), but 10 total countries were represented. 38 different states from the USA were represented.</li>
 					</ul>
-					<img class="center" src="../photos/placeholder.png"/>
+					<img class="center" style="width:100%;" src="http://2018.igem.org/wiki/images/9/94/T--Purdue--surveyMap.png"/>
+					<div class="spacer-small"></div>
 					<div class="row">
 						<div class="col-sm-6">
 							<ul>
@@ -243,17 +362,123 @@
 						</div>
 						<div class="col-sm-6">
 							<div class="imageFrame">
-								<img src="../photos/placeholder.png" style="margin:auto;width:50%;"/>
+								<img src="http://2018.igem.org/wiki/images/1/1e/T--Purdue--infectionsAndSex.png"/>
 							</div>
 						</div>
 					</div>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Attitudes Towards Yeast Infections</h1>
+					<div class="row">
+						<div class="col-sm-6">
+							<p>When asked how much they agree with the statement “a yeast infection is a sexually transmitted infection, with a score of “0” meaning strongly disagree and “10” meaning highly agree, respondents indicated a mean agreement value of 3.04 and a median agreement value of 2. The standard error was 0.206 and the interquartile range was 5. Overall, the majority of people do not consider a yeast infection a sexually transmitted infection.</p>
+						</div>
+						<div class="col-sm-6">
+							<div class="imageFrame">
+								<img src="http://2018.igem.org/wiki/images/e/e7/T--Purdue--agreementWithStatementYeastIsSti.png" style="margin:auto;width:60%;"/>
+							</div>
+							<div class="spacer-small"></div>
+						</div>
+					</div>
+					<h4>Factors that increase a person’s likelihood of considering a yeast infection a sexually transmitted infection are . . . </h4>
+					<div class="spacer-extrasmall"></div>
+					<img class="center" src="http://2018.igem.org/wiki/images/a/af/T--Purdue--genderAndYeastSti.png"/>
+					<p style="text-align:center;">Gender (Males: 4.34, Females: 2.37, p-value: &lt;0.0001)</p>
+					<div class="spacer-small"></div>
+					<img class="center" src="http://2018.igem.org/wiki/images/d/d6/T--Purdue--ageYeastInfectionSti.png"/>
+					<p style="text-align:center;">Younger age (-0.052 agreement values/year, p-value 0.0013, although R2 was low at 0.043)</p>
+					<div class="spacer-small"></div>
+					<img class="center" src="http://2018.igem.org/wiki/images/4/45/T--Purdue--experienceWithInfectionsSti.png"/>
+					<div class="spacer-extrasmall"></div>
+					<img class="center" src="http://2018.igem.org/wiki/images/6/62/T--Purdue--connectingLettersYeastExperienceBelieveSti.png"/>
+					<p style="text-align:center;">Experience with yeast infections (Non-overlapping connecting letters indicates a pairwise t-test with a p-value &lt;0.05.)</p>
+					<div class="spacer-small"></div>
+					<h4>Factors that do not affect a person’s likelihood of considering a yeast infection a sexually transmitted infection are. . . </h4>
+					<ul>
+						<li>Country of residence (ANOVA p-value: 0.0591, indicates no group significantly different than the rest of the groups)</li>
+						<li>State of residence in the United States (ANOVA p-value: 0.1170)</li>
+					</ul>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Yeast ID Marketability</h1>
+					<p>As our detection system is designed to be an over-the-counter (OTC) diagnostic test, we wanted to assess the marketplace and demand for this style of diagnosis. While diagnosis by a healthcare professional was the most preferred option, with 42% of people selecting it as their first-choice diagnostic method, 35% of people selected over-the-counter tests as their preferred diagnostic method, and 51% of people selected it as their second-choice diagnostic method, making it the overall second-choice diagnostic method. As such, due to the prevalence of yeast infections, there seems to be a market for OTC tests, like the one we are creating. All of the people who ranked “other” highly described their “other” option as alternative, “natural” diagnosis methods and treatments. While the over-the-counter was not the most-preferred diagnostic method, there is still a large enough market to justify a demand for testing products such as our own.</p>
+					<div class="spacer-extrasmall"></div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="imageFrame">
+								<img src="http://2018.igem.org/wiki/images/3/36/T--Purdue--rankingOfPreferenceHCPTest.png" style="margin:auto;width:50%;"/>
+							</div>
+						</div>
+						<div class="col-sm-6">
+								<img src="http://2018.igem.org/wiki/images/1/1d/T--Purdue--rankingOfPreferenceOtcTest.png" style="margin:auto;width:50%;"/>
+						</div>
+					</div>
+					<div class="spacer-extrasmall"></div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="imageFrame">
+								<img src="http://2018.igem.org/wiki/images/9/9c/T--Purdue--rankingOfPreferenceNoDiag.png" style="margin:auto;width:50%;"/>
+							</div>
+						</div>
+						<div class="col-sm-6">
+								<img src="http://2018.igem.org/wiki/images/e/e6/T--Purdue--rankingOfPreferenceOther.png" style="margin:auto;width:50%;"/>
+						</div>
+					</div>
+					<div class="spacer-small"></div>
+					<p>A total of 29 people listed not seeking an official diagnosis, and trends in their responses as to why that is there preferred method were analyzed. Nine major themes were apparent in their answers, and about half of them believed that it was easy to diagnose yeast-infections based on symptoms or by consulting online resources and forums. 14% of people wanted to go right to self-treating with over-the-counter products. 10% of people included in their response either that seeking a diagnosis was embarrassing or that they liked the privacy involved in self-diagnosis. </p>
+					<div class="spacer-extrasmall"></div>
+					<img class="center" style="width:60%;" src="http://2018.igem.org/wiki/images/3/30/T--Purdue--reasonsSelfDiagnosis.png"/>
+					<div class="spacer-extrasmall"></div>
+					<p>A total of 57 people selected that they preferred seeking a healthcare professional for their diagnoses, and the reasons for their preference was analyzed. 43% of respondents indicated that they just overall had a high amount of trust for doctors. 32% of respondents included in their response that they wanted a doctor’s recommendations for treatments or prescription-strength treatments. 16% believed that a doctor was most likely to give them the most accurate diagnosis, and 11% thought that a doctor would give them the most direct answer as to what was wrong. 7% believed going to a doctor was the safest option.</p>
+					<div class="spacer-extrasmall"></div>
+					<img class="center" style="width:60%;" src="http://2018.igem.org/wiki/images/9/9b/T--Purdue--reasonsHcp.png"/>
+					<div class="spacer-extrasmall"></div>
+					<p>A total of 49 people selected that they preferred using over-the-counter diagnostic tests, and the trends for the reason for their preference was analyzed. 33% of respondents listed the convenience and ease-of-use as reasons why they preferred OTC-diagnoses, with 10% mentioning that OTC-tests were quick or that they thought they would have to wait too long to see a doctor. 12% of people just responded generically that they liked how OTC-tests prevented them from needing to see a doctor, with an additional 6% of people who prefer OTC-diagnostic tests specifying that they believe that it is embarrassing to see a doctor for their yeast infection and 14% liking the privacy of OTC tests. An additional 24% of people preferred OTC-tests due their low cost and the high costs associated with doctors visits. 14% indicated that they like using OTC tests when they already suspect the issue is a yeast infection, and just want to confirm this belief. </p>
+					<div class="spacer-extrasmall"></div>
+					<img class="center" src="http://2018.igem.org/wiki/images/6/6e/T--Purdue--rasonsOtc.png"/>
+					<div class="spacer-extrasmall"></div>
+					<p>Overall, the trends in reasons for preferring certain diagnosis options indicates a need for further education on yeast infections and the risks associated with self-diagnosing and abuse of antifungal creams, as well as a need to end the stigma associated with yeast infections. While getting doctors to support our OTC-test and its accuracy would help, we should have a market as long as our product is easy-to-use, cheap, and quick.</p>
+					<div class="spacer-small"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="wrapper">
+					<h1>Integration into Paper Assay Design</h1>
+					<h3>Our survey was designed to establish the following design criteria.</h3>
+					<div class="spacer-extrasmall"></div>
+					<img class="center" src="http://2018.igem.org/wiki/images/8/8c/T--Purdue--waitTimes.png"/>
+					<p style="text-align:center;">Our test must take less than 30 minutes to achieve a result.</p>
+					<div class="spacer-small"></div>
+					<img class="center" src="http://2018.igem.org/wiki/images/4/48/T--Purdue--cost.png"/>
+					<p style="text-align:center;">Our test must cost less than $10.</p>
+					<div class="spacer-small"></div>
+					<img class="center" src="http://2018.igem.org/wiki/images/5/59/T--Purdue--swabs.png"/>
+					<p style="text-align:center;">Our test kits should allow for consumers to analyze two individual swabs to ensure their confidence in their diagnosis.</p>
+					<div class="spacer-small"></div>
+					<p>We also asked the survey respondents if they had any concerns with our proposed product, and discovered the following.</p>
+					<ul>
+						<li>Test accuracy should be greater than 90%.</li>
+						<li>With an internal expiration spot on the test strip, there is concern as to buying a test and then discovering it is expired. A solution for this could occur in our packaging, with an amber cellophane window on the packaging allowing customers to view the expiration spot.</li>
+						<li>Over time, the negative control will also react and become blue. There is concern about knowing the optimal time to view the test result.</li>
+						<li>Interpreting the test requires comparing the degree of blue of the test spot, negative control, and positive control. There is concern about how accurately users would be able to do so with their naked eyes.</li>
+						<li>There are four different spots (expiration, test sample, positive control, and negative control) that can turn blue. There is some concern over properly identifying which spot is which.</li>
+					</ul>
+					<div class="spacer-small"></div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="wrapper">
 					<h1>References</h1>
 					<ol class="references">
-						<li></li>
+						<li>University of California - Berkeley. (2018). Mechanical Turk (MTurk) for Online Research.</li>
+						<li>Ross, J., Irani, I., Silberman, M. Six, Zaldivar, A., and Tomlinson, B. (2010). "Who are the Crowdworkers?: Shifting Demographics in Amazon Mechanical Turk". In: CHI EA 2010. (2863-2872)</li>
+						<li>Sheehan, K. (2017). Crowdsourcing research: Data collection with Amazon’s Mechanical Turk. Communication Monographs, 85(1), 140-156. doi: 10.1080/03637751.2017.1342043</li>
 						<li>Achkar, J., & Fries, B. (2010). Candida Infections of the Genitourinary Tract. Clinical Microbiology Reviews, 23(2), 253-273. doi: 10.1128/cmr.00076-09</li>
 					</ol>
 				</div>

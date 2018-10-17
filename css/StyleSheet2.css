@@ -868,6 +868,8 @@ General
     margin-bottom: 0;
     font-size: 1.5em;
     font-weight: 600;
+    text-indent:0;
+    padding-left:2em;
 }
 
 .basic-page .trigger:hover {
@@ -876,6 +878,7 @@ General
 
 .basic-page .body .dropdown {
 	display:none;
+	padding:10px;
 }
 
 .basic-page .body .dropdown.border {
